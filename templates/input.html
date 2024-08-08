@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <title>Input Page</title>
+    </head>
+<body class="text-center">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+    <div class="container">
+        <h1 class="mt-5">Input Page</h1>
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-md-6 form-section" id="form-section">
+                <div class="form-group">
+                    <div class="form-group-title">
+                        <h5>Title</h5>
+                        <button class="btn btn-danger" onclick="removeField(this)">-</button>
+                    </div>
+                    <textarea class="form-control" placeholder="Enter value"></textarea>
+                </div>
+                <button class="btn btn-primary mt-3" onclick="addField()">Add Field</button>
+            </div>
+            <!-- Right Column -->
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="ageRange">Age Range</label>
+                    <input type="range" class="form-control" id="ageRangeMin" min="0" max="100" value="20" oninput="updateAgeRange()">
+                    <input type="range" class="form-control" id="ageRangeMax" min="0" max="100" value="50" oninput="updateAgeRange()">
+                    <p>Selected Age Range: <span id="ageRangeDisplay">20 - 50</span></p>
+                </div>
+                <script>
+                    function updateAgeRange() {
+                        const minSlider = document.getElementById('ageRangeMin');
+                        const maxSlider = document.getElementById('ageRangeMax');
+                        let min = parseInt(minSlider.value);
+                        let max = parseInt(maxSlider.value);
+                
+                        // Ensure the sliders do not overlap incorrectly
+                        if (min > max) {
+                            [min, max] = [max, min];
+                            minSlider.value = min;
+                            maxSlider.value = max;
+                        }
+                
+                        document.getElementById('ageRangeDisplay').textContent = `${min} - ${max}`;
+                    }
+                
+                    // Initialize the display
+                    updateAgeRange();
+                </script>
+                <div class="form-group">
+                    <label for="numberInput">Number Input</label>
+                    <input type="number" class="form-control" id="numberInput" min="0" max="100">
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="checkbox1">
+                        <label class="form-check-label" for="checkbox1">Checkbox 1</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="checkbox2">
+                        <label class="form-check-label" for="checkbox2">Checkbox 2</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="checkbox3">
+                        <label class="form-check-label" for="checkbox3">Checkbox 3</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="textarea">Text Area</label>
+                    <textarea class="form-control" id="textarea" rows="4"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function addField() {
+            const formSection = document.getElementById('form-section');
+            const newField = document.createElement('div');
+            newField.className = 'form-group';
+            newField.innerHTML = `
+                    <div class="form-group-title">
+                        <h5>Title</h5>
+                        <button class="btn btn-danger" onclick="removeField(this)">-</button>
+                    </div>
+                    <textarea class="form-control" placeholder="Enter value"></textarea>
+            `;
+            formSection.insertBefore(newField, formSection.lastElementChild);
+        }
+
+        function removeField(button) {
+            const formGroup = button.parentElement;
+            formGroup.remove();
+        }
+    </script>
+</html>

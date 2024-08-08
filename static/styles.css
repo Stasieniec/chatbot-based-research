@@ -1,0 +1,54 @@
+/* Adjust the font size for the entire body */
+body {
+    font-size: 0.875rem; /* Adjust as needed */
+}
+
+/* Adjust the form section and form group styles */
+.form-section {
+    padding: 10px; /* Adjust padding as needed */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Adjust margin as needed */
+    background-color: #f0f0f0; /* Grey background */
+    border-radius: 5px; /* Border radius */
+    padding: 10px; /* Padding inside the container */
+}
+
+.form-group-title {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 5px; /* Space between title and textarea */
+}
+
+.form-group-title h5 {
+    margin: 0; /* Remove default margin */
+    flex: 1; /* Allow title to take available space */
+}
+
+.form-group-title button {
+    height: 30px; /* Match the height of the title */
+    margin-left: 10px; /* Add some space between title and button */
+}
+
+.form-group textarea {
+    height: 80px; /* Adjust height as needed */
+    font-size: 1rem; /* Adjust font size as needed */
+    width: 100%; /* Ensure textarea takes full width */
+}
+
+/* Adjust the slider input styles */
+input[type="range"] {
+    width: 100%; /* Ensure the slider takes full width */
+    height: 20px; /* Adjust height as needed */
+}
+
+/* Adjust the checkbox styles */
+.form-check {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+}
+
+.form-check-input {
+    margin-right: 10px; /* Add some space between checkbox and label */
+}
