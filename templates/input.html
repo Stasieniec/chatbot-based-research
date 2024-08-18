@@ -18,7 +18,8 @@
                 <div class="col-md-6 form-section w-1/2" id="form-section">
                     <div class="form-group mb-4 bg-gray-200 rounded p-4">
                         <div class="form-group-title flex items-center mb-2">
-                            <h5 class="flex-1 m-0">Title</h5>
+                            <h5 class="flex-1 m-0">New goal</h5>
+                            <button class="btn btn-secondary bg-blue-500 text-white px-2 py-1 ml-2" onclick="editTitle(this)">edit name</button>
                             <button class="btn btn-danger bg-red-500 text-white px-2 py-1 ml-2" onclick="removeField(this)">delete</button>
                         </div>
                         <textarea class="form-control w-full h-20 text-base" placeholder="Enter value"></textarea>
@@ -31,30 +32,32 @@
                 <div class="col-md-6 w-1/2">
                     <div class="form-group mb-4">
                         <label for="ageRange">Age Range</label>
-                        <input type="range" class="form-control w-full h-5" id="ageRangeMin" min="0" max="100" value="20" oninput="updateAgeRange()">
-                        <input type="range" class="form-control w-full h-5" id="ageRangeMax" min="0" max="100" value="50" oninput="updateAgeRange()">
+                        <div id="ageRangeSlider" class="w-full h-5"></div>
                         <p>Selected Age Range: <span id="ageRangeDisplay">20 - 50</span></p>
                     </div>
                     <div class="form-group mb-4">
-                        <label for="numberInput">Number Input</label>
+                        <label for="numberInput">Number of participants</label>
                         <input type="number" class="form-control w-full" id="numberInput" min="0" max="100">
                     </div>
                     <div class="form-group mb-4">
-                        <div class="form-check flex items-center">
-                            <input class="form-check-input mr-2" type="checkbox" id="checkbox1">
-                            <label class="form-check-label" for="checkbox1">Checkbox 1</label>
-                        </div>
-                        <div class="form-check flex items-center">
-                            <input class="form-check-input mr-2" type="checkbox" id="checkbox2">
-                            <label class="form-check-label" for="checkbox2">Checkbox 2</label>
-                        </div>
-                        <div class="form-check flex items-center">
-                            <input class="form-check-input mr-2" type="checkbox" id="checkbox3">
-                            <label class="form-check-label" for="checkbox3">Checkbox 3</label>
+                        <label for="numberInput">Gender of participants</label>
+                        <div class="checkbox-group">
+                            <div class="form-check flex items-center">
+                                <input class="form-check-input mr-2" type="checkbox" id="checkbox1">
+                                <label class="form-check-label" for="checkbox1">Male</label>
+                            </div>
+                            <div class="form-check flex items-center">
+                                <input class="form-check-input mr-2" type="checkbox" id="checkbox2">
+                                <label class="form-check-label" for="checkbox2">Female</label>
+                            </div>
+                            <div class="form-check flex items-center">
+                                <input class="form-check-input mr-2" type="checkbox" id="checkbox3">
+                                <label class="form-check-label" for="checkbox3">Other</label>
+                            </div>
                         </div>
                     </div>
                     <div class="form-group mb-4">
-                        <label for="textarea">Text Area</label>
+                        <label for="textarea">Chatbot instructions</label>
                         <textarea class="form-control w-full h-32" id="textarea" rows="4"></textarea>
                     </div>
                     <div class="form-group mb-4">

@@ -8,12 +8,35 @@ function addField() {
     newField.className = 'form-group mb-4 bg-gray-200 rounded p-4';
     newField.innerHTML = `
         <div class="form-group-title flex items-center mb-2">
-            <h5 class="flex-1 m-0">Title</h5>
+            <h5 class="flex-1 m-0">New goal</h5>
+            <button class="btn btn-secondary bg-blue-500 text-white px-2 py-1 ml-2" onclick="editTitle(this)">edit name</button>
             <button class="btn btn-danger bg-red-500 text-white px-2 py-1 ml-2" onclick="removeField(this)">delete</button>
         </div>
         <textarea class="form-control w-full h-20 text-base" placeholder="Enter value"></textarea>
         <button class="btn btn-secondary mt-2 bg-green-500 text-white px-4 py-2 text-left" onclick="openMetricModal(this)">Add Metric</button>`;
     formSection.insertBefore(newField, formSection.lastElementChild);
+}
+
+function editTitle(button) {
+    const titleElement = button.previousElementSibling;
+    const currentTitle = titleElement.innerText;
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.value = currentTitle;
+    input.className = 'flex-1 m-0';
+    input.onblur = function() {
+        titleElement.innerText = input.value;
+        titleElement.style.display = 'block';
+        input.remove();
+    };
+    input.onkeydown = function(event) {
+        if (event.key === 'Enter') {
+            input.blur();
+        }
+    };
+    titleElement.style.display = 'none';
+    titleElement.parentNode.insertBefore(input, titleElement);
+    input.focus();
 }
 
 function removeField(button) {
@@ -81,3 +104,20 @@ function removeMetric(button) {
     const metricBox = button.closest('.metric-box');
     metricBox.remove();
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const ageRangeSlider = document.getElementById('ageRangeSlider');
+    noUiSlider.create(ageRangeSlider, {
+        start: [20, 50],
+        connect: true,
+        range: {
+            'min': 0,
+            'max': 100
+        }
+    });
+
+    const ageRangeDisplay = document.getElementById('ageRangeDisplay');
+    ageRangeSlider.noUiSlider.on('update', function (values, handle) {
+        ageRangeDisplay.innerText = `${Math.round(values[0])} - ${Math.round(values[1])}`;
+    });
+});
