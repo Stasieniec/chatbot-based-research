@@ -127,6 +127,13 @@ input[type="range"] {
     margin-bottom: 5px; /* Add some space below the label */
 }
 
+.metrics-label {
+    display: block; /* Ensure the label takes full width */
+    text-align: left; /* Align text to the left */
+    margin-top: 10px; /* Add some space above the label */
+    font-weight: bold; /* Make the label bold */
+}
+
 .close {
     color: #aaa;
     float: right;
