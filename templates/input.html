@@ -22,7 +22,8 @@
                             <button class="btn btn-secondary bg-blue-500 text-white px-2 py-1 ml-2" onclick="editTitle(this)">edit name</button>
                             <button class="btn btn-danger bg-red-500 text-white px-2 py-1 ml-2" onclick="removeField(this)">delete</button>
                         </div>
-                        <textarea class="form-control w-full h-20 text-base" placeholder="Enter value"></textarea>
+                        <label class="goal-label text-left">Goal description</label> <!-- Added label -->
+                        <textarea class="form-control w-full h-20 text-base" placeholder="Goal of the research"></textarea>
                         <button class="btn btn-secondary mt-2 bg-green-500 text-white px-4 py-2" onclick="openMetricModal(this)">Add Metric</button>
                     </div>
                     <button class="btn btn-primary mt-3 bg-blue-500 text-white px-4 py-2" onclick="addField()">Add Field</button>
@@ -58,7 +59,7 @@
                     </div>
                     <div class="form-group mb-4">
                         <label for="textarea">Chatbot instructions</label>
-                        <textarea class="form-control w-full h-32" id="textarea" rows="4"></textarea>
+                        <textarea class="form-control w-full h-32" id="textarea" rows="4" placeholder="How should the chatbot behave?"></textarea>
                     </div>
                     <div class="form-group mb-4">
                         <button class="btn btn-draft bg-grey-500 text-white px-4 py-2 mr-2">Save as Draft</button>
@@ -74,12 +75,45 @@
                 <span class="close" onclick="closeMetricModal()">&times;</span>
                 <h2>Add Metric</h2>
                 <div class="radio-group">
-                    <label><input type="radio" name="metricOption" value="option1"> Option 1</label>
+                    <label><input type="radio" name="metricOption" value="likert"> Likert scale</label>
                     <label><input type="radio" name="metricOption" value="option2"> Option 2</label>
                     <label><input type="radio" name="metricOption" value="option3"> Option 3</label>
                 </div>
-                <input type="text" id="metricInput1" class="form-control mt-2" placeholder="Enter first value">
-                <input type="text" id="metricInput2" class="form-control mt-2" placeholder="Enter second value">
+                <div id="dynamic-likert" class="dynamic-content" style="display: none;">
+                    <label>Likert Scale Labels:</label>
+                    <div class="likert-labels">
+                        <div class="likert-label-item">
+                            <label>Very Negative:</label>
+                            <input type="text" class="form-control mt-2" placeholder="Label 1">
+                        </div>
+                        <div class="likert-label-item">
+                            <label>Negative:</label>
+                            <input type="text" class="form-control mt-2" placeholder="Label 2">
+                        </div>
+                        <div class="likert-label-item">
+                            <label>Neutral:</label>
+                            <input type="text" class="form-control mt-2" placeholder="Label 3">
+                        </div>
+                        <div class="likert-label-item">
+                            <label>Positive:</label>
+                            <input type="text" class="form-control mt-2" placeholder="Label 4">
+                        </div>
+                        <div class="likert-label-item">
+                            <label>Very Positive:</label>
+                            <input type="text" class="form-control mt-2" placeholder="Label 5">
+                        </div>
+                    </div>
+                </div>
+                <div id="dynamic-option2" class="dynamic-content" style="display: none;">
+                    <input type="text" id="metricInput1" class="form-control mt-2" placeholder="Enter first value">
+                    <input type="text" id="metricInput2" class="form-control mt-2" placeholder="Enter second value">
+                </div>
+                <div id="dynamic-option3" class="dynamic-content" style="display: none;">
+                    <input type="text" id="metricInput1" class="form-control mt-2" placeholder="Enter first value">
+                    <input type="text" id="metricInput2" class="form-control mt-2" placeholder="Enter second value">
+                </div>
+                <label for="metricTitle">Metric Title:</label>
+                <input type="text" id="metricTitle" class="form-control mt-2" placeholder="Enter metric title">
                 <button class="btn btn-primary mt-2" onclick="saveMetric()">OK</button>
             </div>
         </div>

@@ -22,13 +22,10 @@ body {
     background-color: black; /* Black background */
 }
 
-
 /* Adjust the form section and form group styles */
 .form-section {
     padding: 10px; /* Adjust padding as needed */
 }
-
-
 
 .form-group {
     margin-bottom: 15px; /* Adjust margin as needed */
@@ -107,7 +104,7 @@ input[type="range"] {
     background-color: rgba(0,0,0,0.4);
     padding-top: 60px;
 }
-/* Add these styles to the end of styles.css */
+
 .radio-group label {
     display: flex; /* Use flexbox for layout */
     align-items: center; /* Align items vertically */
@@ -119,9 +116,15 @@ input[type="range"] {
     margin: 5% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
-    max-width: 500px;
+    width: 90%; /* Increase width to accommodate Likert scale labels */
+    max-width: 700px; /* Increase max-width to make the modal wider */
     position: relative; /* Add this to position the close button */
+}
+
+.goal-label {
+    display: block; /* Ensure the label takes full width */
+    text-align: left; /* Align text to the left */
+    margin-bottom: 5px; /* Add some space below the label */
 }
 
 .close {
@@ -141,11 +144,55 @@ input[type="range"] {
     cursor: pointer;
 }
 
-/* Add these styles to the end of styles.css */
 #ageRangeSlider .noUi-handle {
     background-color: #007bff; /* Customize handle color */
 }
 
 #ageRangeSlider .noUi-connect {
     background-color: #007bff; /* Customize connect bar color */
+}
+
+.dynamic-content {
+    display: none; /* Hide dynamic content sections by default */
+}
+
+.dynamic-content .likert-labels {
+    display: block; /* Stack labels vertically */
+}
+
+.dynamic-content .likert-labels {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Add some space between the label items */
+}
+
+.dynamic-content .likert-label-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Add some space between the label and input */
+}
+
+.dynamic-content .likert-label-item label {
+    flex: 0 0 150px; /* Fixed width for labels */
+}
+
+.dynamic-content .likert-label-item input {
+    flex: 1; /* Ensure each input takes the remaining space */
+}
+
+/* Add these styles to the end of styles.css */
+.metric-titles {
+    margin-top: 10px; /* Add some space above the metric titles */
+}
+
+.metric-title {
+    font-weight: bold;
+    margin-top: 5px; /* Add some space above each metric title */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.metric-title button {
+    margin-left: 10px; /* Add some space between buttons */
 }
