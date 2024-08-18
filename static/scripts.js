@@ -1,4 +1,6 @@
 let currentButton = null;
+let isEditing = false;
+let currentMetricBox = null;
 
 function addField() {
     const formSection = document.getElementById('form-section');
@@ -21,11 +23,19 @@ function removeField(button) {
 
 function openMetricModal(button) {
     currentButton = button;
+    isEditing = false;
     document.getElementById('metricModal').style.display = "block";
+
+    // Clear previous values
+    document.querySelectorAll('input[name="metricOption"]').forEach(radio => radio.checked = false);
+    document.getElementById('metricInput1').value = '';
+    document.getElementById('metricInput2').value = '';
 }
 
 function closeMetricModal() {
     document.getElementById('metricModal').style.display = "none";
+    isEditing = false;
+    currentMetricBox = null;
 }
 
 function saveMetric() {
@@ -39,10 +49,32 @@ function saveMetric() {
         metricBox.className = 'metric-box flex items-center justify-start bg-gray-100 p-2 mt-2';
         metricBox.innerHTML = `
             <span class="flex-1">${selectedOption.value}: ${metricInput1}, ${metricInput2}</span>
+            <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2" onclick="editMetric(this)">edit</button>
             <button class="btn btn-danger bg-red-500 text-white px-2 py-1 ml-2" onclick="removeMetric(this)">delete metric</button>`;
-        formGroup.insertBefore(metricBox, currentButton);
+
+        if (isEditing && currentMetricBox) {
+            formGroup.replaceChild(metricBox, currentMetricBox);
+        } else {
+            formGroup.insertBefore(metricBox, currentButton);
+        }
     }
     closeMetricModal();
+}
+
+function editMetric(button) {
+    const metricBox = button.closest('.metric-box');
+    const metricText = metricBox.querySelector('span').innerText;
+    const [option, values] = metricText.split(': ');
+    const [value1, value2] = values.split(', ');
+
+    document.querySelector(`input[name="metricOption"][value="${option}"]`).checked = true;
+    document.getElementById('metricInput1').value = value1;
+    document.getElementById('metricInput2').value = value2;
+
+    currentButton = metricBox.previousElementSibling; // Set to the "Add Metric" button
+    isEditing = true;
+    currentMetricBox = metricBox;
+    document.getElementById('metricModal').style.display = "block";
 }
 
 function removeMetric(button) {
