@@ -19,8 +19,8 @@
                     <div class="form-group mb-4 bg-gray-200 rounded p-4">
                         <div class="form-group-title flex items-center mb-2">
                             <h5 class="flex-1 m-0">New goal</h5>
-                            <button class="btn btn-secondary bg-blue-500 text-white px-2 py-1 ml-2" onclick="editTitle(this)">edit name</button>
-                            <button class="btn btn-danger bg-red-500 text-white px-2 py-1 ml-2" onclick="removeField(this)">delete</button>
+                            <button class="btn btn-secondary bg-blue-500 text-white px-2 py-1 ml-2 rounded" onclick="editTitle(this)">edit name</button>
+                            <button class="btn btn-danger bg-red-500 text-white px-2 py-1 ml-2 rounded" onclick="removeField(this)">delete</button>
                         </div>
                         <label class="goal-label text-left">Goal description</label> <!-- Added label -->
                         <textarea class="form-control w-full h-20 text-base" placeholder="Goal of the research"></textarea>
@@ -58,12 +58,42 @@
                         </div>
                     </div>
                     <div class="form-group mb-4">
+                        <label for="numberInput">Education of participants</label>
+                        <div class="checkbox-group">
+                            <div class="form-check flex items-center">
+                                <input class="form-check-input mr-2" type="checkbox" id="checkbox1">
+                                <label class="form-check-label" for="checkbox1">Elementary</label>
+                            </div>
+                            <div class="form-check flex items-center">
+                                <input class="form-check-input mr-2" type="checkbox" id="checkbox2">
+                                <label class="form-check-label" for="checkbox2">Middle</label>
+                            </div>
+                            <div class="form-check flex items-center">
+                                <input class="form-check-input mr-2" type="checkbox" id="checkbox3">
+                                <label class="form-check-label" for="checkbox3">Higher</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="numberInput">Parental situation</label>
+                        <div class="checkbox-group">
+                            <div class="form-check flex items-center">
+                                <input class="form-check-input mr-2" type="checkbox" id="checkbox1">
+                                <label class="form-check-label" for="checkbox1">Participants with kids</label>
+                            </div>
+                            <div class="form-check flex items-center">
+                                <input class="form-check-input mr-2" type="checkbox" id="checkbox2">
+                                <label class="form-check-label" for="checkbox2">Participants without kids</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group mb-4">
                         <label for="textarea">Chatbot instructions</label>
                         <textarea class="form-control w-full h-32" id="textarea" rows="4" placeholder="How should the chatbot behave?"></textarea>
                     </div>
                     <div class="form-group mb-4">
-                        <button class="btn btn-draft bg-grey-500 text-white px-4 py-2 mr-2">Save as Draft</button>
-                        <button class="btn btn-save bg-black text-white px-4 py-2">Save</button>
+                        <button class="btn btn-draft bg-grey-500 text-white px-4 py-2 mr-2 rounded">Save as Draft</button>
+                        <button class="btn btn-save bg-black text-white px-4 py-2 rounded">Save</button>
                     </div>
                 </div>
             </div>
@@ -76,8 +106,8 @@
                 <h2>Add Metric</h2>
                 <div class="radio-group">
                     <label><input type="radio" name="metricOption" value="likert"> Likert scale</label>
-                    <label><input type="radio" name="metricOption" value="option2"> Option 2</label>
-                    <label><input type="radio" name="metricOption" value="option3"> Option 3</label>
+                    <label><input type="radio" name="metricOption" value="option2"> Number</label>
+                    <label><input type="radio" name="metricOption" value="option3"> Open question</label>
                 </div>
                 <div id="dynamic-likert" class="dynamic-content" style="display: none;">
                     <label>Likert Scale Labels:</label>
@@ -105,16 +135,15 @@
                     </div>
                 </div>
                 <div id="dynamic-option2" class="dynamic-content" style="display: none;">
-                    <input type="text" id="metricInput1" class="form-control mt-2" placeholder="Enter first value">
-                    <input type="text" id="metricInput2" class="form-control mt-2" placeholder="Enter second value">
+                    <input type="number" id="metricInput1" class="form-control mt-2" placeholder="Left boundary">
+                    <input type="number" id="metricInput1" class="form-control mt-2" placeholder="Right boundary">
                 </div>
                 <div id="dynamic-option3" class="dynamic-content" style="display: none;">
-                    <input type="text" id="metricInput1" class="form-control mt-2" placeholder="Enter first value">
-                    <input type="text" id="metricInput2" class="form-control mt-2" placeholder="Enter second value">
+                    <input type="text" id="metricInput1" class="form-control mt-2" placeholder="Enter the question">
                 </div>
                 <label for="metricTitle">Metric Title:</label>
                 <input type="text" id="metricTitle" class="form-control mt-2 metric-titles" placeholder="Enter metric title">
-                <button class="btn btn-primary mt-2" onclick="saveMetric()">OK</button>
+                <button class="btn btn-primary mt-2 rounded" onclick="saveMetric()">OK</button>
             </div>
         </div>
 
