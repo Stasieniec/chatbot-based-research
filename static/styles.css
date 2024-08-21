@@ -1,25 +1,32 @@
 /* Adjust the font size for the entire body */
 body {
     font-size: 0.875rem; /* Adjust as needed */
+    background-color: #f8f9fa; /* Light background */
+    color: #343a40; /* Dark text color */
 }
 
 /* Add this rule to align the "Add Metric" button to the left */
 .btn-secondary {
     display: block; /* Ensure the button takes full width */
     text-align: left; /* Align text to the left */
+    background-color: #6c757d; /* Secondary color */
+    color: #fff; /* White text */
 }
 
 .btn-primary {
-    background-color: grey; /* Set background color to grey */
+    background-color: #007bff; /* Primary color */
+    color: #fff; /* White text */
 }
 
 /* Add these styles to the end of styles.css */
 .btn-draft {
-    background-color: grey; /* Grey background */
+    background-color: #6c757d; /* Secondary color */
+    color: #fff; /* White text */
 }
 
 .btn-save {
-    background-color: black; /* Black background */
+    background-color: #343a40; /* Dark color */
+    color: #fff; /* White text */
 }
 
 /* Adjust the form section and form group styles */
@@ -29,9 +36,10 @@ body {
 
 .form-group {
     margin-bottom: 15px; /* Adjust margin as needed */
-    background-color: #f0f0f0; /* Grey background */
+    background-color: #ffffff; /* White background */
     border-radius: 5px; /* Border radius */
     padding: 10px; /* Padding inside the container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .form-group .checkbox-group {
@@ -57,10 +65,17 @@ body {
     margin-left: 10px; /* Add some space between title and button */
 }
 
-.form-group textarea {
+.form-group textarea,
+.form-group input[type="text"],
+.form-group input[type="number"] {
     height: 80px; /* Adjust height as needed */
     font-size: 1rem; /* Adjust font size as needed */
     width: 100%; /* Ensure textarea takes full width */
+    background-color: #f8f9fa; /* Light background */
+    border: 1px solid #ced4da; /* Light border */
+    border-radius: 5px; /* Border radius */
+    padding: 10px; /* Padding inside the input */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
 }
 
 /* Adjust the slider input styles */
@@ -84,10 +99,11 @@ input[type="range"] {
     display: flex;
     align-items: center;
     justify-content: flex-start; /* Ensure items are aligned to the left */
-    background-color: #f0f0f0;
+    background-color: #ffffff; /* White background */
     padding: 10px;
     margin-top: 10px;
     border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 /* Add these styles to the end of styles.css */
@@ -100,7 +116,6 @@ input[type="range"] {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
     padding-top: 60px;
 }
@@ -119,6 +134,7 @@ input[type="range"] {
     width: 90%; /* Increase width to accommodate Likert scale labels */
     max-width: 700px; /* Increase max-width to make the modal wider */
     position: relative; /* Add this to position the close button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .goal-label {
@@ -202,4 +218,9 @@ input[type="range"] {
 
 .metric-title button {
     margin-left: 10px; /* Add some space between buttons */
+}
+
+.modal-content .btn-primary {
+    padding: 5px 10px; /* Increase padding for larger button */
+    font-size: 1rem; /* Adjust font size if needed */
 }
