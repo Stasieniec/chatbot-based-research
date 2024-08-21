@@ -12,8 +12,8 @@
     <body class="text-center">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
         <div class="container mx-auto">
-            <h1 class="mt-5 text-2xl">Input Page</h1>
-            <div class="row flex">
+            <h1 class="mt-5 text-4xl py-5">Input Page</h1> <!-- Updated title -->
+            <div class="row flex items-start"> <!-- Added items-start class -->
                 <!-- Left Column -->
                 <div class="col-md-6 form-section w-1/2" id="form-section">
                     <div class="form-group mb-4 bg-gray-200 rounded p-4">
@@ -24,13 +24,13 @@
                         </div>
                         <label class="goal-label text-left">Goal description</label> <!-- Added label -->
                         <textarea class="form-control w-full h-20 text-base" placeholder="Goal of the research"></textarea>
-                        <button class="btn btn-secondary mt-2 bg-green-500 text-white px-4 py-2" onclick="openMetricModal(this)">Add Metric</button>
+                        <button class="btn btn-secondary mt-2 bg-green-500 text-white px-4 py-2 rounded" onclick="openMetricModal(this)">Add Metric</button>
                     </div>
-                    <button class="btn btn-primary mt-3 bg-blue-500 text-white px-4 py-2" onclick="addField()">Add Field</button>
+                    <button class="btn btn-primary mt-3 bg-blue-500 text-white px-4 py-2 rounded" onclick="addField()">Add Field</button>
                 </div>
 
                 <!-- Right Column -->
-                <div class="col-md-6 w-1/2">
+                <div class="col-md-6 w-1/2 right-col"> <!-- Removed margin-top class -->
                     <div class="form-group mb-4">
                         <label for="ageRange">Age Range</label>
                         <div id="ageRangeSlider" class="w-full h-5"></div>
@@ -101,9 +101,9 @@
 
         <!-- The Modal -->
         <div id="metricModal" class="modal">
-            <div class="modal-content">
+            <div class="modal-content rounded">
                 <span class="close" onclick="closeMetricModal()">&times;</span>
-                <h2>Add Metric</h2>
+                <h2 class = "rounded">Add Metric</h2>
                 <div class="radio-group">
                     <label><input type="radio" name="metricOption" value="likert"> Likert scale</label>
                     <label><input type="radio" name="metricOption" value="option2"> Number</label>

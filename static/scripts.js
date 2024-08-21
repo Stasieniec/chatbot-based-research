@@ -16,7 +16,7 @@ function addField() {
         <textarea class="form-control w-full h-20 text-base" placeholder="Goal of the research"></textarea>
         <label class="metrics-label text-left mt-4">Metrics</label>
         <div class="metric-titles"></div>
-        <button class="btn btn-secondary mt-2 bg-green-500 text-white px-4 py-2 text-left" onclick="openMetricModal(this)">Add Metric</button>`;
+        <button class="btn btn-secondary mt-2 bg-green-500 text-white px-4 py-2 text-left rounded" onclick="openMetricModal(this)">Add Metric</button>`;
     formSection.insertBefore(newField, formSection.lastElementChild);
 }
 
@@ -105,8 +105,8 @@ function saveMetric() {
             metricTitleElement.className = 'metric-title flex items-center justify-between mt-2';
             metricTitleElement.innerHTML = `
                 <span class="flex-1 metric-title">${metricTitle}</span>
-                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2" onclick="editMetricTitle(this, '${metricId}')">edit</button>
-                <button class="btn btn-danger bg-red-500 text-white px-2 py-1 ml-2" onclick="removeMetricTitle(this)">delete</button>`;
+                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="editMetricTitle(this, '${metricId}')">edit</button>
+                <button class="btn btn-danger bg-red-500 text-white px-2 py-1 ml-2 rounded" onclick="removeMetricTitle(this)">delete</button>`;
 
             const metricBox = document.createElement('div');
             metricBox.className = 'metric-box';
