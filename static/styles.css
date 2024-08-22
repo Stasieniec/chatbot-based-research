@@ -68,9 +68,9 @@ body {
 .form-group textarea,
 .form-group input[type="text"],
 .form-group input[type="number"] {
-    height: 80px; /* Adjust height as needed */
+    height: auto; /* Set height to auto for normal height */
     font-size: 1rem; /* Adjust font size as needed */
-    width: 100%; /* Ensure textarea takes full width */
+    width: 100%; /* Ensure input takes full width */
     background-color: #f8f9fa; /* Light background */
     border: 1px solid #ced4da; /* Light border */
     border-radius: 5px; /* Border radius */
@@ -116,25 +116,69 @@ input[type="range"] {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.5); /* Darker background for better focus */
     padding-top: 60px;
 }
 
-.radio-group label {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Align items vertically */
-    margin-bottom: 5px;
-}
-
 .modal-content {
-    background-color: #fefefe;
+    background-color: #fff;
     margin: 5% auto;
     padding: 20px;
-    border: 1px solid #888;
-    width: 90%; /* Increase width to accommodate Likert scale labels */
-    max-width: 700px; /* Increase max-width to make the modal wider */
-    position: relative; /* Add this to position the close button */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+    width: 90%;
+    max-width: 600px; /* Adjust width */
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    animation: fadeIn 0.3s ease-in-out; /* Add fade-in animation */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.close:hover,
+.close:focus {
+    color: #000; /* Darker color on hover */
+    text-decoration: none;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* More space between options */
+    font-size: 1rem; /* Increase font size */
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 10px; /* Space between radio and label */
+}
+
+.modal-content .btn-primary {
+    padding: 10px 20px; /* Increase padding */
+    font-size: 1rem; /* Adjust font size */
+    background-color: #007bff; /* Primary color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.modal-content .btn-primary:hover {
+    background-color: #0056b3; /* Darker on hover */
 }
 
 .goal-label {
@@ -169,10 +213,21 @@ input[type="range"] {
 
 #ageRangeSlider .noUi-handle {
     background-color: #007bff; /* Customize handle color */
+    border-radius: 50%; /* Make the handle round */
+    width: 20px; /* Adjust handle size */
+    height: 20px; /* Adjust handle size */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
 }
 
 #ageRangeSlider .noUi-connect {
     background-color: #007bff; /* Customize connect bar color */
+    height: 5px; /* Adjust height for a more subtle look */
+}
+
+#ageRangeSlider .noUi-base {
+    background-color: #e9ecef; /* Light background for the slider base */
+    height: 5px; /* Adjust height for a more subtle look */
+    border-radius: 5px; /* Rounded corners for the slider base */
 }
 
 .dynamic-content {
@@ -236,6 +291,6 @@ h1 {
     margin-top: 20px; /* Adjust margin to align with the left column */
 }
 
-.right-col{
+.right-col {
     margin-top: 10px;
 }
