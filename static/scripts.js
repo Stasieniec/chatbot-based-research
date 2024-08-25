@@ -9,8 +9,8 @@ function addField() {
     newField.innerHTML = `
         <div class="form-group-title flex items-center mb-2">
             <h5 class="flex-1 m-0">New goal</h5>
-            <button class="btn btn-secondary bg-blue-500 text-white px-2 py-1 ml-2" onclick="editTitle(this)">edit name</button>
-            <button class="btn btn-danger bg-red-500 text-white px-2 py-1 ml-2" onclick="removeField(this)">delete</button>
+            <button class="btn btn-secondary bg-blue-500 text-white px-2 py-1 ml-2 rounded" onclick="editTitle(this)">edit name</button>
+            <button class="btn btn-danger bg-red-500 text-white px-2 py-1 ml-2 rounded" onclick="removeField(this)">delete</button>
         </div>
         <label class="goal-label text-left">Goal description</label>
         <textarea class="form-control w-full h-20 text-base" placeholder="Goal of the research"></textarea>

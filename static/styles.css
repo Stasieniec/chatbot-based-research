@@ -294,3 +294,65 @@ h1 {
 .right-col {
     margin-top: 10px;
 }
+
+/* RESULTS PAGE SPECIFIC */
+
+.word-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between buttons */
+    justify-content: center; /* Center the buttons */
+    margin-bottom: 20px; /* Space below the word cloud */
+}
+
+.word-cloud-btn {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Button padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.word-cloud-btn:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}
+
+.goal-results {
+    margin-top: 20px; /* Add some space above the goal results */
+}
+
+.goal-result {
+    background-color: #ffffff; /* White background */
+    padding: 15px; /* Padding inside the container */
+    border-radius: 5px; /* Border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px; /* Space below each goal result */
+}
+
+.goal-title {
+    font-weight: bold; /* Bold font for goal titles */
+}
+
+.metric-results {
+    margin-top: 10px; /* Add some space above the metric results */
+}
+
+.metric-title {
+    font-weight: bold; /* Bold font for metric titles */
+}
+
+.metric-image-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if needed */
+    margin-top: 10px; /* Add some space above the container */
+}
+
+.metric-image {
+    width: 50%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
