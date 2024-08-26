@@ -7,5 +7,8 @@
   },
   "scripts": {
     "build:css": "postcss static/tailwind.css -o static/tailwind.css"
+  },
+  "dependencies": {
+    "nouislider": "^15.8.1"
   }
 }
