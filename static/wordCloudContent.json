@@ -1,0 +1,20 @@
+{
+    "word1": {
+        "title": "Word 1 Details",
+        "summary": "Summary for word 1",
+        "content": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+        ]
+    },
+    "word2": {
+        "title": "Word 2 Details",
+        "summary": "Summary for word 2",
+        "content": [
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.",
+            "Eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+            "Sunt in culpa qui officia deserunt mollit anim id est laborum."
+        ]
+    }
+}

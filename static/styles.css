@@ -269,6 +269,7 @@ input[type="range"] {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
 }
 
 .metric-title button {
@@ -337,10 +338,7 @@ h1 {
 
 .metric-results {
     margin-top: 10px; /* Add some space above the metric results */
-}
-
-.metric-title {
-    font-weight: bold; /* Bold font for metric titles */
+    text-align: center;
 }
 
 .metric-image-container {
@@ -355,4 +353,68 @@ h1 {
     height: auto; /* Maintain aspect ratio */
     border-radius: 5px; /* Rounded corners */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.metric-results-title {
+    text-align: center !important;
+    font-weight: bold;
+}
+
+
+/* Add these styles to the end of styles.css */
+.word-cloud-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 60px;
+}
+
+.word-cloud-modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.scrollable-content {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+.content-box {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.word-cloud-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.word-cloud-close:hover,
+.word-cloud-close:focus {
+    color: #000;
+    text-decoration: none;
 }

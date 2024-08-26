@@ -24,17 +24,17 @@
                         <div class="goal-result mb-4">
                             <h3 class="goal-title text-xl mb-2">Goal Title 1</h3>
                             <div class="word-cloud mb-4">
-                                <button class="word-cloud-btn">Word1</button>
-                                <button class="word-cloud-btn">Word2</button>
-                                <button class="word-cloud-btn">Word3</button>
-                                <button class="word-cloud-btn">Word4</button>
-                                <button class="word-cloud-btn">Word5</button>
-                                <button class="word-cloud-btn">Word6</button>
-                                <button class="word-cloud-btn">Word7</button>
-                                <button class="word-cloud-btn">Word8</button>
+                                <button class="word-cloud-btn" data-word="word1">Word1</button>
+                                <button class="word-cloud-btn" data-word="word1">Word2</button>
+                                <button class="word-cloud-btn" data-word="word1">Word3</button>
+                                <button class="word-cloud-btn" data-word="word1">Word4</button>
+                                <button class="word-cloud-btn" data-word="word1">Word5</button>
+                                <button class="word-cloud-btn" data-word="word1">Word6</button>
+                                <button class="word-cloud-btn" data-word="word1">Word7</button>
+                                <button class="word-cloud-btn" data-word="word1">Word8</button>
                             </div>
                             <div class="metric-results">
-                                <h4 class="metric-title text-lg mb-2">Metric Title 1</h4>
+                                <h4 class="metric-result-title text-lg mb-2">Metric Title 1</h4>
                                 <div class="metric-image-container">
                                     <img src="{{ url_for('static', filename='age.png') }}" alt="Metric Result 1" class="metric-image mb-4">
                                 </div>
@@ -44,17 +44,23 @@
                         <div class="goal-result mb-4">
                             <h3 class="goal-title text-xl mb-2">Goal Title 2</h3>
                             <div class="word-cloud mb-4">
-                                <button class="word-cloud-btn">Word1</button>
-                                <button class="word-cloud-btn">Word2</button>
-                                <button class="word-cloud-btn">Word3</button>
-                                <button class="word-cloud-btn">Word4</button>
-                                <button class="word-cloud-btn">Word5</button>
-                                <button class="word-cloud-btn">Word6</button>
-                                <button class="word-cloud-btn">Word7</button>
-                                <button class="word-cloud-btn">Word8</button>
+                                <button class="word-cloud-btn" data-word="word1">Word1</button>
+                                <button class="word-cloud-btn" data-word="word2">Word2</button>
+                                <button class="word-cloud-btn" data-word="word1">Word3</button>
+                                <button class="word-cloud-btn" data-word="word1">Word4</button>
+                                <button class="word-cloud-btn" data-word="word1">Word5</button>
+                                <button class="word-cloud-btn" data-word="word1">Word6</button>
+                                <button class="word-cloud-btn" data-word="word1">Word7</button>
+                                <button class="word-cloud-btn" data-word="word1">Word8</button>
                             </div>
                             <div class="metric-results">
-                                <h4 class="metric-title text-lg mb-2">Metric Title 2</h4>
+                                <h4 class="metric-result-title text-lg mb-2">Metric Title 2</h4>
+                                <div class="metric-image-container">
+                                    <img src="{{ url_for('static', filename='age.png') }}" alt="Metric Result 2" class="metric-image mb-4">
+                                </div>
+                            </div>
+                            <div class="metric-results">
+                                <h4 class="metric-result-title text-lg mb-2">Metric Title 3</h4>
                                 <div class="metric-image-container">
                                     <img src="{{ url_for('static', filename='age.png') }}" alt="Metric Result 2" class="metric-image mb-4">
                                 </div>
@@ -96,9 +102,21 @@
             </div>
         </div>
 
+        <!--MODAL-->
+        <div id="wordCloudModal" class="word-cloud-modal">
+            <div class="word-cloud-modal-content">
+                <span class="word-cloud-close">&times;</span>
+                <h2>Word Cloud Details</h2>
+                <p>Summary</p>
+                <div class="scrollable-content">
+                    <!-- Content will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+        <script src="{{ url_for('static', filename='results.js') }}"></script>
     </body>
 </html>
