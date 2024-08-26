@@ -28,9 +28,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 const wordData = data[word];
                 if (wordData) {
                     document.querySelector('.word-cloud-modal-content h2').innerText = wordData.title;
-                    document.querySelector('.word-cloud-modal-content p').innerText = wordData.summary;
+                    const summaryDiv = document.createElement('div');
+                    summaryDiv.className = 'word-cloud-summary';
+                    summaryDiv.innerText = wordData.summary;
                     const contentBoxContainer = document.querySelector('.scrollable-content');
                     contentBoxContainer.innerHTML = '';
+                    contentBoxContainer.appendChild(summaryDiv);
                     wordData.content.forEach(text => {
                         const contentBox = document.createElement('div');
                         contentBox.className = 'content-box';

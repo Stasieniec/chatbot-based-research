@@ -418,3 +418,26 @@ h1 {
     color: #000;
     text-decoration: none;
 }
+
+/* ... existing code ... */
+
+.word-cloud-summary {
+    background-color: #f8f9fa; /* Light background for summary */
+    padding: 15px; /* Padding inside the summary div */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below the summary */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.word-cloud-modal-content h2 {
+    font-size: 1.5rem; /* Increase font size for title */
+    margin-bottom: 10px; /* Space below the title */
+    text-align: center; /* Center the title */
+}
+
+.word-cloud-modal-content p {
+    font-size: 1rem; /* Adjust font size for summary */
+    line-height: 1.5; /* Improve readability */
+}
+
+/* ... existing code ... */
