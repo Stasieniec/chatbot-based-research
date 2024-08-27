@@ -1,0 +1,32 @@
+{
+    "responses": [
+      {
+        "id": "response1",
+        "text": "This is the full response for the first entry. It talks about the healthcare system in detail..."
+      },
+      {
+        "id": "response2",
+        "text": "This is the full response for the second entry. It discusses the positive aspects of the local hospital..."
+      },
+      {
+        "id": "response3",
+        "text": "This is the full response for the third entry. It compares public services, noting that healthcare is quite good..."
+      },
+      {
+        "id": "response4",
+        "text": "This is the full response for the fourth entry. It praises the hospital on a specific street..."
+      },
+      {
+        "id": "response5",
+        "text": "This is the full response for the fifth entry. It talks about various public services including healthcare..."
+      },
+      {
+        "id": "response6",
+        "text": "This is the full response for the sixth entry. It focuses on the positive aspects of the local healthcare system..."
+      },
+      {
+        "id": "scierzka_rowerowa_1",
+        "text": "This is the full response for the sixth entry. This is the full response for the sixth entry. This is the full response for the entry."
+      }
+    ]
+  }

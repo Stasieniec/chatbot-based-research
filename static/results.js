@@ -40,19 +40,19 @@ document.addEventListener('DOMContentLoaded', function() {
                     paragraph.className = 'related-responses-txt';
                     contentBoxContainer.appendChild(paragraph);
     
-                    wordData.content.forEach(text => {
+                    wordData.content.forEach((item) => {
                         const contentBoxWrapper = document.createElement('div');
                         contentBoxWrapper.className = 'content-box-container';
     
                         const contentBox = document.createElement('div');
                         contentBox.className = 'content-box';
-                        contentBox.innerText = text;
+                        contentBox.innerText = item.text;
     
                         const viewFullResponseBtn = document.createElement('button');
                         viewFullResponseBtn.className = 'view-full-response-btn';
                         viewFullResponseBtn.innerText = 'View Full Response';
                         viewFullResponseBtn.onclick = function() {
-                            // Add your link logic here
+                            fetchFullResponse(item.responseId);
                         };
     
                         contentBoxWrapper.appendChild(contentBox);
@@ -63,5 +63,45 @@ document.addEventListener('DOMContentLoaded', function() {
             })
             .catch(error => console.error('Error fetching content:', error));
     }
+    
+    function fetchFullResponse(responseId) {
+        fetch('static/fullResponses.json')
+            .then(response => response.json())
+            .then(data => {
+                const fullResponse = data.responses.find(response => response.id === responseId);
+                if (fullResponse) {
+                    showFullResponseModal(fullResponse.text);
+                }
+            })
+            .catch(error => console.error('Error fetching full response:', error));
+    }
+
+    
+    function showFullResponseModal(fullResponse) {
+        const fullResponseModal = document.getElementById('fullResponseModal');
+        const fullResponseContent = document.querySelector('.full-response-content');
+        fullResponseContent.innerText = fullResponse;
+        fullResponseModal.style.display = 'block';
+    }
+    
+    // Add these event listeners at the end of the DOMContentLoaded function
+    const fullResponseModal = document.getElementById('fullResponseModal');
+    const fullResponseCloseBtn = document.querySelector('.full-response-close');
+    const goBackBtn = document.querySelector('.go-back-btn');
+    
+    fullResponseCloseBtn.addEventListener('click', function() {
+        fullResponseModal.style.display = 'none';
+    });
+    
+    goBackBtn.addEventListener('click', function() {
+        fullResponseModal.style.display = 'none';
+        modal.style.display = 'block';
+    });
+    
+    window.addEventListener('click', function(event) {
+        if (event.target == fullResponseModal) {
+            fullResponseModal.style.display = 'none';
+        }
+    });
 }
 );
