@@ -375,19 +375,6 @@ h1 {
     padding-top: 60px;
 }
 
-.word-cloud-modal-content {
-    background-color: #fff;
-    margin: 5% auto;
-    padding: 20px;
-    border: none;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 600px;
-    position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    animation: fadeIn 0.3s ease-in-out;
-}
-
 .scrollable-content {
     max-height: 300px;
     overflow-y: auto;
@@ -397,8 +384,60 @@ h1 {
 .content-box {
     background-color: #f1f1f1;
     padding: 10px;
-    margin-bottom: 10px;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    text-align: left;
+    flex: 1;
+    min-height: 40px;
+    height: auto; /* Allow height to adjust based on content */
+    word-wrap: break-word; /* Ensure long words don't overflow */
+}
+
+.content-box-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.view-full-response-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    min-height: 40px;
+    height: 100%; /* Make button height match the content box */
+    margin-left: 10px;
+    box-sizing: border-box;
+    white-space: normal; /* Allow text to wrap */
+    text-align: center;
+}
+
+.view-full-response-btn:hover {
+    background-color: #0056b3;
+}
+
+.word-cloud-modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    width: 95%;
+    max-width: 800px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
 }
 
 .word-cloud-close {
@@ -419,7 +458,6 @@ h1 {
     text-decoration: none;
 }
 
-/* ... existing code ... */
 
 .word-cloud-summary {
     background-color: #f8f9fa; /* Light background for summary */
@@ -440,4 +478,7 @@ h1 {
     line-height: 1.5; /* Improve readability */
 }
 
-/* ... existing code ... */
+.related-responses-txt{
+    margin-bottom: 20px;
+    margin-top: 5px;
+}

@@ -34,14 +34,34 @@ document.addEventListener('DOMContentLoaded', function() {
                     const contentBoxContainer = document.querySelector('.scrollable-content');
                     contentBoxContainer.innerHTML = '';
                     contentBoxContainer.appendChild(summaryDiv);
+    
+                    const paragraph = document.createElement('p');
+                    paragraph.innerText = 'Related responses';
+                    paragraph.className = 'related-responses-txt';
+                    contentBoxContainer.appendChild(paragraph);
+    
                     wordData.content.forEach(text => {
+                        const contentBoxWrapper = document.createElement('div');
+                        contentBoxWrapper.className = 'content-box-container';
+    
                         const contentBox = document.createElement('div');
                         contentBox.className = 'content-box';
                         contentBox.innerText = text;
-                        contentBoxContainer.appendChild(contentBox);
+    
+                        const viewFullResponseBtn = document.createElement('button');
+                        viewFullResponseBtn.className = 'view-full-response-btn';
+                        viewFullResponseBtn.innerText = 'View Full Response';
+                        viewFullResponseBtn.onclick = function() {
+                            // Add your link logic here
+                        };
+    
+                        contentBoxWrapper.appendChild(contentBox);
+                        contentBoxWrapper.appendChild(viewFullResponseBtn);
+                        contentBoxContainer.appendChild(contentBoxWrapper);
                     });
                 }
             })
             .catch(error => console.error('Error fetching content:', error));
     }
-});
+}
+);
