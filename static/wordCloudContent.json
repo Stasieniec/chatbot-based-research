@@ -16,5 +16,14 @@
             "Eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
             "Sunt in culpa qui officia deserunt mollit anim id est laborum."
         ]
+    },
+    "Służba Zdrowia": {
+        "title": "Temat - służba zdrowia",
+        "summary": "Służba zdrowia zazawyczaj jest chwalona",
+        "content": [
+            "\"[...] mimo tego, mam wrażenie, że akurat na służbę zdrowia można liczyć.\"",
+            "\"Przede wszystkim, muszę pochwalić to, jak działa szpital na ulicy ...\"",
+            "\"Poziom usług publicznych jest naprawdę słaby. Może oprócz służby zdrowia, to jest całkiem spoko\""
+        ]
     }
 }
