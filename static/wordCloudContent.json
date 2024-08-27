@@ -1,29 +1,43 @@
 {
-    "word1": {
-        "title": "Word 1 Details",
-        "summary": "Summary for word 1",
-        "content": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
-        ]
-    },
-    "word2": {
-        "title": "Word 2 Details",
-        "summary": "Summary for word 2",
-        "content": [
-            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.",
-            "Eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
-            "Sunt in culpa qui officia deserunt mollit anim id est laborum."
-        ]
-    },
     "Służba Zdrowia": {
-        "title": "Temat - służba zdrowia",
-        "summary": "Służba zdrowia zazawyczaj jest chwalona",
+      "title": "Temat - dobra służba zdrowia",
+      "summary": "Służba zdrowia zazwyczaj jest chwalona. Reszta opisu...",
+      "content": [
+        {
+          "text": "\"[...] mimo tego, mam wrażenie, że akurat na służbę zdrowia można liczyć.\"",
+          "responseId": "response1"
+        },
+        {
+          "text": "\"Przede wszystkim, muszę pochwalić to, jak działa szpital na ulicy ...\"",
+          "responseId": "response2"
+        },
+        {
+          "text": "\"Poziom usług publicznych jest naprawdę słaby. Może oprócz służby zdrowia, to jest całkiem spoko\"",
+          "responseId": "response3"
+        },
+        {
+          "text": "\"Przede wszystkim, muszę pochwalić to, jak działa szpital na ulicy ...\"",
+          "responseId": "response4"
+        },
+        {
+          "text": "\"Przede wszystkim, muszę pochwalić to, jak działa szpital na ulicy ...\"",
+          "responseId": "response5"
+        },
+        {
+          "text": "\"Przede wszystkim, muszę pochwalić to, jak działa szpital na ulicy ...\"",
+          "responseId": "response6"
+        }
+      ]
+    },
+
+    "Brak ścierzek rowerowych": {
+        "title": "Temat - brak ścierzek rowerowych",
+        "summary": "Opis tego co mówią te rzeczy",
         "content": [
-            "\"[...] mimo tego, mam wrażenie, że akurat na służbę zdrowia można liczyć.\"",
-            "\"Przede wszystkim, muszę pochwalić to, jak działa szpital na ulicy ...\"",
-            "\"Poziom usług publicznych jest naprawdę słaby. Może oprócz służby zdrowia, to jest całkiem spoko\""
+          {
+            "text": "\"Nie no to jest dramat nie ma w ogóle ścierzek\"",
+            "responseId": "scierzka_rowerowa_1"
+          }
         ]
-    }
-}
+      }
+  }
