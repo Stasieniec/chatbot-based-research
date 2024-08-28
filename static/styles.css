@@ -503,7 +503,7 @@ h1 {
     border: none;
     border-radius: 10px;
     width: 95%;
-    max-width: 800px;
+    max-width: 1000px;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     animation: fadeIn 0.3s ease-in-out;
@@ -575,6 +575,31 @@ h1 {
     border-radius: 5px;
     padding: 15px;
     margin-top: 20px;
+    max-height: 300px; /* Set a maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Add smooth scrolling for modern browsers */
+.chat-transcript {
+    scroll-behavior: smooth;
+}
+
+/* Style the scrollbar for WebKit browsers */
+.chat-transcript::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-transcript::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.chat-transcript::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.chat-transcript::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 .chat-message {
