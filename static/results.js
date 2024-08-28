@@ -64,27 +64,50 @@ document.addEventListener('DOMContentLoaded', function() {
             .catch(error => console.error('Error fetching content:', error));
     }
     
+    function showFullResponseModal(fullResponse, demographics) {
+        const fullResponseModal = document.getElementById('fullResponseModal');
+        const fullResponseContent = document.querySelector('.full-response-content');
+        
+        // Create and populate the demographics section
+        const demographicsHtml = `
+            <div class="demographics-info">
+                <h3>Respondent Demographics</h3>
+                <p><strong>Age:</strong> ${demographics.age}</p>
+                <p><strong>Gender:</strong> ${demographics.gender}</p>
+                <p><strong>Education Level:</strong> ${demographics.educationLevel}</p>
+                <p><strong>Parental Status:</strong> ${demographics.parentalStatus}</p>
+            </div>
+        `;
+        
+        // Create the transcript HTML
+        const transcriptHtml = `
+            <div class="chat-transcript">
+                <h3>Chat Transcript</h3>
+                ${fullResponse.map(message => `
+                    <div class="chat-message ${message.sender.toLowerCase()}">
+                        <strong>${message.sender}:</strong> ${message.text}
+                    </div>
+                `).join('')}
+            </div>
+        `;
+        
+        // Set the content of the modal
+        fullResponseContent.innerHTML = demographicsHtml + transcriptHtml;
+        fullResponseModal.style.display = 'block';
+    }
+    
     function fetchFullResponse(responseId) {
         fetch('static/fullResponses.json')
             .then(response => response.json())
             .then(data => {
                 const fullResponse = data.responses.find(response => response.id === responseId);
                 if (fullResponse) {
-                    showFullResponseModal(fullResponse.text);
+                    showFullResponseModal(fullResponse.transcript, fullResponse.demographics);
                 }
             })
             .catch(error => console.error('Error fetching full response:', error));
-    }
-
+        }    
     
-    function showFullResponseModal(fullResponse) {
-        const fullResponseModal = document.getElementById('fullResponseModal');
-        const fullResponseContent = document.querySelector('.full-response-content');
-        fullResponseContent.innerText = fullResponse;
-        fullResponseModal.style.display = 'block';
-    }
-    
-    // Add these event listeners at the end of the DOMContentLoaded function
     const fullResponseModal = document.getElementById('fullResponseModal');
     const fullResponseCloseBtn = document.querySelector('.full-response-close');
     const goBackBtn = document.querySelector('.go-back-btn');
