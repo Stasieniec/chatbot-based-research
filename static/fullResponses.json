@@ -99,7 +99,11 @@
         {"sender": "Bot", "text": "That's interesting. Can you tell me more about that?"},
         {"sender": "Human", "text": "Sure. Our local health department runs regular campaigns for vaccinations, health screenings, and lifestyle education. It's really proactive."},
         {"sender": "Bot", "text": "That sounds great. Is there anything else you find positive about the healthcare system?"},
-        {"sender": "Human", "text": "Yes, the integration of mental health services with general healthcare has been a big improvement in recent years."}
+        {"sender": "Human", "text": "Yes, the integration of mental health services with general healthcare has been a big improvement in recent years."},
+        {"sender": "Bot", "text": "Hi there! I'd like to ask about the positive aspects of your local healthcare system. What stands out to you?"},
+        {"sender": "Human", "text": "One thing that really impresses me is the focus on preventive care."},
+        {"sender": "Bot", "text": "Hi there! I'd like to ask about the positive aspects of your local healthcare system. What stands out to you?"},
+        {"sender": "Human", "text": "One thing that really impresses me is the focus on preventive care."}
       ]
     },
     {
