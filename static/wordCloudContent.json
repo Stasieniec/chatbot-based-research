@@ -1,43 +1,16 @@
-{
-    "Służba Zdrowia": {
-      "title": "Temat - dobra służba zdrowia",
-      "summary": "Służba zdrowia zazwyczaj jest chwalona. Reszta opisu...",
+{   
+    "Dobra komunikacja miejska": {
+      "title": "Temat - punktualne autobusy",
+      "summary": "Wielu respondentów wyraziło zadowolenie z punktualności autobusów w ich okolicy. Uczestnicy badania często podkreślali, że autobusy kursują zgodnie z rozkładem jazdy i rzadko się spóźniają. Dzięki temu mieszkańcy czują się pewniej, planując swoje codzienne dojazdy do pracy, szkoły czy na zakupy. Punktualność transportu publicznego jest uznawana za jeden z kluczowych atutów obecnego systemu komunikacji miejskiej.",
       "content": [
         {
-          "text": "\"[...] mimo tego, mam wrażenie, że akurat na służbę zdrowia można liczyć.\"",
-          "responseId": "response1"
+          "text": "\"Autobusy kursują często i są punktualne.\"",
+          "responseId": "jakosc_transportu_1"
         },
         {
-          "text": "\"Przede wszystkim, muszę pochwalić to, jak działa szpital na ulicy ...\"",
-          "responseId": "response2"
-        },
-        {
-          "text": "\"Poziom usług publicznych jest naprawdę słaby. Może oprócz służby zdrowia, to jest całkiem spoko\"",
-          "responseId": "response3"
-        },
-        {
-          "text": "\"Przede wszystkim, muszę pochwalić to, jak działa szpital na ulicy ...\"",
-          "responseId": "response4"
-        },
-        {
-          "text": "\"Przede wszystkim, muszę pochwalić to, jak działa szpital na ulicy ...\"",
-          "responseId": "response5"
-        },
-        {
-          "text": "\"Przede wszystkim, muszę pochwalić to, jak działa szpital na ulicy ...\"",
-          "responseId": "response6"
+          "text": "\"Poza tym zawsze są na czas.\"",
+          "responseId": "jakosc_transportu_2"
         }
       ]
-    },
-
-    "Brak ścierzek rowerowych": {
-        "title": "Temat - brak ścierzek rowerowych",
-        "summary": "Opis tego co mówią te rzeczy",
-        "content": [
-          {
-            "text": "\"Nie no to jest dramat nie ma w ogóle ścierzek\"",
-            "responseId": "scierzka_rowerowa_1"
-          }
-        ]
-      }
+    }
   }
