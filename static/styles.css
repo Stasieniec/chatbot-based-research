@@ -349,7 +349,7 @@ h1 {
 }
 
 .metric-image {
-    width: 50%; /* Adjust the width as needed */
+    width: 70%; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
     border-radius: 5px; /* Rounded corners */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */

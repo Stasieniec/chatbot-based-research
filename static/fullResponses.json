@@ -122,6 +122,48 @@
         {"sender": "Bot", "text": "That sounds challenging. Are there any plans for improvement that you know of?"},
         {"sender": "Human", "text": "I've heard the city is planning to add more bike paths, but progress has been slow. We really need a comprehensive network of safe cycling routes."}
       ]
+    },
+    {
+      "id": "jakosc_transportu_1",
+      "demographics": {
+        "age": 30,
+        "gender": "Female",
+        "educationLevel": "Higher",
+        "parentalStatus": "Parent"
+      },
+      "transcript": [
+        {"sender": "Bot", "text": "Cześć! Chciałbym zapytać o jakość transportu publicznego w Twojej okolicy. Jak oceniasz jego dostępność?"},
+        {"sender": "Human", "text": "Uważam, że transport publiczny w mojej okolicy jest naprawdę dobry. Autobusy kursują często i są punktualne."},
+        {"sender": "Bot", "text": "To świetnie! A co sądzisz o wygodzie podróży autobusami miejskimi?"},
+        {"sender": "Human", "text": "Są wygodne, a pojazdy są czyste i nowoczesne. Jest wystarczająco miejsca dla pasażerów, nawet w godzinach szczytu."},
+        {"sender": "Bot", "text": "Cieszę się, że masz takie pozytywne doświadczenia. Czy są jakieś elementy transportu publicznego, które mogłyby zostać jeszcze bardziej ulepszone?"},
+        {"sender": "Human", "text": "Może przydałoby się więcej połączeń w godzinach wieczornych i w weekendy, ale ogólnie jestem zadowolona."}
+      ]
+    },
+    {
+      "id": "jakosc_transportu_2",
+      "demographics": {
+        "age": 27,
+        "gender": "Male",
+        "educationLevel": "Higher",
+        "parentalStatus": "Not Parent"
+      },
+      "transcript": [
+        {"sender": "Bot", "text": "Cześć! Chciałbym porozmawiać o transporcie publicznym w Twojej okolicy. Na początek, jak oceniasz jakość podróży autobusami miejskimi? Wybierz jedną z opcji: bardzo dobrze, dobrze, neutralnie, źle, bardzo źle."},
+        {"sender": "Human", "text": "Oceniam jakość podróży bardzo dobrze."},
+        {"sender": "Bot", "text": "To świetnie! Czy możesz podzielić się, co najbardziej Ci się podoba w obecnym transporcie publicznym?"},
+        {"sender": "Human", "text": "Najbardziej podoba mi się to, że autobusy są nowe i bardzo czyste. Poza tym zawsze są na czas."},
+        {"sender": "Bot", "text": "Super, cieszę się, że jesteś zadowolona! Czy jest coś, co Twoim zdaniem można by jeszcze poprawić w transporcie publicznym?"},
+        {"sender": "Human", "text": "Może czasem brakuje informacji o zmianach w rozkładzie jazdy, na przykład gdy są remonty."},
+        {"sender": "Bot", "text": "Rozumiem, więc uważasz, że lepsza informacja o zmianach w rozkładzie jazdy byłaby przydatna. Czy masz na myśli więcej komunikatów na przystankach, w autobusach, czy może w aplikacjach mobilnych?"},
+        {"sender": "Human", "text": "Myślę, że informacje w aplikacjach mobilnych byłyby najlepsze, bo większość ludzi z nich korzysta."},
+        {"sender": "Bot", "text": "Dzięki za Twoją sugestię! Czy są jeszcze jakieś inne aspekty transportu publicznego, które mogłyby zostać poprawione?"},
+        {"sender": "Human", "text": "W sumie, nie przychodzi mi nic więcej do głowy. Jak na razie, jestem naprawdę zadowolona z transportu."},
+        {"sender": "Bot", "text": "To wspaniale słyszeć! Dziękuję za wszystkie odpowiedzi. Twoje sugestie pomogą nam ulepszyć transport publiczny. Miłego dnia!"},
+        {"sender": "Human", "text": "Dziękuję, wzajemnie!"}
+      ]
     }
+    
+    
   ]
 }
