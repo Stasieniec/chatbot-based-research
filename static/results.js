@@ -3,6 +3,29 @@ document.addEventListener('DOMContentLoaded', function() {
     const closeBtn = document.querySelector('.word-cloud-close');
     const wordCloudButtons = document.querySelectorAll('.word-cloud-btn');
 
+    const plotImages = document.querySelectorAll('.metric-image');
+    const plotModal = document.getElementById('plotModal');
+    const plotModalImg = document.getElementById('plotModalImg');
+    const plotModalClose = document.querySelector('.plot-modal-close');
+
+
+    plotImages.forEach(img => {
+        img.addEventListener('click', function() {
+            plotModal.style.display = 'block';
+            plotModalImg.src = this.src;
+        });
+    });
+
+    plotModalClose.addEventListener('click', function() {
+        plotModal.style.display = 'none';
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target == plotModal) {
+            plotModal.style.display = 'none';
+        }
+    });
+
     wordCloudButtons.forEach(button => {
         button.addEventListener('click', function() {
             const word = this.getAttribute('data-word');
