@@ -1,36 +1,111 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Set random seed for reproducibility
-np.random.seed(42)
+def set_plot_style():
+    plt.style.use('ggplot')
+    plt.rcParams['font.sans-serif'] = ['Arial']
+    plt.rcParams['font.family'] = 'sans-serif'
 
-# Define Likert scale options
-likert_options = ['Bardzo zła', 'Zła', 'Neutralna', 'Dobra', 'Wspaniałą']
+def generate_likert_data(size=1000, loc=3, scale=1):
+    np.random.seed(42)
+    data = np.random.normal(loc=loc, scale=scale, size=size)
+    return np.clip(data, 0, 4).round().astype(int)
 
-# Generate normally distributed data
-data = np.random.normal(loc=3, scale=1, size=1000)
-data = np.clip(data, 0, 4).round().astype(int)
+def plot_likert_scale(data):
+    set_plot_style()
+    
+    likert_options = ['Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree']
+    counts = [np.sum(data == i) for i in range(5)]
 
-# Count occurrences of each option
-counts = [np.sum(data == i) for i in range(5)]
+    fig, ax = plt.subplots(figsize=(10, 6))
+    bars = ax.bar(likert_options, counts, color='#3498db', edgecolor='none', width=0.6)
 
-# Create bar plot
-plt.figure(figsize=(10, 6))
-bars = plt.bar(likert_options, counts, color='skyblue', edgecolor='navy')
+    ax.set_xlabel('Response Options', fontsize=12, labelpad=10)
+    ax.set_ylabel('Number of Responses', fontsize=12, labelpad=10)
+    ax.tick_params(axis='both', which='major', labelsize=10)
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
 
-# Customize the plot
-plt.title('Jakość komunikacji miejskiej', fontsize=16)
-plt.xlabel('Jakość komunikacji miejskiej', fontsize=12)
-plt.ylabel('Ilość głosów', fontsize=12)
-plt.ylim(0, max(counts) * 1.1)  # Set y-axis limit with some padding
+    for bar in bars:
+        height = bar.get_height()
+        ax.text(bar.get_x() + bar.get_width()/2., height,
+                f'{height}',
+                ha='center', va='bottom', fontsize=10)
 
-# Add value labels on top of each bar
-for bar in bars:
-    height = bar.get_height()
-    plt.text(bar.get_x() + bar.get_width()/2., height,
-             f'{height}',
-             ha='center', va='bottom')
+    plt.tight_layout()
+    plt.show()
 
-# Adjust layout and display the plot
-plt.tight_layout()
-plt.show()
+def plot_gender_ratio(male_ratio=0.45, total_participants=1000):
+    set_plot_style()
+
+    male_count = int(total_participants * male_ratio)
+    female_count = total_participants - male_count
+
+    gender_sizes = [male_count, female_count]
+    gender_labels = ['Kobiety', 'Mężczyźni']
+    gender_colors = ['#3498db', '#e74c3c']
+
+    fig, ax = plt.subplots(figsize=(8, 8))
+    ax.pie(gender_sizes, labels=gender_labels, colors=gender_colors, autopct='%1.1f%%',
+           startangle=90, wedgeprops=dict(width=0.3))
+    ax.axis('equal')
+
+    plt.tight_layout()
+    plt.show()
+
+def plot_three_category_distribution(category_names, sizes, colors):
+    set_plot_style()
+
+    fig, ax = plt.subplots(figsize=(8, 8))
+    ax.pie(sizes, labels=category_names, colors=colors, autopct='%1.1f%%',
+           startangle=90, wedgeprops=dict(width=0.3))
+    ax.axis('equal')
+
+    plt.tight_layout()
+    plt.show()
+
+
+def generate_integer_normal_data(size=1000, mean=50, std_dev=10):
+    np.random.seed(42)
+    data = np.random.normal(loc=mean, scale=std_dev, size=size)
+    return np.round(data).astype(int)
+
+def plot_integer_distribution(data):
+    set_plot_style()
+    
+    fig, ax = plt.subplots(figsize=(10, 6))
+    
+    # Calculate the range for the bins
+    min_val, max_val = min(data), max(data)
+    bins = range(min_val, max_val + 2)  # +2 to include the max value
+    
+    ax.hist(data, bins=bins, align='left', rwidth=0.8, color='#3498db', edgecolor='none')
+    
+    ax.set_xlabel('Częstotliwość', fontsize=12, labelpad=10)
+    ax.set_ylabel('Wartość', fontsize=12, labelpad=10)
+    ax.tick_params(axis='both', which='major', labelsize=10)
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+    
+    plt.tight_layout()
+    plt.show()
+
+
+# Example usage:
+# To generate Likert scale plot
+# likert_data = generate_likert_data()
+# plot_likert_scale(likert_data)
+
+# To generate gender ratio plot
+# plot_gender_ratio()
+
+# To generate three-category distribution plot
+category_names = ['Podstawowe', 'Średnie', 'Wyższe']
+sizes = [2, 109, 95]
+colors = ['#3498db', '#e74c3c', '#2ecc71']
+
+#plot_gender_ratio()
+#plot_three_category_distribution(category_names, sizes, colors)
+
+integer_data = generate_integer_normal_data(mean=5, std_dev=3)
+plot_integer_distribution(integer_data)
