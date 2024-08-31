@@ -6,15 +6,16 @@ def set_plot_style():
     plt.rcParams['font.sans-serif'] = ['Arial']
     plt.rcParams['font.family'] = 'sans-serif'
 
-def generate_likert_data(size=1000, loc=3, scale=1):
+def generate_likert_data(size=250, loc=3, scale=1):
     np.random.seed(42)
     data = np.random.normal(loc=loc, scale=scale, size=size)
     return np.clip(data, 0, 4).round().astype(int)
 
+
 def plot_likert_scale(data):
     set_plot_style()
     
-    likert_options = ['Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree']
+    likert_options = ['Bardzo źle', 'Źle', 'Neutralnie', 'Dobrze', 'Bardzo dobrze']
     counts = [np.sum(data == i) for i in range(5)]
 
     fig, ax = plt.subplots(figsize=(10, 6))
@@ -65,30 +66,32 @@ def plot_three_category_distribution(category_names, sizes, colors):
     plt.show()
 
 
-def generate_integer_normal_data(size=1000, mean=50, std_dev=10):
+def generate_integer_normal_data(size=250, mean=5, std_dev=3):
     np.random.seed(42)
     data = np.random.normal(loc=mean, scale=std_dev, size=size)
-    return np.round(data).astype(int)
+    return np.maximum(0, np.round(data)).astype(int)
 
-def plot_integer_distribution(data):
+
+def  plot_integer_distribution(data):
     set_plot_style()
     
     fig, ax = plt.subplots(figsize=(10, 6))
     
     # Calculate the range for the bins
-    min_val, max_val = min(data), max(data)
+    min_val, max_val = max(0, min(data)), max(data)
     bins = range(min_val, max_val + 2)  # +2 to include the max value
     
     ax.hist(data, bins=bins, align='left', rwidth=0.8, color='#3498db', edgecolor='none')
     
-    ax.set_xlabel('Częstotliwość', fontsize=12, labelpad=10)
-    ax.set_ylabel('Wartość', fontsize=12, labelpad=10)
+    ax.set_xlabel('Wartość', fontsize=12, labelpad=10)
+    ax.set_ylabel('Częstotliwość', fontsize=12, labelpad=10)
     ax.tick_params(axis='both', which='major', labelsize=10)
     ax.spines['top'].set_visible(False)
     ax.spines['right'].set_visible(False)
     
     plt.tight_layout()
     plt.show()
+
 
 
 # Example usage:
@@ -101,11 +104,18 @@ def plot_integer_distribution(data):
 
 # To generate three-category distribution plot
 category_names = ['Podstawowe', 'Średnie', 'Wyższe']
-sizes = [2, 109, 95]
+sizes = [38, 109, 103]  # Adjusted to sum up to 250
 colors = ['#3498db', '#e74c3c', '#2ecc71']
+
 
 #plot_gender_ratio()
 #plot_three_category_distribution(category_names, sizes, colors)
 
-integer_data = generate_integer_normal_data(mean=5, std_dev=3)
+#integer_data = generate_integer_normal_data(mean=5, std_dev=3)
+#plot_integer_distribution(integer_data)
+
+likert_data = generate_likert_data()
+plot_likert_scale(likert_data)
+
+integer_data = generate_integer_normal_data()
 plot_integer_distribution(integer_data)
