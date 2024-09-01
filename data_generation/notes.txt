@@ -1,15 +1,20 @@
-Cel 1:
-Jakość komunikacji miejskiej - raczej dobrze
-Ile razy korzystasz - dużo razy zero, dużo razy trochę, trochę razy dużo
+Goal 1: Jakość komunikacji miejskiej
+Measure 1: Likert scale - Jak oceniasz jakość komunikacji miejskiej - (mostly positive answers)
+Measure 2: Numeric value - Ile razy w tygodniu korzystasz z transportu publicznego?
+Measure 3: Open question - Jaką zmianę zasugerowałbyś/sugerowałabyś dla obecnego stanu transportu publicznego?
 
 
-Cel 2:
-Jak oceniasz - raczej źle
-Ile godzin tygodniowo - trochę 0, trochę trochę, dużo dużo
+Cel 2: Infrastruktura drogowa i zarządzanie ruchem
+Measure 1: Likert scale - Jak oceniasz obecny stan dróg w Twojej okolicy? - (mostly negative answers)
+Measure 2: Numeric value: - Ile godzin tygodniowo średnio tracisz z powodu korków?
+Measure 3: Open question - Czy są miejsca, gdzie bezpieczeństwo na drogach powinno zostać poprawione?
 
+Cel 3: Miejsca parkingowe
+Measure 1: Likert scale - Jak oceniasz liczbę miejsc parkingowych w centrum miasta - (somewhat negative answers)
+Measure 2: Numeric value: - Jak daleko (w metrach) zazwyczaj parkujesz od celu podróży?
+Measure 3: Open question - Jakie zmiany mogłyby poprawić sytuację parkingową w Twojej okolicy?
 
-Cel 3:
-Parkowanie w centrum - Neutralnie / dobrze
-
-Cel 4: 
-Stan dróg podczas zimy - Raczej źle
+Cel 4: Sezonowe wyzwania mobilności
+Measure 1: Likert scale - Jak oceniasz stan dróg w Twojej okolicy podczas zimy? - (somewhat positive answers)
+Measure 2: Numeric value: - Ile razy tej zimy doświadczyłeś/łaś problemów z poruszaniem się po mieście przez śnieg lub lód?
+Measure 3: Open question - Jakie działania mogłyby poprawić warunki drogowe w zimie?
