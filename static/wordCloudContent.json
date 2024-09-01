@@ -1,7 +1,7 @@
 {   
     "Punktualne i czyste autobusy": {
       "title": "Popularna opinia - Punktualne i czyste autobusy",
-      "summary": "Wielu respondentów wyraziło zadowolenie z punktualności autobusów w ich okolicy. Uczestnicy badania często podkreślali, że autobusy kursują zgodnie z rozkładem jazdy i rzadko się spóźniają. Dzięki temu mieszkańcy czują się pewniej, planując swoje codzienne dojazdy do pracy, szkoły czy na zakupy. Punktualność transportu publicznego jest uznawana za jeden z kluczowych atutów obecnego systemu komunikacji miejskiej.",
+      "summary": "Respondenci często chwalą punktualność i czystość autobusów. Nowe autobusy są także oceniane pozytywnie za komfort.",
       "content": [
         {
           "text": "\"Autobusy są zawsze punktualne i czyste, co jest dla mnie ważne, szczególnie gdy podróżuję z dzieckiem.\"",
@@ -27,7 +27,7 @@
     },
     "Brakuje informacji o zmianach w rozkładzie jazdy": {
       "title": "Popularna opinia - Brakuje informacji o zmianach w rozkładzie jazdy",
-      "summary": "Wielu respondentów wyraziło zadowolenie z punktualności autobusów w ich okolicy. Uczestnicy badania często podkreślali, że autobusy kursują zgodnie z rozkładem jazdy i rzadko się spóźniają. Dzięki temu mieszkańcy czują się pewniej, planując swoje codzienne dojazdy do pracy, szkoły czy na zakupy. Punktualność transportu publicznego jest uznawana za jeden z kluczowych atutów obecnego systemu komunikacji miejskiej.",
+      "summary": "Wiele osób podkreśla, że brakuje informacji o zmianach w rozkładzie jazdy, co utrudnia planowanie podróży, zwłaszcza w aplikacjach mobilnych.",
       "content": [
         {
           "text": "\"Często brakuje informacji o zmianach w rozkładzie, co bywa kłopotliwe\"",
@@ -69,7 +69,7 @@
     },
     "Nowe autobusy są bardzo wygodne": {
       "title": "Popularna opinia - Nowe autobusy są bardzo wygodne",
-      "summary": "Summary",
+      "summary": "Nowe pojazdy są chwalone za wygodę, ale nie zawsze są dostępne w godzinach szczytu.",
       "content": [
         {
           "text": "\"Nowe autobusy są bardzo wygodne, a kierowcy zazwyczaj uprzejmi\"",
@@ -83,7 +83,7 @@
     },
     "Czasami autobusy są przepełnione, szczególnie w godzinach szczytu": {
       "title": "Popularna opinia - Czasami autobusy są przepełnione, szczególnie w godzinach szczytu",
-      "summary": "Summary",
+      "summary": "Przepełnione autobusy, szczególnie w godzinach szczytu, to częsty problem zgłaszany przez użytkowników.",
       "content": [
         {
           "text": "\"Czasami jest naprawdę tłoczno w autobusach, szczególnie w godzinach szczytu\"",
@@ -105,7 +105,7 @@
     },
     "Potrzebne są częstsze kursy wieczorami": {
       "title": "Popularna opinia - Potrzebne są częstsze kursy wieczorami",
-      "summary": "Summary",
+      "summary": "Respondenci sugerują, że większa liczba kursów wieczornych byłaby korzystna, zwłaszcza w weekendy.",
       "content": [
         {
           "text": "\"Myślę, że przydałyby się częstsze kursy wieczorami.\"",
@@ -145,7 +145,7 @@
 
     "Stan dróg jest fatalny, dużo dziur i nierówności": {
       "title": "Popularna opinia - Stan dróg jest fatalny, dużo dziur i nierówności",
-      "summary": "Summary",
+      "summary": "Opinie są zgodne co do złego stanu dróg, które są pełne dziur i nierówności.",
       "content": [
         {
           "text": "\"Drogi są w kiepskim stanie, pełno dziur i nierówności, co utrudnia jazdę\"",
@@ -191,7 +191,7 @@
     },
     "Remonty dróg trwają za długo i powodują ogromne korki": {
       "title": "Popularna opinia - Remonty dróg trwają za długo i powodują ogromne korki",
-      "summary": "Summary",
+      "summary": "Długotrwałe remonty dróg prowadzą do ogromnych korków, co jest dużym problemem dla kierowców.",
       "content": [
         {
           "text": "\"Remonty trwają wieczność i tworzą ogromne korki\"",
@@ -213,7 +213,7 @@
     },
     "Potrzebne są lepsze oznaczenia na drogach, zwłaszcza na skrzyżowaniach": {
       "title": "Popularna opinia - Potrzebne są lepsze oznaczenia na drogach, zwłaszcza na skrzyżowaniach",
-      "summary": "Summary",
+      "summary": "Respondenci wskazują na potrzebę lepszych oznaczeń na drogach, zwłaszcza w miejscach takich jak skrzyżowania.",
       "content": [
         {
           "text": "\"Na skrzyżowaniach brakuje odpowiednich oznaczeń, co stwarza ryzyko\"",
@@ -243,7 +243,7 @@
     },
     "W niektórych miejscach brakuje odpowiedniego oświetlenia": {
       "title": "Są miejsca, gdzie oświetlenie jest słabe, zwłaszcza w pobliżu osiedli.",
-      "summary": "Summary",
+      "summary": "Niedostateczne oświetlenie na drogach, szczególnie w niektórych miejscach, jest problemem wpływającym na bezpieczeństwo.",
       "content": [
         {
           "text": "\"Przydałoby się lepsze oznakowanie i więcej oświetlenia, bo teraz to nie jest zbyt bezpieczne\"",
@@ -265,7 +265,7 @@
     },
     "Korki w godzinach szczytu są nie do zniesienia": {
       "title": "Popularna opinia - Korki w godzinach szczytu są nie do zniesienia",
-      "summary": "Summary",
+      "summary": "Korki w godzinach szczytu są uznawane za bardzo uciążliwe i trudne do zniesienia.",
       "content": [
         {
           "text": "\"[...] co powoduje ogromne korki.\"",
@@ -283,7 +283,7 @@
 
     "Znalezienie miejsca parkingowego w centrum to koszmar": {
       "title": "Popularna opinia - Znalezienie miejsca parkingowego w centrum to koszmar",
-      "summary": "Summary",
+      "summary": "W centrum miasta znalezienie miejsca parkingowego jest dużym problemem, uznawanym za koszmar przez wielu mieszkańców.",
       "content": [
         {
           "text": "\"Z parkowaniem w centrum jest naprawdę ciężko, znalezienie miejsca zajmuje sporo czasu\"",
@@ -329,7 +329,7 @@
     },    
     "Parkingi są za drogie i za mało dostępne": {
       "title": "Popularna opinia - Parkingi są za drogie i za mało dostępne",
-      "summary": "Summary",
+      "summary": "Ceny parkingów są zbyt wysokie, a liczba dostępnych miejsc jest niewystarczająca.",
       "content": [
         {
           "text": "\"Przydałoby się więcej parkingów piętrowych, żeby zwiększyć liczbę miejsc\"",
@@ -343,7 +343,7 @@
     },    
     "Często muszę parkować bardzo daleko od celu podróży": {
       "title": "Popularna opinia - Często muszę parkować bardzo daleko od celu podróży",
-      "summary": "Summary",
+      "summary": "Respondenci często zmuszeni są do parkowania daleko od miejsca docelowego, co jest niewygodne.",
       "content": [
         {
           "text": "\"Liczba miejsc jest niewystarczająca, często muszę parkować daleko od celu\"",
@@ -373,7 +373,7 @@
     },    
     "Brakuje miejsc parkingowych dla mieszkańców w godzinach nocnych": {
       "title": "Popularna opinia - Brakuje miejsc parkingowych dla mieszkańców w godzinach nocnych",
-      "summary": "Summary",
+      "summary": "Brakuje miejsc parkingowych dostępnych dla mieszkańców w godzinach nocnych, co powoduje problemy z parkowaniem.",
       "content": [
         {
           "text": "\"Byłoby dobrze, gdyby było więcej miejsc parkingowych dostępnych nocą, zwłaszcza dla mieszkańców\"",
@@ -395,7 +395,7 @@
     },    
     "Potreba więcej miejsc parkingowych dla rowerów": {
       "title": "Popularna opinia - Więcej miejsc parkingowych dla rowerów by się przydało",
-      "summary": "Summary",
+      "summary": "Istnieje potrzeba zwiększenia liczby miejsc parkingowych dla rowerów, co mogłoby pomóc w rozwiązaniu problemu z parkowaniem.",
       "content": [
         {
           "text": "\"Na pewno przydałoby się więcej miejsc parkingowych dla rowerów, zwłaszcza w centrum\"",
@@ -421,7 +421,7 @@
 
     "Drogi są dobrze odśnieżone, ale czasem za późno": {
       "title": "Popularna opinia - Drogi są dobrze odśnieżone, ale czasem za późno",
-      "summary": "Summary",
+      "summary": "Drogi są odśnieżane, ale często z opóźnieniem, co może wpływać na bezpieczeństwo.",
       "content": [
         {
           "text": "\"Drogi są odśnieżane, ale nie zawsze na czas. Czasami trochę za długo trzeba czekać\"",
@@ -439,7 +439,7 @@
     },
     "Chodniki są śliskie, brakuje odpowiedniej posypki na czas": {
       "title": "Popularna opinia - Chodniki są śliskie, brakuje odpowiedniej posypki na czas",
-      "summary": "Summary",
+      "summary": "Problemem są śliskie chodniki, na których brakuje odpowiedniej posypki, co stwarza zagrożenie dla pieszych.",
       "content": [
         {
           "text": "\"Szybsze posypywanie dróg piaskiem mogłoby pomóc\"",
@@ -473,7 +473,7 @@
     },
     "Rzadko mam problemy z poruszaniem się zimą": {
       "title": "Popularna opinia - Rzadko mam problemy z poruszaniem się zimą",
-      "summary": "Summary",
+      "summary": "Większość respondentów nie ma dużych problemów z poruszaniem się zimą, ale są pewne trudności.",
       "content": [
         {
           "text": "\"Zimą rzadko mam problemy z poruszaniem się, chociaż czasem chodniki są śliskie.\"",
@@ -511,7 +511,7 @@
     },
     "Potrzebna jest lepsza koordynacja służb odśnieżających": {
       "title": "Popularna opinia - Potrzebna jest lepsza koordynacja służb odśnieżających",
-      "summary": "Summary",
+      "summary": "Sugerowane jest poprawienie koordynacji między służbami odśnieżającymi, aby szybciej i skuteczniej radzić sobie z zimowymi warunkami.",
       "content": [
         {
           "text": "\"Służby odśnieżające mogłyby działać szybciej, żeby nie trzeba było długo czekać na odśnieżenie\"",
@@ -529,7 +529,7 @@
     },
     "Przejścia dla pieszych są często zaniedbane zimą, co sprawia, że są niebezpieczne": {
       "title": "Popularna opinia - Przejścia dla pieszych są często zaniedbane zimą, co sprawia, że są niebezpieczne",
-      "summary": "Summary",
+      "summary": "Przejścia dla pieszych są często zaniedbywane w zimie, co czyni je niebezpiecznymi dla pieszych.",
       "content": [
         {
           "text": "\"Chodniki bywają śliskie, co sprawia, że są niebezpieczne\"",
