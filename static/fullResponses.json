@@ -1,6 +1,155 @@
 {
   "responses": [
     {
+      "id": "jakosc_transportu_10",
+      "demographics": {
+        "age": 43,
+        "gender": "Female",
+        "educationLevel": "Secondary",
+        "parentalStatus": "Not Parent"
+      },
+      "transcript": [
+        {
+          "sender": "Bot",
+          "text": "Cześć! Chciałbym porozmawiać o transporcie publicznym w Twojej okolicy. Na początek, jak oceniasz jakość komunikacji miejskiej? Wybierz jedną z opcji: bardzo dobrze, dobrze, neutralnie, źle, bardzo źle."
+        },
+        {
+          "sender": "Human",
+          "text": "Hmm, chyba dobrze... ale nie jestem pewna."
+        },
+        {
+          "sender": "Bot",
+          "text": "Rozumiem. Co konkretnie sprawia, że oceniasz ją dobrze?"
+        },
+        {
+          "sender": "Human",
+          "text": "No, autobusy są... chyba ok, ale czasem to różnie bywa."
+        },
+        {
+          "sender": "Bot",
+          "text": "Możesz podać przykład, co według Ciebie jest w porządku, a co mogłoby być lepsze?"
+        },
+        {
+          "sender": "Human",
+          "text": "Może to, że są czyste... ale czasem nie ma informacji, kiedy coś się zmienia. To trochę irytujące."
+        },
+        {
+          "sender": "Bot",
+          "text": "Rozumiem, brak informacji o zmianach w rozkładzie może być problemem. Jak często korzystasz z transportu publicznego w ciągu tygodnia?"
+        },
+        {
+          "sender": "Human",
+          "text": "Nie wiem dokładnie... może kilka razy, albo rzadziej."
+        },
+        {
+          "sender": "Bot",
+          "text": "Czy możesz podać przybliżoną liczbę, na przykład 2-3 razy w tygodniu?"
+        },
+        {
+          "sender": "Human",
+          "text": "Tak, powiedzmy 2 razy."
+        },
+        {
+          "sender": "Bot",
+          "text": "Dziękuję. A jeśli mogłabyś zasugerować jedną zmianę w transporcie publicznym, co by to było?"
+        },
+        {
+          "sender": "Human",
+          "text": "Hmm, nie wiem... może coś z kursami wieczorem, czasem są zbyt rzadko."
+        },
+        {
+          "sender": "Bot",
+          "text": "To ważna uwaga. A jak oceniasz obecny stan dróg w Twojej okolicy?"
+        },
+        {
+          "sender": "Human",
+          "text": "No, drogi... są takie sobie, ale nie wiem, co bym mogła powiedzieć więcej."
+        },
+        {
+          "sender": "Bot",
+          "text": "Czy zauważasz jakieś konkretne problemy, na przykład dziury, remonty, korki?"
+        },
+        {
+          "sender": "Human",
+          "text": "No tak, dziury są, ale to chyba normalne, nie?"
+        },
+        {
+          "sender": "Bot",
+          "text": "Dziury mogą być problemem, szczególnie jeśli jest ich dużo. A ile godzin tygodniowo tracisz z powodu korków?"
+        },
+        {
+          "sender": "Human",
+          "text": "Nie wiem... może z 3 godziny? Albo więcej, ale to różnie bywa."
+        },
+        {
+          "sender": "Bot",
+          "text": "Rozumiem. Czy są miejsca, gdzie bezpieczeństwo na drogach powinno zostać poprawione?"
+        },
+        {
+          "sender": "Human",
+          "text": "Może... przy szkołach? Tam zawsze trzeba uważać."
+        },
+        {
+          "sender": "Bot",
+          "text": "To dobra sugestia. A jak oceniasz liczbę miejsc parkingowych w centrum miasta?"
+        },
+        {
+          "sender": "Human",
+          "text": "Z miejscami... no, trudno powiedzieć. Czasem jest, a czasem nie ma."
+        },
+        {
+          "sender": "Bot",
+          "text": "Czy zdarza się, że musisz parkować daleko od celu podróży?"
+        },
+        {
+          "sender": "Human",
+          "text": "Tak, czasem, ale nie wiem dokładnie, jak daleko."
+        },
+        {
+          "sender": "Bot",
+          "text": "Czy myślisz, że jakieś zmiany mogłyby poprawić sytuację parkingową w Twojej okolicy?"
+        },
+        {
+          "sender": "Human",
+          "text": "Może... więcej miejsc, albo... nie wiem, to trudne."
+        },
+        {
+          "sender": "Bot",
+          "text": "Rozumiem. A jak oceniasz stan dróg w Twojej okolicy podczas zimy?"
+        },
+        {
+          "sender": "Human",
+          "text": "Nie jest tak źle, rzadko mam problemy."
+        },
+        {
+          "sender": "Bot",
+          "text": "To dobrze słyszeć. Ile razy tej zimy doświadczyłaś problemów z poruszaniem się po mieście przez śnieg lub lód?"
+        },
+        {
+          "sender": "Human",
+          "text": "Może raz, ale to było dawno, więc nie pamiętam dokładnie."
+        },
+        {
+          "sender": "Bot",
+          "text": "Dziękuję za odpowiedź. Jakie działania mogłyby poprawić warunki drogowe w zimie?"
+        },
+        {
+          "sender": "Human",
+          "text": "Może więcej posypywania... albo lepsze odśnieżanie, ale nie wiem."
+        },
+        {
+          "sender": "Bot",
+          "text": "Dziękuję za wszystkie Twoje odpowiedzi! Twoje uwagi są dla nas bardzo cenne. Życzę miłego dnia!"
+        },
+        {
+          "sender": "Human",
+          "text": "Dziękuję! Nawzajem!."
+        }
+      ]
+    },
+
+    
+    {
       "id": "jakosc_transportu_1",
       "demographics": {
         "age": 34,
@@ -724,8 +873,597 @@
           "text": "Dziękuję, wzajemnie."
         }
       ]
+    },
+
+    {
+      "id": "jakosc_transportu_7",
+      "demographics": {
+        "age": 32,
+        "gender": "Male",
+        "educationLevel": "Higher",
+        "parentalStatus": "Parent"
+      },
+      "transcript": [
+        {
+          "sender": "Bot",
+          "text": "Cześć! Chciałbym porozmawiać o transporcie publicznym w Twojej okolicy. Na początek, jak oceniasz jakość komunikacji miejskiej? Wybierz jedną z opcji: bardzo dobrze, dobrze, neutralnie, źle, bardzo źle."
+        },
+        {
+          "sender": "Human",
+          "text": "Oceniam dobrze. Generalnie jest w porządku, ale są rzeczy, które mogłyby być lepsze."
+        },
+        {
+          "sender": "Bot",
+          "text": "Dziękuję za opinię. Co najbardziej Ci się podoba, a co Twoim zdaniem wymaga poprawy?"
+        },
+        {
+          "sender": "Human",
+          "text": "Autobusy są zawsze punktualne i czyste, co jest dla mnie ważne, szczególnie gdy podróżuję z dzieckiem. Ale czasami brakuje informacji o zmianach w rozkładzie, co może być problematyczne."
+        },
+        {
+          "sender": "Bot",
+          "text": "Dziękuję za podzielenie się tymi uwagami. Jak często korzystasz z transportu publicznego w ciągu tygodnia?"
+        },
+        {
+          "sender": "Human",
+          "text": "Korzystam około pięć razy w tygodniu, głównie do pracy i zawożenia syna do przedszkola."
+        },
+        {
+          "sender": "Bot",
+          "text": "Rozumiem. A gdybyś miał coś zmienić w transporcie publicznym, co by to było?"
+        },
+        {
+          "sender": "Human",
+          "text": "Wieczorami przydałyby się częstsze kursy. Czasem jak wracamy później od znajomych, to trzeba długo czekać na autobus."
+        },
+        {
+          "sender": "Bot",
+          "text": "Dziękuję za tę sugestię. Przejdźmy teraz do stanu dróg i zarządzania ruchem. Jak oceniasz obecny stan dróg w Twojej okolicy?"
+        },
+        {
+          "sender": "Human",
+          "text": "Niestety, stan dróg jest fatalny. Jest wiele dziur i nierówności, co jest problemem, zwłaszcza kiedy jeżdżę z synem."
+        },
+        {
+          "sender": "Bot",
+          "text": "To zrozumiałe, a ile godzin tygodniowo tracisz z powodu korków?"
+        },
+        {
+          "sender": "Human",
+          "text": "Mieszkam blisko pracy, więc nie tracę wiele czasu w korkach. Ale jak muszę gdzieś dalej jechać, to korki bywają naprawdę uciążliwe."
+        },
+        {
+          "sender": "Bot",
+          "text": "Rozumiem. Czy są miejsca, gdzie bezpieczeństwo na drogach powinno zostać poprawione?"
+        },
+        {
+          "sender": "Human",
+          "text": "Tak, szczególnie przy przedszkolu mojego syna. Przydałoby się lepsze oznakowanie i więcej oświetlenia, bo teraz to nie jest zbyt bezpieczne."
+        },
+        {
+          "sender": "Bot",
+          "text": "Dziękuję za wskazanie tego miejsca. A jak oceniasz liczbę miejsc parkingowych w centrum miasta?"
+        },
+        {
+          "sender": "Human",
+          "text": "Znalezienie miejsca to prawdziwe wyzwanie, szczególnie w weekendy. Często muszę parkować bardzo daleko od celu podróży, co jest problematyczne z małym dzieckiem."
+        },
+        {
+          "sender": "Bot",
+          "text": "Rozumiem. Jakie zmiany mogłyby poprawić sytuację parkingową?"
+        },
+        {
+          "sender": "Human",
+          "text": "Więcej miejsc parkingowych dla mieszkańców, szczególnie w godzinach nocnych, by się przydało. Może też warto pomyśleć o parkingach wielopoziomowych."
+        },
+        {
+          "sender": "Bot",
+          "text": "To dobra sugestia. Przejdźmy teraz do sezonowych wyzwań mobilności. Jak oceniasz stan dróg w Twojej okolicy podczas zimy?"
+        },
+        {
+          "sender": "Human",
+          "text": "Rzadko mam problemy z poruszaniem się zimą, ale czasami chodniki są śliskie, co jest niebezpieczne."
+        },
+        {
+          "sender": "Bot",
+          "text": "Dziękuję za odpowiedź. Ile razy tej zimy doświadczyłeś problemów z poruszaniem się po mieście przez śnieg lub lód?"
+        },
+        {
+          "sender": "Human",
+          "text": "Może dwa albo trzy razy. Z reguły służby odśnieżające radzą sobie dobrze."
+        },
+        {
+          "sender": "Bot",
+          "text": "Dziękuję za wszystkie Twoje odpowiedzi! Twoje uwagi są dla nas bardzo cenne. Życzę miłego dnia!"
+        },
+        {
+          "sender": "Human",
+          "text": "Dziękuję, wzajemnie!"
+        }
+      ]
+    },
+
+    {
+      "id": "jakosc_transportu_8",
+      "demographics": {
+        "age": 24,
+        "gender": "Female",
+        "educationLevel": "Higher",
+        "parentalStatus": "Not Parent"
+      },
+      "transcript": [
+        {
+          "sender": "Bot",
+          "text": "Cześć! Chciałbym porozmawiać o transporcie publicznym w Twojej okolicy. Na początek, jak oceniasz jakość komunikacji miejskiej? Wybierz jedną z opcji: bardzo dobrze, dobrze, neutralnie, źle, bardzo źle."
+        },
+        {
+          "sender": "Human",
+          "text": "Bardzo dobrze! Naprawdę, autobusy są nowe i czyste, a to dla mnie ważne."
+        },
+        {
+          "sender": "Bot",
+          "text": "To świetnie, że jesteś zadowolona! Czy jest coś, co mogłoby być lepsze?"
+        },
+        {
+          "sender": "Human",
+          "text": "Hmm, może więcej kursów wieczorami? Czasami po zajęciach na uczelni muszę długo czekać."
+        },
+        {
+          "sender": "Bot",
+          "text": "Rozumiem. Jak często korzystasz z transportu publicznego w ciągu tygodnia?"
+        },
+        {
+          "sender": "Human",
+          "text": "Codziennie, nie mam samochodu, więc polegam na autobusach i tramwajach."
+        },
+        {
+          "sender": "Bot",
+          "text": "Dziękuję za odpowiedź. A gdybyś mogła zasugerować jedną zmianę w transporcie publicznym, co by to było?"
+        },
+        {
+          "sender": "Human",
+          "text": "Więcej informacji o zmianach w rozkładzie, szczególnie przy remontach, czasami brakuje mi tych danych."
+        },
+        {
+          "sender": "Bot",
+          "text": "To cenna uwaga. Przejdźmy teraz do stanu dróg i zarządzania ruchem. Jak oceniasz obecny stan dróg w Twojej okolicy?"
+        },
+        {
+          "sender": "Human",
+          "text": "Ogólnie nie jest źle, ale na pewno mogłoby być lepiej. Czasami są remonty, które trwają wieki i wszystko blokują."
+        },
+        {
+          "sender": "Bot",
+          "text": "Rozumiem. A ile godzin tygodniowo tracisz z powodu korków?"
+        },
+        {
+          "sender": "Human",
+          "text": "Na szczęście niewiele, bo raczej wybieram rower lub chodzę pieszo."
+        },
+        {
+          "sender": "Bot",
+          "text": "To dobra alternatywa! Czy są miejsca, gdzie bezpieczeństwo na drogach powinno zostać poprawione?"
+        },
+        {
+          "sender": "Human",
+          "text": "Może lepsze oznaczenia na skrzyżowaniach dla pieszych i rowerzystów. Czasem nie wiadomo, kto ma pierwszeństwo."
+        },
+        {
+          "sender": "Bot",
+          "text": "Dziękuję za wskazanie tego problemu. A jak oceniasz liczbę miejsc parkingowych w centrum miasta?"
+        },
+        {
+          "sender": "Human",
+          "text": "Szczerze mówiąc, nie parkuję, ale widzę, że ludzie mają z tym problemy, zwłaszcza mieszkańcy. Myślę, że przydałoby się więcej miejsc na rowery."
+        },
+        {
+          "sender": "Bot",
+          "text": "To ważne, że dostrzegasz te potrzeby. Jakie zmiany mogłyby poprawić sytuację parkingową?"
+        },
+        {
+          "sender": "Human",
+          "text": "Może więcej miejsc parkingowych na rowery blisko sklepów i uczelni? To by było super!"
+        },
+        {
+          "sender": "Bot",
+          "text": "Świetna sugestia! A jak oceniasz stan dróg w Twojej okolicy podczas zimy?"
+        },
+        {
+          "sender": "Human",
+          "text": "Rzadko mam problemy z poruszaniem się zimą, chyba że naprawdę mocno sypie, ale to rzadko."
+        },
+        {
+          "sender": "Bot",
+          "text": "Dziękuję za odpowiedź. Ile razy tej zimy doświadczyłaś problemów z poruszaniem się po mieście przez śnieg lub lód?"
+        },
+        {
+          "sender": "Human",
+          "text": "Może raz albo dwa, ale to nic wielkiego. Najważniejsze, żeby chodniki były odśnieżane na bieżąco."
+        },
+        {
+          "sender": "Bot",
+          "text": "Dziękuję za wszystkie Twoje odpowiedzi! Twoje uwagi są dla nas bardzo cenne. Życzę miłego dnia!"
+        },
+        {
+          "sender": "Human",
+          "text": "Dzięki, wzajemnie!"
+        }
+      ]
+    },
+
+    {
+      "id": "jakosc_transportu_9",
+      "demographics": {
+        "age": 38,
+        "gender": "Male",
+        "educationLevel": "Higher",
+        "parentalStatus": "Parent"
+      },
+      "transcript": [
+        {
+          "sender": "Bot",
+          "text": "Cześć! Chciałbym porozmawiać o transporcie publicznym w Twojej okolicy. Na początek, jak oceniasz jakość komunikacji miejskiej? Wybierz jedną z opcji: bardzo dobrze, dobrze, neutralnie, źle, bardzo źle."
+        },
+        {
+          "sender": "Human",
+          "text": "Dobrze, ale mogłoby być lepiej."
+        },
+        {
+          "sender": "Bot",
+          "text": "Co Twoim zdaniem mogłoby być lepsze?"
+        },
+        {
+          "sender": "Human",
+          "text": "Brakuje informacji o zmianach w rozkładzie, szczególnie przy remontach. Trzeba to ogarniać lepiej."
+        },
+        {
+          "sender": "Bot",
+          "text": "Dziękuję za uwagę. Jak często korzystasz z transportu publicznego w ciągu tygodnia?"
+        },
+        {
+          "sender": "Human",
+          "text": "Kilka razy w tygodniu, jak muszę, ale wolę samochód."
+        },
+        {
+          "sender": "Bot",
+          "text": "Rozumiem. A gdybyś mógł zasugerować jedną zmianę w transporcie publicznym, co by to było?"
+        },
+        {
+          "sender": "Human",
+          "text": "Więcej kursów wieczorem. Czasami muszę wracać późno, a wtedy czekam za długo."
+        },
+        {
+          "sender": "Bot",
+          "text": "Dziękuję za odpowiedź. Przejdźmy teraz do stanu dróg i zarządzania ruchem. Jak oceniasz obecny stan dróg w Twojej okolicy?"
+        },
+        {
+          "sender": "Human",
+          "text": "Fatalny. Dziury, remonty ciągną się w nieskończoność."
+        },
+        {
+          "sender": "Bot",
+          "text": "Rozumiem. Ile godzin tygodniowo tracisz z powodu korków?"
+        },
+        {
+          "sender": "Human",
+          "text": "Zbyt wiele, szczególnie rano. Powiedziałbym, że jakieś 5 godzin."
+        },
+        {
+          "sender": "Bot",
+          "text": "To sporo. Czy są miejsca, gdzie bezpieczeństwo na drogach powinno zostać poprawione?"
+        },
+        {
+          "sender": "Human",
+          "text": "Na skrzyżowaniach brakuje oznaczeń, zwłaszcza przy szkołach. Zawsze się martwię o dzieci."
+        },
+        {
+          "sender": "Bot",
+          "text": "To ważny punkt. A jak oceniasz liczbę miejsc parkingowych w centrum miasta?"
+        },
+        {
+          "sender": "Human",
+          "text": "Koszmar. Czasami to trwa wieki, zanim znajdę miejsce."
+        },
+        {
+          "sender": "Bot",
+          "text": "To frustrujące. Jak daleko zazwyczaj parkujesz od celu podróży?"
+        },
+        {
+          "sender": "Human",
+          "text": "Średnio jakieś 500 metrów, czasami więcej."
+        },
+        {
+          "sender": "Bot",
+          "text": "Dziękuję za odpowiedź. Jakie zmiany mogłyby poprawić sytuację parkingową?"
+        },
+        {
+          "sender": "Human",
+          "text": "Więcej miejsc parkingowych, a najlepiej dla mieszkańców, szczególnie w nocy."
+        },
+        {
+          "sender": "Bot",
+          "text": "To cenne uwagi. Jak oceniasz stan dróg w Twojej okolicy podczas zimy?"
+        },
+        {
+          "sender": "Human",
+          "text": "Rzadko mam problemy, ale przy większym śniegu miasto nie nadąża."
+        },
+        {
+          "sender": "Bot",
+          "text": "Dziękuję za odpowiedź. Ile razy tej zimy doświadczyłeś problemów z poruszaniem się po mieście przez śnieg lub lód?"
+        },
+        {
+          "sender": "Human",
+          "text": "Ze dwa razy, głównie na bocznych ulicach."
+        },
+        {
+          "sender": "Bot",
+          "text": "Jakie działania mogłyby poprawić warunki drogowe w zimie?"
+        },
+        {
+          "sender": "Human",
+          "text": "Lepiej odśnieżone chodniki i przejścia dla pieszych, bo to jest największy problem."
+        },
+        {
+          "sender": "Bot",
+          "text": "Dziękuję za wszystkie Twoje odpowiedzi! Twoje uwagi są dla nas bardzo cenne. Życzę miłego dnia!"
+        },
+        {
+          "sender": "Human",
+          "text": "Dzięki, wzajemnie!"
+        }
+      ]
+    },
+
+
+    {
+      "id": "jakosc_transportu_11",
+      "demographics": {
+        "age": 67,
+        "gender": "Male",
+        "educationLevel": "Higher",
+        "parentalStatus": "Parent"
+      },
+      "transcript": [
+        {
+          "sender": "Bot",
+          "text": "Dzień dobry! Chciałbym porozmawiać o transporcie publicznym w Pańskiej okolicy. Na początek, jak ocenia Pan jakość komunikacji miejskiej? Wybierz jedną z opcji: bardzo dobrze, dobrze, neutralnie, źle, bardzo źle."
+        },
+        {
+          "sender": "Human",
+          "text": "Dzień dobry! Powiedziałbym, że bardzo dobrze. Uwielbiam naszą komunikację miejską."
+        },
+        {
+          "sender": "Bot",
+          "text": "To wspaniale słyszeć! Co najbardziej podoba się Panu w obecnym transporcie publicznym?"
+        },
+        {
+          "sender": "Human",
+          "text": "Autobusy są zawsze punktualne i czyste, to naprawdę robi wrażenie. A nowe autobusy są bardzo wygodne."
+        },
+        {
+          "sender": "Bot",
+          "text": "Cieszę się, że jest Pan zadowolony! A ile razy w tygodniu korzysta Pan z transportu publicznego?"
+        },
+        {
+          "sender": "Human",
+          "text": "Korzystam prawie codziennie, może z 5-6 razy w tygodniu."
+        },
+        {
+          "sender": "Bot",
+          "text": "Dziękuję za odpowiedź. Czy jest coś, co według Pana można by jeszcze poprawić w transporcie publicznym?"
+        },
+        {
+          "sender": "Human",
+          "text": "Czasami brakuje informacji o zmianach w rozkładzie, na przykład podczas remontów. Ale to drobiazg."
+        },
+        {
+          "sender": "Bot",
+          "text": "Rozumiem, to ważna kwestia. Teraz chciałbym zapytać, jak ocenia Pan obecny stan dróg w swojej okolicy?"
+        },
+        {
+          "sender": "Human",
+          "text": "Drogi mogłyby być lepsze, niestety. Są tu i ówdzie dziury, ale generalnie jest nieźle."
+        },
+        {
+          "sender": "Bot",
+          "text": "Dziękuję za szczerość. Ile godzin tygodniowo traci Pan z powodu korków?"
+        },
+        {
+          "sender": "Human",
+          "text": "Na szczęście nie muszę dużo jeździć w godzinach szczytu, więc może jakieś 2 godziny tygodniowo. Nie jest źle."
+        },
+        {
+          "sender": "Bot",
+          "text": "To dobrze. Czy są miejsca, gdzie bezpieczeństwo na drogach powinno zostać poprawione?"
+        },
+        {
+          "sender": "Human",
+          "text": "Tak, szczególnie na przejściach dla pieszych w pobliżu szkół. Tam by się przydało lepsze oznakowanie i więcej świateł."
+        },
+        {
+          "sender": "Bot",
+          "text": "To cenna uwaga, dziękuję. A jak ocenia Pan liczbę miejsc parkingowych w centrum miasta?"
+        },
+        {
+          "sender": "Human",
+          "text": "No, to bywa problematyczne. Trudno znaleźć miejsce, szczególnie w godzinach popołudniowych."
+        },
+        {
+          "sender": "Bot",
+          "text": "Czy często musi Pan parkować daleko od celu podróży?"
+        },
+        {
+          "sender": "Human",
+          "text": "Tak, czasami nawet kilkaset metrów od miejsca, gdzie muszę się dostać. Ale jestem w stanie zrozumieć, że to miasto i nie zawsze będzie łatwo."
+        },
+        {
+          "sender": "Bot",
+          "text": "Rozumiem. Jakie zmiany mogłyby poprawić sytuację parkingową w Pańskiej okolicy?"
+        },
+        {
+          "sender": "Human",
+          "text": "Więcej miejsc parkingowych na obrzeżach miasta mogłoby pomóc, z dobrym dojazdem do centrum. To by odciążyło trochę śródmieście."
+        },
+        {
+          "sender": "Bot",
+          "text": "Dziękuję za sugestię. A jak ocenia Pan stan dróg w swojej okolicy podczas zimy?"
+        },
+        {
+          "sender": "Human",
+          "text": "Muszę przyznać, że drogi są dobrze utrzymane, chociaż mogliby szybciej reagować po dużych opadach śniegu."
+        },
+        {
+          "sender": "Bot",
+          "text": "Cieszę się, że jest Pan zadowolony. Ile razy tej zimy doświadczył Pan problemów z poruszaniem się po mieście przez śnieg lub lód?"
+        },
+        {
+          "sender": "Human",
+          "text": "Rzadko mam problemy, może raz czy dwa, ale generalnie miasto się dobrze spisuje."
+        },
+        {
+          "sender": "Bot",
+          "text": "To dobrze słyszeć. Jakie działania mogłyby jeszcze bardziej poprawić warunki drogowe w zimie?"
+        },
+        {
+          "sender": "Human",
+          "text": "Może lepsza koordynacja służb odśnieżających, szczególnie w godzinach porannych. Ale naprawdę nie mam dużych zastrzeżeń."
+        },
+        {
+          "sender": "Bot",
+          "text": "Dziękuję za wszystkie odpowiedzi! Pańskie opinie są dla nas bardzo cenne. Życzę miłego dnia!"
+        },
+        {
+          "sender": "Human",
+          "text": "Dziękuję, wzajemnie!"
+        }
+      ]
+    },
+
+
+    {
+      "id": "jakosc_transportu_12",
+      "demographics": {
+        "age": 40,
+        "gender": "Female",
+        "educationLevel": "Secondary",
+        "parentalStatus": "Not Parent"
+      },
+      "transcript": [
+        {
+          "sender": "Bot",
+          "text": "Dzień dobry! Chciałbym porozmawiać o transporcie publicznym w Pani okolicy. Na początek, jak ocenia Pani jakość komunikacji miejskiej? Wybierz jedną z opcji: bardzo dobrze, dobrze, neutralnie, źle, bardzo źle."
+        },
+        {
+          "sender": "Human",
+          "text": "Myślę, że dobrze, ale jest trochę rzeczy, które mogłyby być lepsze."
+        },
+        {
+          "sender": "Bot",
+          "text": "Rozumiem. Co konkretnie mogłoby zostać poprawione?"
+        },
+        {
+          "sender": "Human",
+          "text": "Czasami autobusy są przepełnione, szczególnie w godzinach szczytu. Brakuje też informacji o zmianach w rozkładzie."
+        },
+        {
+          "sender": "Bot",
+          "text": "Dziękuję za te spostrzeżenia. A ile razy w tygodniu korzysta Pani z transportu publicznego?"
+        },
+        {
+          "sender": "Human",
+          "text": "Używam transportu publicznego około 3-4 razy w tygodniu."
+        },
+        {
+          "sender": "Bot",
+          "text": "Dobrze, zrozumiałem. Czy jest jeszcze coś, co chciałaby Pani zmienić w transporcie publicznym?"
+        },
+        {
+          "sender": "Human",
+          "text": "Może przydałyby się częstsze kursy wieczorami, szczególnie na mojej linii."
+        },
+        {
+          "sender": "Bot",
+          "text": "Dziękuję za opinię. Teraz chciałbym zapytać, jak ocenia Pani obecny stan dróg w swojej okolicy?"
+        },
+        {
+          "sender": "Human",
+          "text": "Stan dróg jest naprawdę zły, pełno dziur i nierówności. A remonty ciągną się w nieskończoność, co powoduje ogromne korki."
+        },
+        {
+          "sender": "Bot",
+          "text": "To brzmi frustrująco. Ile godzin tygodniowo traci Pani z powodu korków?"
+        },
+        {
+          "sender": "Human",
+          "text": "Pewnie z 5 godzin tygodniowo, to sporo jak na moje potrzeby."
+        },
+        {
+          "sender": "Bot",
+          "text": "Rozumiem, to rzeczywiście dużo. Czy są miejsca, gdzie bezpieczeństwo na drogach powinno zostać poprawione?"
+        },
+        {
+          "sender": "Human",
+          "text": "Tak, szczególnie na niektórych skrzyżowaniach, gdzie brakuje dobrych oznaczeń. I w niektórych miejscach brakuje oświetlenia, co jest niebezpieczne."
+        },
+        {
+          "sender": "Bot",
+          "text": "Dziękuję za wskazówki. A jak ocenia Pani liczbę miejsc parkingowych w centrum miasta?"
+        },
+        {
+          "sender": "Human",
+          "text": "Znalezienie miejsca parkingowego w centrum to prawdziwy koszmar. Parkingi są za drogie, a miejsc jest zdecydowanie za mało."
+        },
+        {
+          "sender": "Bot",
+          "text": "Czy często musi Pani parkować daleko od celu podróży?"
+        },
+        {
+          "sender": "Human",
+          "text": "Tak, zazwyczaj parkuję kilka przecznic od miejsca, do którego jadę, zwłaszcza w centrum."
+        },
+        {
+          "sender": "Bot",
+          "text": "To musi być uciążliwe. Jakie zmiany mogłyby poprawić sytuację parkingową w Pani okolicy?"
+        },
+        {
+          "sender": "Human",
+          "text": "Więcej miejsc parkingowych dla rowerów by się przydało. Często wybieram rower, bo z parkowaniem samochodu jest za dużo problemów."
+        },
+        {
+          "sender": "Bot",
+          "text": "Rozumiem, dziękuję za tę opinię. A jak ocenia Pani stan dróg w swojej okolicy podczas zimy?"
+        },
+        {
+          "sender": "Human",
+          "text": "Rzadko mam problem z poruszaniem się zimą, bo miasto dba o drogi. Chociaż, czasem chodniki są śliskie, szczególnie rano."
+        },
+        {
+          "sender": "Bot",
+          "text": "To dobrze słyszeć, że nie ma Pani większych problemów zimą. Ile razy tej zimy doświadczyła Pani problemów z poruszaniem się po mieście przez śnieg lub lód?"
+        },
+        {
+          "sender": "Human",
+          "text": "Może z raz czy dwa, ale nic poważnego."
+        },
+        {
+          "sender": "Bot",
+          "text": "To dobrze słyszeć. Jakie działania mogłyby jeszcze bardziej poprawić warunki drogowe w zimie?"
+        },
+        {
+          "sender": "Human",
+          "text": "Może szybsze posypywanie chodników, szczególnie przy szkołach i przystankach. To mogłoby pomóc."
+        },
+        {
+          "sender": "Bot",
+          "text": "Dziękuję za wszystkie odpowiedzi. Pani opinie są dla nas bardzo cenne. Życzę miłego dnia!"
+        },
+        {
+          "sender": "Human",
+          "text": "Dziękuję, wzajemnie!"
+        }
+      ]
     }
-    
     
     
        
