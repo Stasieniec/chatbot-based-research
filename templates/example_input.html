@@ -18,15 +18,50 @@
                 <div class="col-md-6 form-section w-1/2" id="form-section">
                     <div class="form-group mb-4 bg-gray-200 rounded p-4">
                         <div class="form-group-title flex items-center mb-2">
-                            <h5 class="flex-1 m-0">Nowy cel</h5>
-                            <button class="btn btn-secondary bg-blue-500 text-white px-2 py-1 ml-2 rounded" onclick="editTitle(this)">edytuj nazwę</button>
-                            <button class="btn btn-danger bg-red-500 text-white px-2 py-1 ml-2 rounded" onclick="removeField(this)">usuń</button>
+                            <h5 class="flex-1 m-0">Customer Satisfaction</h5>
                         </div>
-                        <label class="goal-label text-left">Opis celu</label> <!-- Added label -->
-                        <textarea class="form-control w-full h-20 text-base" placeholder="Cel badania"></textarea>
-                        <button class="btn btn-secondary mt-2 bg-green-500 text-white px-4 py-2 rounded" onclick="openMetricModal(this)">Dodaj miarę</button>
+                        <label class="goal-label text-left">Goal description</label>
+                        <textarea class="form-control w-full h-20 text-base" readonly>Measure overall customer satisfaction with our product</textarea>
+                        <label class="metrics-label text-left mt-4">Miary</label>
+                        <div class="metric-titles">
+                            <div class="metric-title flex items-center justify-between mt-2">
+                                <span class="flex-1 metric-title">Overall Satisfaction</span>
+                                <button class="btn btn-view bg-blue-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMeasure('Customer Satisfaction', 'Overall Satisfaction')">zobacz</button>
+                            </div>
+                            <div class="metric-title flex items-center justify-between mt-2">
+                                <span class="flex-1 metric-title">Ease of Use</span>
+                                <button class="btn btn-view bg-blue-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMeasure('Customer Satisfaction', 'Ease of Use')">zobacz</button>
+                            </div>
+                            <div class="metric-title flex items-center justify-between mt-2">
+                                <span class="flex-1 metric-title">Value for Money</span>
+                                <button class="btn btn-view bg-blue-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMeasure('Customer Satisfaction', 'Value for Money')">zobacz</button>
+                            </div>
+                            <div class="metric-title flex items-center justify-between mt-2">
+                                <span class="flex-1 metric-title">Open Feedback</span>
+                                <button class="btn btn-view bg-blue-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMeasure('Customer Satisfaction', 'Open Feedback')">zobacz</button>
+                            </div>
+                        </div>
                     </div>
-                    <button class="btn btn-primary mt-3 bg-blue-500 text-white px-4 py-2 rounded" onclick="addField()">Dodaj nowy cel</button>
+                    <div class="form-group mb-4 bg-gray-200 rounded p-4">
+                        <div class="form-group-title flex items-center mb-2">
+                            <h5 class="flex-1 m-0">Product Features</h5>
+                            <button class="btn btn-view bg-blue-500 text-white px-2 py-1 ml-2 rounded" onclick="viewGoal(this)">zobacz</button>
+                        </div>
+                        <label class="goal-label text-left">Goal description</label>
+                        <textarea class="form-control w-full h-20 text-base" readonly>Evaluate the usefulness of new product features</textarea>
+                        <label class="metrics-label text-left mt-4">Miary</label>
+                        <div class="metric-titles">
+                            <div class="metric-title flex items-center justify-between mt-2">
+                                <span class="flex-1 metric-title">Feature A Usefulness</span>
+                            </div>
+                            <div class="metric-title flex items-center justify-between mt-2">
+                                <span class="flex-1 metric-title">Feature B Usefulness</span>
+                            </div>
+                            <div class="metric-title flex items-center justify-between mt-2">
+                                <span class="flex-1 metric-title">Open Feedback</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Right Column -->
@@ -110,42 +145,48 @@
                     <div class="likert-labels">
                         <div class="likert-label-item">
                             <label>Bardzo negatywne:</label>
-                            <input type="text" class="form-control mt-2" placeholder="Label 1">
+                            <input type="text" class="form-control mt-2" placeholder="Bardzo źle">
                         </div>
                         <div class="likert-label-item">
                             <label>Negatywne:</label>
-                            <input type="text" class="form-control mt-2" placeholder="Label 2">
+                            <input type="text" class="form-control mt-2" placeholder="Źle">
                         </div>
                         <div class="likert-label-item">
                             <label>Neutralne:</label>
-                            <input type="text" class="form-control mt-2" placeholder="Label 3">
+                            <input type="text" class="form-control mt-2" placeholder="Neutralnie">
                         </div>
                         <div class="likert-label-item">
                             <label>Pozytywne:</label>
-                            <input type="text" class="form-control mt-2" placeholder="Label 4">
+                            <input type="text" class="form-control mt-2" placeholder="Dobrze">
                         </div>
                         <div class="likert-label-item">
                             <label>Bardzo pozytywne:</label>
-                            <input type="text" class="form-control mt-2" placeholder="Label 5">
+                            <input type="text" class="form-control mt-2" placeholder="Bardzo dobrze">
                         </div>
                     </div>
                 </div>
                 <div id="dynamic-option2" class="dynamic-content" style="display: none;">
-                    <input type="number" id="metricInput1" class="form-control mt-2" placeholder="Left boundary">
-                    <input type="number" id="metricInput1" class="form-control mt-2" placeholder="Right boundary">
+                    <input type="number" id="metricInput1" class="form-control mt-2" placeholder="Lewa granica przedziału">
+                    <input type="number" id="metricInput1" class="form-control mt-2" placeholder="Prawa granica przedziału">
                 </div>
                 <div id="dynamic-option3" class="dynamic-content" style="display: none;">
-                    <input type="text" id="metricInput1" class="form-control mt-2" placeholder="Enter the question">
+                    <input type="text" id="metricInput1" class="form-control mt-2" placeholder="Wpisz pytanie">
                 </div>
                 <label for="metricTitle">Tytuł miary:</label>
-                <input type="text" id="metricTitle" class="form-control mt-2 metric-titles" placeholder="Enter metric title">
+                <input type="text" id="metricTitle" class="form-control mt-2 metric-titles" placeholder="Tytuł miary">
                 <button class="btn btn-primary mt-2 rounded" onclick="saveMetric()">OK</button>
+            </div>
+        </div>
+
+        <div id="metricModal" class="modal">
+            <div class="modal-content rounded">
+                <!-- Content will be dynamically inserted here -->
             </div>
         </div>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="{{ url_for('static', filename='input.js') }}"></script>
+        <script src="{{ url_for('static', filename='example_input.js') }}"></script>
     </body>
 </html>

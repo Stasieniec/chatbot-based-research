@@ -113,3 +113,67 @@ templates\home.html, code is 16, comment is 0, blank is 0.
 templates\input.html, code is 145, comment is 3, blank is 3.
 templates\results.html, code is 172, comment is 12, blank is 11.
 ===============================================================================
+===============================================================================
+EXTENSION NAME : linecounter
+EXTENSION VERSION : 0.2.7
+-------------------------------------------------------------------------------
+count time : 2024-09-02 21:37:02
+count workspace : c:\KiljanResearch\App\chatbot-based-research
+total files : 40
+total code lines : 6785
+total comment lines : 212
+total blank lines : 439
+
+    statistics
+   |      extension|     total code|  total comment|    total blank|percent|
+   -------------------------------------------------------------------------
+   |            .py|             89|             19|             43|    1.3|
+   |               |             98|              0|             19|    1.4|
+   |            .js|            705|             41|            125|     10|
+   |           .txt|             20|              0|              4|   0.29|
+   |            .md|              2|              0|              0|  0.029|
+   |          .json|           4218|              0|             42|     62|
+   |           .css|           1137|            134|            189|     17|
+   |          .html|            516|             18|             17|    7.6|
+   -------------------------------------------------------------------------
+.gitattributes, code is 2, comment is 0, blank is 0.
+.gitignore, code is 78, comment is 0, blank is 15.
+app.py, code is 16, comment is 0, blank is 6.
+data_generation\data_gen.py, code is 73, comment is 19, blank is 37.
+data_generation\notes.txt, code is 16, comment is 0, blank is 4.
+data_generation\plots\komunikacja.png, it is a binary file.
+LICENSE, code is 17, comment is 0, blank is 4.
+package-lock.json, code is 2000, comment is 0, blank is 1.
+package.json, code is 14, comment is 0, blank is 0.
+postcss.config.js, code is 6, comment is 0, blank is 0.
+Procfile, code is 1, comment is 0, blank is 0.
+README.md, code is 2, comment is 0, blank is 0.
+requirements.txt, code is 4, comment is 0, blank is 0.
+static\age.png, it is a binary file.
+static\example_input.js, code is 341, comment is 29, blank is 63.
+static\fullResponses.json, code is 1464, comment is 0, blank is 15.
+static\input.js, code is 177, comment is 7, blank is 33.
+static\openQuotesContent.json, code is 210, comment is 0, blank is 12.
+static\plots\education.png, it is a binary file.
+static\plots\gender.png, it is a binary file.
+static\plots\komunikacja.png, it is a binary file.
+static\plots\komunikacja_liczba.png, it is a binary file.
+static\plots\likert_goal1.png, it is a binary file.
+static\plots\likert_goal2.png, it is a binary file.
+static\plots\likert_goal3.png, it is a binary file.
+static\plots\likert_goal4.png, it is a binary file.
+static\plots\num_goal2.png, it is a binary file.
+static\plots\num_goal3.png, it is a binary file.
+static\plots\num_goal4.png, it is a binary file.
+static\plots\num_komunikacja.png, it is a binary file.
+static\plots\parent.png, it is a binary file.
+static\results.js, code is 170, comment is 4, blank is 29.
+static\styles.css, code is 662, comment is 16, blank is 115.
+static\tailwind.css, code is 475, comment is 118, blank is 74.
+static\wordCloudContent.json, code is 530, comment is 0, blank is 14.
+tailwind.config.js, code is 11, comment is 1, blank is 0.
+templates\example_input.html, code is 174, comment is 3, blank is 3.
+templates\home.html, code is 17, comment is 0, blank is 0.
+templates\input.html, code is 146, comment is 3, blank is 3.
+templates\results.html, code is 179, comment is 12, blank is 11.
+===============================================================================

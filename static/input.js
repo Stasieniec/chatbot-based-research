@@ -14,7 +14,7 @@ function addField() {
         </div>
         <label class="goal-label text-left">Goal description</label>
         <textarea class="form-control w-full h-20 text-base" placeholder="Cel badania"></textarea>
-        <label class="metrics-label text-left mt-4">Metrics</label>
+        <label class="metrics-label text-left mt-4">Miary</label>
         <div class="metric-titles"></div>
         <button class="btn btn-secondary mt-2 bg-green-500 text-white px-4 py-2 text-left rounded" onclick="openMetricModal(this)">Dodaj miarę</button>`;
     formSection.insertBefore(newField, formSection.lastElementChild);

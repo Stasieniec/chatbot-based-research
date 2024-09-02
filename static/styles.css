@@ -771,3 +771,78 @@ h1 {
 .opinie{
     margin-top: 30px;
 }
+
+.btn-view {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-view:hover {
+    background-color: #0056b3;
+}
+
+.measure-item {
+    margin-bottom: 20px;
+}
+
+.likert-scale {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.likert-scale label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.range-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.range-inputs input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.open-feedback {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+    resize: vertical;
+}
+
+input[readonly],
+textarea[readonly] {
+    background-color: #f8f9fa;
+    cursor: not-allowed;
+}
+
+/* Style for disabled inputs */
+input[type="radio"]:disabled,
+input[type="range"]:disabled,
+textarea[readonly] {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.modal-content label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}

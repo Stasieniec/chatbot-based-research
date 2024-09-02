@@ -530,6 +530,313 @@
                     "filename": "templates\\results.html"
                 }
             ]
+        },
+        {
+            "version": "0.2.7",
+            "counttime": "2024-09-02 21:37:02",
+            "filesum": 40,
+            "codesum": 6785,
+            "commentsum": 212,
+            "blanksum": 439,
+            "statistics": {
+                ".py": {
+                    "code": 89,
+                    "comment": 19,
+                    "blank": 43
+                },
+                "": {
+                    "code": 98,
+                    "comment": 0,
+                    "blank": 19
+                },
+                ".js": {
+                    "code": 705,
+                    "comment": 41,
+                    "blank": 125
+                },
+                ".txt": {
+                    "code": 20,
+                    "comment": 0,
+                    "blank": 4
+                },
+                ".md": {
+                    "code": 2,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".json": {
+                    "code": 4218,
+                    "comment": 0,
+                    "blank": 42
+                },
+                ".css": {
+                    "code": 1137,
+                    "comment": 134,
+                    "blank": 189
+                },
+                ".html": {
+                    "code": 516,
+                    "comment": 18,
+                    "blank": 17
+                }
+            },
+            "filelist": [
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": ".gitattributes"
+                },
+                {
+                    "blank": 15,
+                    "code": 78,
+                    "comment": 0,
+                    "filename": ".gitignore"
+                },
+                {
+                    "blank": 6,
+                    "code": 16,
+                    "comment": 0,
+                    "filename": "app.py"
+                },
+                {
+                    "blank": 37,
+                    "code": 73,
+                    "comment": 19,
+                    "filename": "data_generation\\data_gen.py"
+                },
+                {
+                    "blank": 4,
+                    "code": 16,
+                    "comment": 0,
+                    "filename": "data_generation\\notes.txt"
+                },
+                {
+                    "filename": "data_generation\\plots\\komunikacja.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 4,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": "LICENSE"
+                },
+                {
+                    "blank": 1,
+                    "code": 2000,
+                    "comment": 0,
+                    "filename": "package-lock.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": "package.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "postcss.config.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "Procfile"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "README.md"
+                },
+                {
+                    "blank": 0,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": "requirements.txt"
+                },
+                {
+                    "filename": "static\\age.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 63,
+                    "code": 341,
+                    "comment": 29,
+                    "filename": "static\\example_input.js"
+                },
+                {
+                    "blank": 15,
+                    "code": 1464,
+                    "comment": 0,
+                    "filename": "static\\fullResponses.json"
+                },
+                {
+                    "blank": 33,
+                    "code": 177,
+                    "comment": 7,
+                    "filename": "static\\input.js"
+                },
+                {
+                    "blank": 12,
+                    "code": 210,
+                    "comment": 0,
+                    "filename": "static\\openQuotesContent.json"
+                },
+                {
+                    "filename": "static\\plots\\education.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "static\\plots\\gender.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "static\\plots\\komunikacja.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "static\\plots\\komunikacja_liczba.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "static\\plots\\likert_goal1.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "static\\plots\\likert_goal2.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "static\\plots\\likert_goal3.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "static\\plots\\likert_goal4.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "static\\plots\\num_goal2.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "static\\plots\\num_goal3.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "static\\plots\\num_goal4.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "static\\plots\\num_komunikacja.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "static\\plots\\parent.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 29,
+                    "code": 170,
+                    "comment": 4,
+                    "filename": "static\\results.js"
+                },
+                {
+                    "blank": 115,
+                    "code": 662,
+                    "comment": 16,
+                    "filename": "static\\styles.css"
+                },
+                {
+                    "blank": 74,
+                    "code": 475,
+                    "comment": 118,
+                    "filename": "static\\tailwind.css"
+                },
+                {
+                    "blank": 14,
+                    "code": 530,
+                    "comment": 0,
+                    "filename": "static\\wordCloudContent.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 11,
+                    "comment": 1,
+                    "filename": "tailwind.config.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 174,
+                    "comment": 3,
+                    "filename": "templates\\example_input.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": "templates\\home.html"
+                },
+                {
+                    "blank": 3,
+                    "code": 146,
+                    "comment": 3,
+                    "filename": "templates\\input.html"
+                },
+                {
+                    "blank": 11,
+                    "code": 179,
+                    "comment": 12,
+                    "filename": "templates\\results.html"
+                }
+            ]
         }
     ]
 }
