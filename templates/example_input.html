@@ -7,89 +7,89 @@
         <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css">
         <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-        <title>Input Page</title>
+        <title>Tworzenie badania</title>
     </head>
     <body class="text-center">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
         <div class="container mx-auto">
-            <h1 class="mt-5 text-4xl py-5">Input Page</h1> <!-- Updated title -->
+            <h1 class="mt-5 text-4xl py-5">Tworzenie badania</h1> <!-- Updated title -->
             <div class="row flex items-start"> <!-- Added items-start class -->
                 <!-- Left Column -->
                 <div class="col-md-6 form-section w-1/2" id="form-section">
                     <div class="form-group mb-4 bg-gray-200 rounded p-4">
                         <div class="form-group-title flex items-center mb-2">
-                            <h5 class="flex-1 m-0">New goal</h5>
-                            <button class="btn btn-secondary bg-blue-500 text-white px-2 py-1 ml-2 rounded" onclick="editTitle(this)">edit name</button>
-                            <button class="btn btn-danger bg-red-500 text-white px-2 py-1 ml-2 rounded" onclick="removeField(this)">delete</button>
+                            <h5 class="flex-1 m-0">Nowy cel</h5>
+                            <button class="btn btn-secondary bg-blue-500 text-white px-2 py-1 ml-2 rounded" onclick="editTitle(this)">edytuj nazwę</button>
+                            <button class="btn btn-danger bg-red-500 text-white px-2 py-1 ml-2 rounded" onclick="removeField(this)">usuń</button>
                         </div>
-                        <label class="goal-label text-left">Goal description</label> <!-- Added label -->
-                        <textarea class="form-control w-full h-20 text-base" placeholder="Goal of the research"></textarea>
-                        <button class="btn btn-secondary mt-2 bg-green-500 text-white px-4 py-2 rounded" onclick="openMetricModal(this)">Add Metric</button>
+                        <label class="goal-label text-left">Opis celu</label> <!-- Added label -->
+                        <textarea class="form-control w-full h-20 text-base" placeholder="Cel badania"></textarea>
+                        <button class="btn btn-secondary mt-2 bg-green-500 text-white px-4 py-2 rounded" onclick="openMetricModal(this)">Dodaj miarę</button>
                     </div>
-                    <button class="btn btn-primary mt-3 bg-blue-500 text-white px-4 py-2 rounded" onclick="addField()">Add Field</button>
+                    <button class="btn btn-primary mt-3 bg-blue-500 text-white px-4 py-2 rounded" onclick="addField()">Dodaj nowy cel</button>
                 </div>
 
                 <!-- Right Column -->
                 <div class="col-md-6 w-1/2 right-col"> <!-- Removed margin-top class -->
                     <div class="form-group mb-4">
-                        <label for="ageRange">Age Range</label>
+                        <label for="ageRange">Zakres wiekowy</label>
                         <div id="ageRangeSlider" class="w-full h-5"></div>
-                        <p>Selected Age Range: <span id="ageRangeDisplay">20 - 50</span></p>
+                        <p>Wybrany zakres wiekowy: <span id="ageRangeDisplay">20 - 50</span></p>
                     </div>
                     <div class="form-group mb-4">
-                        <label for="numberInput">Number of participants</label>
+                        <label for="numberInput">Ilość respondentów</label>
                         <input type="number" class="form-control w-full" id="numberInput" min="1">
                     </div>
                     <div class="form-group mb-4">
-                        <label for="numberInput">Gender of participants</label>
+                        <label for="numberInput">Płeć respondentów</label>
                         <div class="checkbox-group">
                             <div class="form-check flex items-center">
                                 <input class="form-check-input mr-2" type="checkbox" id="checkbox1">
-                                <label class="form-check-label" for="checkbox1">Male</label>
+                                <label class="form-check-label" for="checkbox1">Mężczyźni</label>
                             </div>
                             <div class="form-check flex items-center">
                                 <input class="form-check-input mr-2" type="checkbox" id="checkbox2">
-                                <label class="form-check-label" for="checkbox2">Female</label>
+                                <label class="form-check-label" for="checkbox2">Kobiety</label>
                             </div>
                         </div>
                     </div>
                     <div class="form-group mb-4">
-                        <label for="numberInput">Education of participants</label>
+                        <label for="numberInput">Poziom wykrztałcenia respondentów</label>
                         <div class="checkbox-group">
                             <div class="form-check flex items-center">
                                 <input class="form-check-input mr-2" type="checkbox" id="checkbox1">
-                                <label class="form-check-label" for="checkbox1">Elementary</label>
+                                <label class="form-check-label" for="checkbox1">Podstawowe</label>
                             </div>
                             <div class="form-check flex items-center">
                                 <input class="form-check-input mr-2" type="checkbox" id="checkbox2">
-                                <label class="form-check-label" for="checkbox2">Middle</label>
+                                <label class="form-check-label" for="checkbox2">Średnie</label>
                             </div>
                             <div class="form-check flex items-center">
                                 <input class="form-check-input mr-2" type="checkbox" id="checkbox3">
-                                <label class="form-check-label" for="checkbox3">Higher</label>
+                                <label class="form-check-label" for="checkbox3">Wyższe</label>
                             </div>
                         </div>
                     </div>
                     <div class="form-group mb-4">
-                        <label for="numberInput">Parental situation</label>
+                        <label for="numberInput">Posiadanie dzieci</label>
                         <div class="checkbox-group">
                             <div class="form-check flex items-center">
                                 <input class="form-check-input mr-2" type="checkbox" id="checkbox1">
-                                <label class="form-check-label" for="checkbox1">Participants with kids</label>
+                                <label class="form-check-label" for="checkbox1">Respondenci posiadający dzieci</label>
                             </div>
                             <div class="form-check flex items-center">
                                 <input class="form-check-input mr-2" type="checkbox" id="checkbox2">
-                                <label class="form-check-label" for="checkbox2">Participants without kids</label>
+                                <label class="form-check-label" for="checkbox2">Respondenci nie posiadający dzieci</label>
                             </div>
                         </div>
                     </div>
                     <div class="form-group mb-4">
-                        <label for="textarea">Chatbot instructions</label>
-                        <textarea class="form-control w-full h-32" id="textarea" rows="4" placeholder="How should the chatbot behave?"></textarea>
+                        <label for="textarea">Dodatkowe instrukcje dla chatbota</label>
+                        <textarea class="form-control w-full h-32" id="textarea" rows="4" placeholder="Jak powinien zachowywać się chatbot w stosunku do respondentów? O czym powienine pamiętać, a na co powinien uważać?"></textarea>
                     </div>
                     <div class="form-group mb-4">
-                        <button class="btn btn-draft bg-grey-500 text-white px-4 py-2 mr-2 rounded">Save as Draft</button>
-                        <button class="btn btn-save bg-black text-white px-4 py-2 rounded">Save</button>
+                        <button class="btn btn-draft bg-grey-500 text-white px-4 py-2 mr-2 rounded">Zapisz jako szkic</button>
+                        <button class="btn btn-save bg-black text-white px-4 py-2 rounded">Zapisz</button>
                     </div>
                 </div>
             </div>
@@ -101,31 +101,31 @@
                 <span class="close" onclick="closeMetricModal()">&times;</span>
                 <h2 class = "rounded">Add Metric</h2>
                 <div class="radio-group">
-                    <label><input type="radio" name="metricOption" value="likert"> Likert scale</label>
-                    <label><input type="radio" name="metricOption" value="option2"> Number</label>
-                    <label><input type="radio" name="metricOption" value="option3"> Open question</label>
+                    <label><input type="radio" name="metricOption" value="likert"> Skala Likerta</label>
+                    <label><input type="radio" name="metricOption" value="option2"> Wartość liczbowa</label>
+                    <label><input type="radio" name="metricOption" value="option3"> Pytanie otwarte</label>
                 </div>
                 <div id="dynamic-likert" class="dynamic-content" style="display: none;">
-                    <label>Likert Scale Labels:</label>
+                    <label>Oznacznia dla stopni skali Likerta:</label>
                     <div class="likert-labels">
                         <div class="likert-label-item">
-                            <label>Very Negative:</label>
+                            <label>Bardzo negatywne:</label>
                             <input type="text" class="form-control mt-2" placeholder="Label 1">
                         </div>
                         <div class="likert-label-item">
-                            <label>Negative:</label>
+                            <label>Negatywne:</label>
                             <input type="text" class="form-control mt-2" placeholder="Label 2">
                         </div>
                         <div class="likert-label-item">
-                            <label>Neutral:</label>
+                            <label>Neutralne:</label>
                             <input type="text" class="form-control mt-2" placeholder="Label 3">
                         </div>
                         <div class="likert-label-item">
-                            <label>Positive:</label>
+                            <label>Pozytywne:</label>
                             <input type="text" class="form-control mt-2" placeholder="Label 4">
                         </div>
                         <div class="likert-label-item">
-                            <label>Very Positive:</label>
+                            <label>Bardzo pozytywne:</label>
                             <input type="text" class="form-control mt-2" placeholder="Label 5">
                         </div>
                     </div>
@@ -137,7 +137,7 @@
                 <div id="dynamic-option3" class="dynamic-content" style="display: none;">
                     <input type="text" id="metricInput1" class="form-control mt-2" placeholder="Enter the question">
                 </div>
-                <label for="metricTitle">Metric Title:</label>
+                <label for="metricTitle">Tytuł miary:</label>
                 <input type="text" id="metricTitle" class="form-control mt-2 metric-titles" placeholder="Enter metric title">
                 <button class="btn btn-primary mt-2 rounded" onclick="saveMetric()">OK</button>
             </div>

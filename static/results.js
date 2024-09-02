@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     contentBoxContainer.appendChild(summaryDiv);
     
                     const paragraph = document.createElement('p');
-                    paragraph.innerText = 'Related responses';
+                    paragraph.innerText = 'Powiązane odpowiedzi';
                     paragraph.className = 'related-responses-txt';
                     contentBoxContainer.appendChild(paragraph);
     

@@ -9,14 +9,14 @@ function addField() {
     newField.innerHTML = `
         <div class="form-group-title flex items-center mb-2">
             <h5 class="flex-1 m-0">New goal</h5>
-            <button class="btn btn-secondary bg-blue-500 text-white px-2 py-1 ml-2 rounded" onclick="editTitle(this)">edit name</button>
-            <button class="btn btn-danger bg-red-500 text-white px-2 py-1 ml-2 rounded" onclick="removeField(this)">delete</button>
+            <button class="btn btn-secondary bg-blue-500 text-white px-2 py-1 ml-2 rounded" onclick="editTitle(this)">edytuj nazwę</button>
+            <button class="btn btn-danger bg-red-500 text-white px-2 py-1 ml-2 rounded" onclick="removeField(this)">usuń</button>
         </div>
         <label class="goal-label text-left">Goal description</label>
-        <textarea class="form-control w-full h-20 text-base" placeholder="Goal of the research"></textarea>
+        <textarea class="form-control w-full h-20 text-base" placeholder="Cel badania"></textarea>
         <label class="metrics-label text-left mt-4">Metrics</label>
         <div class="metric-titles"></div>
-        <button class="btn btn-secondary mt-2 bg-green-500 text-white px-4 py-2 text-left rounded" onclick="openMetricModal(this)">Add Metric</button>`;
+        <button class="btn btn-secondary mt-2 bg-green-500 text-white px-4 py-2 text-left rounded" onclick="openMetricModal(this)">Dodaj miarę</button>`;
     formSection.insertBefore(newField, formSection.lastElementChild);
 }
 
@@ -105,8 +105,8 @@ function saveMetric() {
             metricTitleElement.className = 'metric-title flex items-center justify-between mt-2';
             metricTitleElement.innerHTML = `
                 <span class="flex-1 metric-title">${metricTitle}</span>
-                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="editMetricTitle(this, '${metricId}')">edit</button>
-                <button class="btn btn-danger bg-red-500 text-white px-2 py-1 ml-2 rounded" onclick="removeMetricTitle(this)">delete</button>`;
+                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="editMetricTitle(this, '${metricId}')">edytuj</button>
+                <button class="btn btn-danger bg-red-500 text-white px-2 py-1 ml-2 rounded" onclick="removeMetricTitle(this)">usuń</button>`;
 
             const metricBox = document.createElement('div');
             metricBox.className = 'metric-box';
