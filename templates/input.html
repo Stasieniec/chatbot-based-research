@@ -24,6 +24,7 @@
                         </div>
                         <label class="goal-label text-left">Opis celu</label> <!-- Added label -->
                         <textarea class="form-control w-full h-20 text-base" placeholder="Cel badania"></textarea>
+                        <label class="metrics-label text-left mt-4">Miary</label>
                         <button class="btn btn-secondary mt-2 bg-green-500 text-white px-4 py-2 rounded" onclick="openMetricModal(this)">Dodaj miarę</button>
                     </div>
                     <button class="btn btn-primary mt-3 bg-blue-500 text-white px-4 py-2 rounded" onclick="addField()">Dodaj nowy cel</button>
@@ -110,35 +111,35 @@
                     <div class="likert-labels">
                         <div class="likert-label-item">
                             <label>Bardzo negatywne:</label>
-                            <input type="text" class="form-control mt-2" placeholder="Label 1">
+                            <input type="text" class="form-control mt-2" placeholder="Bardzo źle">
                         </div>
                         <div class="likert-label-item">
                             <label>Negatywne:</label>
-                            <input type="text" class="form-control mt-2" placeholder="Label 2">
+                            <input type="text" class="form-control mt-2" placeholder="Źle">
                         </div>
                         <div class="likert-label-item">
                             <label>Neutralne:</label>
-                            <input type="text" class="form-control mt-2" placeholder="Label 3">
+                            <input type="text" class="form-control mt-2" placeholder="Neutralnie">
                         </div>
                         <div class="likert-label-item">
                             <label>Pozytywne:</label>
-                            <input type="text" class="form-control mt-2" placeholder="Label 4">
+                            <input type="text" class="form-control mt-2" placeholder="Dobrze">
                         </div>
                         <div class="likert-label-item">
                             <label>Bardzo pozytywne:</label>
-                            <input type="text" class="form-control mt-2" placeholder="Label 5">
+                            <input type="text" class="form-control mt-2" placeholder="Bardzo dobrze">
                         </div>
                     </div>
                 </div>
                 <div id="dynamic-option2" class="dynamic-content" style="display: none;">
-                    <input type="number" id="metricInput1" class="form-control mt-2" placeholder="Left boundary">
-                    <input type="number" id="metricInput1" class="form-control mt-2" placeholder="Right boundary">
+                    <input type="number" id="metricInput1" class="form-control mt-2" placeholder="Lewa granica przedziału">
+                    <input type="number" id="metricInput1" class="form-control mt-2" placeholder="Prawa granica przedziału">
                 </div>
                 <div id="dynamic-option3" class="dynamic-content" style="display: none;">
-                    <input type="text" id="metricInput1" class="form-control mt-2" placeholder="Enter the question">
+                    <input type="text" id="metricInput1" class="form-control mt-2" placeholder="Wpisz pytanie">
                 </div>
                 <label for="metricTitle">Tytuł miary:</label>
-                <input type="text" id="metricTitle" class="form-control mt-2 metric-titles" placeholder="Enter metric title">
+                <input type="text" id="metricTitle" class="form-control mt-2 metric-titles" placeholder="Tytuł miary">
                 <button class="btn btn-primary mt-2 rounded" onclick="saveMetric()">OK</button>
             </div>
         </div>
