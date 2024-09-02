@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='tailwind.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <title>Input Page</title>
+    </head>
+    <body class="text-center">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+        <div class="container mx-auto">
+            <h1 class="mt-5 text-4xl py-5">Input Page</h1> <!-- Updated title -->
+            <div class="row flex items-start"> <!-- Added items-start class -->
+                <!-- Left Column -->
+                <div class="col-md-6 form-section w-1/2" id="form-section">
+                    <div class="form-group mb-4 bg-gray-200 rounded p-4">
+                        <div class="form-group-title flex items-center mb-2">
+                            <h5 class="flex-1 m-0">New goal</h5>
+                            <button class="btn btn-secondary bg-blue-500 text-white px-2 py-1 ml-2 rounded" onclick="editTitle(this)">edit name</button>
+                            <button class="btn btn-danger bg-red-500 text-white px-2 py-1 ml-2 rounded" onclick="removeField(this)">delete</button>
+                        </div>
+                        <label class="goal-label text-left">Goal description</label> <!-- Added label -->
+                        <textarea class="form-control w-full h-20 text-base" placeholder="Goal of the research"></textarea>
+                        <button class="btn btn-secondary mt-2 bg-green-500 text-white px-4 py-2 rounded" onclick="openMetricModal(this)">Add Metric</button>
+                    </div>
+                    <button class="btn btn-primary mt-3 bg-blue-500 text-white px-4 py-2 rounded" onclick="addField()">Add Field</button>
+                </div>
+
+                <!-- Right Column -->
+                <div class="col-md-6 w-1/2 right-col"> <!-- Removed margin-top class -->
+                    <div class="form-group mb-4">
+                        <label for="ageRange">Age Range</label>
+                        <div id="ageRangeSlider" class="w-full h-5"></div>
+                        <p>Selected Age Range: <span id="ageRangeDisplay">20 - 50</span></p>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="numberInput">Number of participants</label>
+                        <input type="number" class="form-control w-full" id="numberInput" min="1">
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="numberInput">Gender of participants</label>
+                        <div class="checkbox-group">
+                            <div class="form-check flex items-center">
+                                <input class="form-check-input mr-2" type="checkbox" id="checkbox1">
+                                <label class="form-check-label" for="checkbox1">Male</label>
+                            </div>
+                            <div class="form-check flex items-center">
+                                <input class="form-check-input mr-2" type="checkbox" id="checkbox2">
+                                <label class="form-check-label" for="checkbox2">Female</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="numberInput">Education of participants</label>
+                        <div class="checkbox-group">
+                            <div class="form-check flex items-center">
+                                <input class="form-check-input mr-2" type="checkbox" id="checkbox1">
+                                <label class="form-check-label" for="checkbox1">Elementary</label>
+                            </div>
+                            <div class="form-check flex items-center">
+                                <input class="form-check-input mr-2" type="checkbox" id="checkbox2">
+                                <label class="form-check-label" for="checkbox2">Middle</label>
+                            </div>
+                            <div class="form-check flex items-center">
+                                <input class="form-check-input mr-2" type="checkbox" id="checkbox3">
+                                <label class="form-check-label" for="checkbox3">Higher</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="numberInput">Parental situation</label>
+                        <div class="checkbox-group">
+                            <div class="form-check flex items-center">
+                                <input class="form-check-input mr-2" type="checkbox" id="checkbox1">
+                                <label class="form-check-label" for="checkbox1">Participants with kids</label>
+                            </div>
+                            <div class="form-check flex items-center">
+                                <input class="form-check-input mr-2" type="checkbox" id="checkbox2">
+                                <label class="form-check-label" for="checkbox2">Participants without kids</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="textarea">Chatbot instructions</label>
+                        <textarea class="form-control w-full h-32" id="textarea" rows="4" placeholder="How should the chatbot behave?"></textarea>
+                    </div>
+                    <div class="form-group mb-4">
+                        <button class="btn btn-draft bg-grey-500 text-white px-4 py-2 mr-2 rounded">Save as Draft</button>
+                        <button class="btn btn-save bg-black text-white px-4 py-2 rounded">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div id="metricModal" class="modal">
+            <div class="modal-content rounded">
+                <span class="close" onclick="closeMetricModal()">&times;</span>
+                <h2 class = "rounded">Add Metric</h2>
+                <div class="radio-group">
+                    <label><input type="radio" name="metricOption" value="likert"> Likert scale</label>
+                    <label><input type="radio" name="metricOption" value="option2"> Number</label>
+                    <label><input type="radio" name="metricOption" value="option3"> Open question</label>
+                </div>
+                <div id="dynamic-likert" class="dynamic-content" style="display: none;">
+                    <label>Likert Scale Labels:</label>
+                    <div class="likert-labels">
+                        <div class="likert-label-item">
+                            <label>Very Negative:</label>
+                            <input type="text" class="form-control mt-2" placeholder="Label 1">
+                        </div>
+                        <div class="likert-label-item">
+                            <label>Negative:</label>
+                            <input type="text" class="form-control mt-2" placeholder="Label 2">
+                        </div>
+                        <div class="likert-label-item">
+                            <label>Neutral:</label>
+                            <input type="text" class="form-control mt-2" placeholder="Label 3">
+                        </div>
+                        <div class="likert-label-item">
+                            <label>Positive:</label>
+                            <input type="text" class="form-control mt-2" placeholder="Label 4">
+                        </div>
+                        <div class="likert-label-item">
+                            <label>Very Positive:</label>
+                            <input type="text" class="form-control mt-2" placeholder="Label 5">
+                        </div>
+                    </div>
+                </div>
+                <div id="dynamic-option2" class="dynamic-content" style="display: none;">
+                    <input type="number" id="metricInput1" class="form-control mt-2" placeholder="Left boundary">
+                    <input type="number" id="metricInput1" class="form-control mt-2" placeholder="Right boundary">
+                </div>
+                <div id="dynamic-option3" class="dynamic-content" style="display: none;">
+                    <input type="text" id="metricInput1" class="form-control mt-2" placeholder="Enter the question">
+                </div>
+                <label for="metricTitle">Metric Title:</label>
+                <input type="text" id="metricTitle" class="form-control mt-2 metric-titles" placeholder="Enter metric title">
+                <button class="btn btn-primary mt-2 rounded" onclick="saveMetric()">OK</button>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="{{ url_for('static', filename='input.js') }}"></script>
+    </body>
+</html>

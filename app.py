@@ -14,5 +14,9 @@ def input_page():
 def results_page():
     return render_template('results.html')
 
+@app.route('/example_input')
+def example_input_page():
+    return render_template('example_input.html')
+
 if __name__ == '__main__':
     app.run(debug=False)
