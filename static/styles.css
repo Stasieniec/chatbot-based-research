@@ -307,7 +307,7 @@ h1 {
 }
 
 .word-cloud-btn {
-    background-color: #007bff; /* Button background color */
+    background-color: gray; /* Button background color */
     color: #fff; /* Button text color */
     border: none; /* Remove border */
     border-radius: 5px; /* Rounded corners */
@@ -489,27 +489,24 @@ h1 {
 .full-response-modal {
     display: none;
     position: fixed;
-    z-index: 2;
+    z-index: 1001; /* Higher than the quotes modal */
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding-top: 60px;
+    background-color: rgba(0,0,0,0.4);
 }
 
 .full-response-modal-content {
-    background-color: #fff;
+    background-color: #fefefe;
     margin: 5% auto;
     padding: 20px;
-    border: none;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
     border-radius: 10px;
-    width: 95%;
-    max-width: 1000px;
     position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    animation: fadeIn 0.3s ease-in-out;
 }
 
 .full-response-close {
@@ -517,17 +514,17 @@ h1 {
     float: right;
     font-size: 28px;
     font-weight: bold;
+    cursor: pointer;
     position: absolute;
     top: 10px;
-    right: 10px;
-    cursor: pointer;
-    transition: color 0.3s;
+    right: 20px;
 }
 
 .full-response-close:hover,
 .full-response-close:focus {
     color: #000;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .full-response-content {
@@ -536,17 +533,17 @@ h1 {
 }
 
 .go-back-btn {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
     border: none;
     border-radius: 5px;
-    padding: 10px 15px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    margin-top: 20px;
 }
 
 .go-back-btn:hover {
-    background-color: #0056b3;
+    background-color: #45a049;
 }
 
 .demographics-info {
@@ -673,4 +670,100 @@ h1 {
 
 .metric-image:hover {
     opacity: 0.8;
+}
+
+.respondenci{
+    margin-bottom: 20px;
+}
+
+
+.open-quotes-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.open-quotes-btn:hover {
+    background-color: #45a049;
+}
+
+.quotes-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.quotes-modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.quotes-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.quotes-close:hover,
+.quotes-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.quote-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quote-box p {
+    margin: 0;
+    flex: 1;
+    padding-right: 15px;
+}
+
+.view-full-response-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+    flex-shrink: 0;
+    min-width: 180px; /* Adjust this value as needed */
+    text-align: center;
+}
+
+
+.view-full-response-btn:hover {
+    background-color: #0056b3;
 }

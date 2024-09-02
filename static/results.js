@@ -8,6 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const plotModalImg = document.getElementById('plotModalImg');
     const plotModalClose = document.querySelector('.plot-modal-close');
 
+    const openQuotesBtns = document.querySelectorAll('.open-quotes-btn');
+    const quotesModal = document.getElementById('quotesModal');
+    const quotesClose = quotesModal.querySelector('.quotes-close');
+    const quotesContent = quotesModal.querySelector('.scrollable-content');
+
 
     plotImages.forEach(img => {
         img.addEventListener('click', function() {
@@ -73,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
                         const viewFullResponseBtn = document.createElement('button');
                         viewFullResponseBtn.className = 'view-full-response-btn';
-                        viewFullResponseBtn.innerText = 'View Full Response';
+                        viewFullResponseBtn.innerText = 'Zobacz całą odpowiedź';
                         viewFullResponseBtn.onclick = function() {
                             fetchFullResponse(item.responseId);
                         };
@@ -94,18 +99,18 @@ document.addEventListener('DOMContentLoaded', function() {
         // Create and populate the demographics section
         const demographicsHtml = `
             <div class="demographics-info">
-                <h3>Respondent Demographics</h3>
-                <p><strong>Age:</strong> ${demographics.age}</p>
-                <p><strong>Gender:</strong> ${demographics.gender}</p>
-                <p><strong>Education Level:</strong> ${demographics.educationLevel}</p>
-                <p><strong>Parental Status:</strong> ${demographics.parentalStatus}</p>
+                <h3>Demografia respondenta</h3>
+                <p><strong>Wiek:</strong> ${demographics.age}</p>
+                <p><strong>Płeć:</strong> ${demographics.gender}</p>
+                <p><strong>Poziom edukacji:</strong> ${demographics.educationLevel}</p>
+                <p><strong>Status rodzicielski:</strong> ${demographics.parentalStatus}</p>
             </div>
         `;
         
         // Create the transcript HTML
         const transcriptHtml = `
             <div class="chat-transcript">
-                <h3>Chat Transcript</h3>
+                <h3>Transkrypt chatu</h3>
                 ${fullResponse.map(message => `
                     <div class="chat-message ${message.sender.toLowerCase()}">
                         <strong>${message.sender}:</strong> ${message.text}
@@ -149,5 +154,50 @@ document.addEventListener('DOMContentLoaded', function() {
             fullResponseModal.style.display = 'none';
         }
     });
+
+    openQuotesBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const goalId = this.getAttribute('data-goal');
+            fetch('/static/openQuotesContent.json')
+                .then(response => response.json())
+                .then(data => {
+                    const goalData = data[`goal${goalId}`];
+                    if (goalData) {
+                        let contentHtml = `<h3>${goalData.question}</h3>`;
+                        goalData.quotes.forEach(quote => {
+                            contentHtml += `
+                                <div class="quote-box">
+                                    <p>${quote.text}</p>
+                                    <button class="view-full-response-btn" data-response-id="${quote.responseId}">Zobacz całą odpowiedź</button>
+                                </div>
+                            `;
+                        });
+                        quotesContent.innerHTML = contentHtml;
+                        quotesModal.style.display = 'block';
+
+                        // Add event listeners to the new "Zobacz całą odpowiedź" buttons
+                        const viewFullResponseBtns = quotesContent.querySelectorAll('.view-full-response-btn');
+                        viewFullResponseBtns.forEach(btn => {
+                            btn.addEventListener('click', function() {
+                                const responseId = this.getAttribute('data-response-id');
+                                fetchFullResponse(responseId);
+                            });
+                        });
+                    }
+                })
+                .catch(error => console.error('Error fetching quotes:', error));
+        });
+    });
+
+    quotesClose.addEventListener('click', function() {
+        quotesModal.style.display = 'none';
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target == quotesModal) {
+            quotesModal.style.display = 'none';
+        }
+    });
+
 }
 );

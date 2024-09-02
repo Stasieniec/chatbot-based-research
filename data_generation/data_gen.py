@@ -6,7 +6,7 @@ def set_plot_style():
     plt.rcParams['font.sans-serif'] = ['Arial']
     plt.rcParams['font.family'] = 'sans-serif'
 
-def generate_likert_data(size=250, loc=3, scale=1):
+def generate_likert_data(size=300, loc=2, scale=1):
     np.random.seed(42)
     data = np.random.normal(loc=loc, scale=scale, size=size)
     return np.clip(data, 0, 4).round().astype(int)
@@ -21,8 +21,8 @@ def plot_likert_scale(data):
     fig, ax = plt.subplots(figsize=(10, 6))
     bars = ax.bar(likert_options, counts, color='#3498db', edgecolor='none', width=0.6)
 
-    ax.set_xlabel('Response Options', fontsize=12, labelpad=10)
-    ax.set_ylabel('Number of Responses', fontsize=12, labelpad=10)
+    ax.set_xlabel('Opcje odpowiedzi', fontsize=12, labelpad=10)
+    ax.set_ylabel('Liczba odpowiedzi', fontsize=12, labelpad=10)
     ax.tick_params(axis='both', which='major', labelsize=10)
     ax.spines['top'].set_visible(False)
     ax.spines['right'].set_visible(False)
@@ -66,22 +66,28 @@ def plot_three_category_distribution(category_names, sizes, colors):
     plt.show()
 
 
-def generate_integer_normal_data(size=250, mean=5, std_dev=3):
+def generate_integer_normal_data(size=300, mean=10, std_dev=4, zero_boost=20):
     np.random.seed(42)
     data = np.random.normal(loc=mean, scale=std_dev, size=size)
-    return np.maximum(0, np.round(data)).astype(int)
+    data = np.maximum(0, np.round(data)).astype(int)
+    
+    # Add extra zeros
+    #zeros = np.zeros(zero_boost, dtype=int)
+    #data = np.concatenate((data, zeros))
+    
+    np.random.shuffle(data)
+    return data
 
-
-def  plot_integer_distribution(data):
+def plot_integer_distribution(data):
     set_plot_style()
     
     fig, ax = plt.subplots(figsize=(10, 6))
     
     # Calculate the range for the bins
-    min_val, max_val = max(0, min(data)), max(data)
+    min_val, max_val = 0, max(data)
     bins = range(min_val, max_val + 2)  # +2 to include the max value
     
-    ax.hist(data, bins=bins, align='left', rwidth=0.8, color='#3498db', edgecolor='none')
+    counts, edges, _ = ax.hist(data, bins=bins, align='left', rwidth=0.8, color='#3498db', edgecolor='none')
     
     ax.set_xlabel('Wartość', fontsize=12, labelpad=10)
     ax.set_ylabel('Częstotliwość', fontsize=12, labelpad=10)
@@ -104,7 +110,7 @@ def  plot_integer_distribution(data):
 
 # To generate three-category distribution plot
 category_names = ['Podstawowe', 'Średnie', 'Wyższe']
-sizes = [38, 109, 103]  # Adjusted to sum up to 250
+sizes = [38, 97, 165]  # Adjusted to sum up to 250
 colors = ['#3498db', '#e74c3c', '#2ecc71']
 
 
@@ -114,8 +120,8 @@ colors = ['#3498db', '#e74c3c', '#2ecc71']
 #integer_data = generate_integer_normal_data(mean=5, std_dev=3)
 #plot_integer_distribution(integer_data)
 
-likert_data = generate_likert_data()
-plot_likert_scale(likert_data)
+#likert_data = generate_likert_data()
+#plot_likert_scale(likert_data)
 
-integer_data = generate_integer_normal_data()
+integer_data = generate_integer_normal_data(mean=98, std_dev=30, zero_boost=5)
 plot_integer_distribution(integer_data)

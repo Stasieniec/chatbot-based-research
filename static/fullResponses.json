@@ -4,9 +4,9 @@
       "id": "jakosc_transportu_10",
       "demographics": {
         "age": 43,
-        "gender": "Female",
-        "educationLevel": "Secondary",
-        "parentalStatus": "Not Parent"
+        "gender": "Kobieta",
+        "educationLevel": "Średnia",
+        "parentalStatus": "Nie posiada dzieci"
       },
       "transcript": [
         {
@@ -153,9 +153,9 @@
       "id": "jakosc_transportu_1",
       "demographics": {
         "age": 34,
-        "gender": "Female",
-        "educationLevel": "Secondary",
-        "parentalStatus": "Parent"
+        "gender": "Kobieta",
+        "educationLevel": "Średnia",
+        "parentalStatus": "Posiada dzieci"
       },
       "transcript": [
         {
@@ -192,7 +192,7 @@
         },
         {
           "sender": "Bot",
-          "text": "To dobra sugestia! Przejdźmy teraz do stanu dróg. Jak oceniasz obecny stan dróg w Twojej okolicy?"
+          "text": "Okej. Przejdźmy teraz do stanu dróg. Jak oceniasz obecny stan dróg w Twojej okolicy?"
         },
         {
           "sender": "Human",
@@ -277,9 +277,9 @@
       "id": "jakosc_transportu_2",
       "demographics": {
         "age": 45,
-        "gender": "Male",
-        "educationLevel": "Higher",
-        "parentalStatus": "Parent"
+        "gender": "Mężczyzna",
+        "educationLevel": "Wyższa",
+        "parentalStatus": "Posiada dzieci"
       },
       "transcript": [
         {
@@ -400,9 +400,9 @@
       "id": "jakosc_transportu_3",
       "demographics": {
         "age": 35,
-        "gender": "Female",
-        "educationLevel": "Secondary",
-        "parentalStatus": "Parent"
+        "gender": "Kobieta",
+        "educationLevel": "Średnia",
+        "parentalStatus": "Posiada dzieci"
       },
       "transcript": [
         {
@@ -463,7 +463,15 @@
         },
         {
           "sender": "Bot",
-          "text": "To ważna uwaga. Jak oceniasz liczbę miejsc parkingowych w centrum miasta?"
+          "text": "To ważna uwaga. Czy masz na myśli jakieś konkretne miejsca?"
+        },
+        {
+          "sender": "Human",
+          "text": "Tak, zwłaszcza przy osiedlach, na przykład przy ulicy Kochanowskiego."
+        },
+        {
+          "sender": "Bot",
+          "text": "Dziękuję. A jak oceniasz liczbę miejsc parkingowych w centrum miasta?"
         },
         {
           "sender": "Human",
@@ -524,9 +532,9 @@
       "id": "jakosc_transportu_4",
       "demographics": {
         "age": 42,
-        "gender": "Male",
-        "educationLevel": "Higher",
-        "parentalStatus": "Not Parent"
+        "gender": "Mężczyzna",
+        "educationLevel": "Wyższa",
+        "parentalStatus": "Nie posiada dzieci"
       },
       "transcript": [
         {
@@ -663,9 +671,9 @@
       "id": "jakosc_transportu_5",
       "demographics": {
         "age": 34,
-        "gender": "Female",
-        "educationLevel": "Secondary",
-        "parentalStatus": "Parent"
+        "gender": "Kobieta",
+        "educationLevel": "Średnia",
+        "parentalStatus": "Posiada dzieci"
       },
       "transcript": [
         {
@@ -771,9 +779,9 @@
       "id": "jakosc_transportu_6",
       "demographics": {
         "age": 65,
-        "gender": "Male",
-        "educationLevel": "Higher",
-        "parentalStatus": "Parent"
+        "gender": "Mężczyzna",
+        "educationLevel": "Wyższa",
+        "parentalStatus": "Posiada dzieci"
       },
       "transcript": [
         {
@@ -879,9 +887,9 @@
       "id": "jakosc_transportu_7",
       "demographics": {
         "age": 32,
-        "gender": "Male",
-        "educationLevel": "Higher",
-        "parentalStatus": "Parent"
+        "gender": "Mężczyzna",
+        "educationLevel": "Wyższa",
+        "parentalStatus": "Posiada dzieci"
       },
       "transcript": [
         {
@@ -987,9 +995,9 @@
       "id": "jakosc_transportu_8",
       "demographics": {
         "age": 24,
-        "gender": "Female",
-        "educationLevel": "Higher",
-        "parentalStatus": "Not Parent"
+        "gender": "Kobieta",
+        "educationLevel": "Wyższa",
+        "parentalStatus": "Nie posiada dzieci"
       },
       "transcript": [
         {
@@ -1095,9 +1103,9 @@
       "id": "jakosc_transportu_9",
       "demographics": {
         "age": 38,
-        "gender": "Male",
-        "educationLevel": "Higher",
-        "parentalStatus": "Parent"
+        "gender": "Mężczyzna",
+        "educationLevel": "Wyższa",
+        "parentalStatus": "Posiada dzieci"
       },
       "transcript": [
         {
@@ -1220,9 +1228,9 @@
       "id": "jakosc_transportu_11",
       "demographics": {
         "age": 67,
-        "gender": "Male",
-        "educationLevel": "Higher",
-        "parentalStatus": "Parent"
+        "gender": "Mężczyzna",
+        "educationLevel": "Wyższa",
+        "parentalStatus": "Posiada dzieci"
       },
       "transcript": [
         {
@@ -1345,9 +1353,9 @@
       "id": "jakosc_transportu_12",
       "demographics": {
         "age": 40,
-        "gender": "Female",
-        "educationLevel": "Secondary",
-        "parentalStatus": "Not Parent"
+        "gender": "Kobieta",
+        "educationLevel": "Średnia",
+        "parentalStatus": "Nie posiada dzieci"
       },
       "transcript": [
         {

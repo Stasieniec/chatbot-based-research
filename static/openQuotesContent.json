@@ -1,0 +1,222 @@
+{
+    "goal1": {
+      "question": "Jaką zmianę zasugerowałbyś/sugerowałabyś dla obecnego stanu transportu publicznego?",
+      "quotes": [
+        {
+          "text": "Poprawa kursowania autobusów wieczorem.",
+          "responseId": "jakosc_transportu_10"
+        },
+        {
+            "text": "Zwiększenie ilości kursów, zwłaszcza wieczorami",
+            "responseId": "jakosc_transportu_1"
+        },
+        {
+            "text": "Zwiększenie czystości w autobusach",
+            "responseId": "jakosc_transportu_2"
+        },
+        {
+            "text": "Bardziej skuteczne aktualizacje rozkładu jazdy",
+            "responseId": "jakosc_transportu_3"
+        },
+        {
+            "text": "Lepsze rozplanowanie kursów w godzinach wieczornych",
+            "responseId": "jakosc_transportu_4"
+        },
+        {
+            "text": "Bardziej skuteczne aktualizacje rozkładu jazdy",
+            "responseId": "jakosc_transportu_5"
+        },
+        {
+            "text": "Częstsze kursy w godzinach wieczornych",
+            "responseId": "jakosc_transportu_6"
+        },
+        {
+            "text": "Częstsze kursy w godzinach wieczornych",
+            "responseId": "jakosc_transportu_7"
+        },
+        {
+            "text": "Więcej informacji o zmianach w rozkładzie",
+            "responseId": "jakosc_transportu_8"
+        },
+        {
+            "text": "Więcej kursów wieczorem",
+            "responseId": "jakosc_transportu_9"
+        },
+        {
+            "text": "Bardziej skuteczne aktualizacje rozkładu jazdy",
+            "responseId": "jakosc_transportu_11"
+        },
+        {
+            "text": "Częstsze kursy w godzinach wieczornych",
+            "responseId": "jakosc_transportu_12"
+        }
+      ]
+    },
+
+
+
+    "goal2": {
+      "question": "Czy są miejsca, gdzie bezpieczeństwo na drogach powinno zostać poprawione?",
+      "quotes": [
+        {
+          "text": "Przy szkołach.",
+          "responseId": "jakosc_transportu_10"
+        },
+        {
+            "text": "Lepsze oświetlenie dróg na osiedlach",
+            "responseId": "jakosc_transportu_1"
+        },
+        {
+            "text": "Zwiększenie ilości odpowiednich znaków przy skrzyżowaniach",
+            "responseId": "jakosc_transportu_2"
+        },
+        {
+            "text": "Lepsze oświetlenie dróg na osiedlach, na przykład przy ulicy Kochanowskiego",
+            "responseId": "jakosc_transportu_3"
+        },
+        {
+            "text": "Zwiększenie odpowiednich oznaczeń przy skrzyżowaniach",
+            "responseId": "jakosc_transportu_4"
+        },
+        {
+            "text": "Więcej miejsc dla rowerów",
+            "responseId": "jakosc_transportu_5"
+        },
+        {
+            "text": "Lepsze oświetlenie przy przejściach dla pieszych",
+            "responseId": "jakosc_transportu_6"
+        },
+        {
+            "text": "Lepsze oznakowanie i oświetlenie przy przedszkolach",
+            "responseId": "jakosc_transportu_7"
+        },
+        {
+            "text": "Lepsze oznaczenia na skrzyżowaniach dla pieszych i rowerzystów",
+            "responseId": "jakosc_transportu_8"
+        },
+        {
+            "text": "Lepsze oznakowanie i oświetlenie przy szkołach",
+            "responseId": "jakosc_transportu_9"
+        },
+        {
+            "text": "Lepsze oznakowanie i oświetlenie przy szkołach",
+            "responseId": "jakosc_transportu_11"
+        },
+        {
+            "text": "Zwiększenie odpowiednich oznaczeń przy skrzyżowaniach",
+            "responseId": "jakosc_transportu_12"
+        }
+      ]
+    },
+
+
+
+    "goal3": {
+      "question": "Jakie zmiany mogłyby poprawić sytuację parkingową w Twojej okolicy?",
+      "quotes": [
+        {
+          "text": "Zwiększenie liczby miejsc.",
+          "responseId": "jakosc_transportu_10"
+        },
+        {
+            "text": "Więcej miejsc parkingowych dla mieszkańców, zwłaszcza nocą.",
+            "responseId": "jakosc_transportu_1"
+        },
+        {
+            "text": "Budowa parkingów piętrowych",
+            "responseId": "jakosc_transportu_2"
+        },
+        {
+            "text": "Zwiększenie liczby miejsc.",
+            "responseId": "jakosc_transportu_3"
+        },
+        {
+            "text": "Obniżenie cen parkingów",
+            "responseId": "jakosc_transportu_4"
+        },
+        {
+            "text": "Więcej miejsc parkingowych dla rowerów",
+            "responseId": "jakosc_transportu_5"
+        },
+        {
+            "text": "Więcej miejsc parkingowych dla rowerów",
+            "responseId": "jakosc_transportu_6"
+        },
+        {
+            "text": "Obniżenie cen parkingów",
+            "responseId": "jakosc_transportu_7"
+        },
+        {
+            "text": "Budowa parkingów piętrowych",
+            "responseId": "jakosc_transportu_8"
+        },
+        {
+            "text": "Więcej miejsc parkingowych na rowery blisko sklepów i uczelni.",
+            "responseId": "jakosc_transportu_8"
+        },
+        {
+            "text": "Więcej parkingów dla mieszkańcow",
+            "responseId": "jakosc_transportu_9"
+        },
+        {
+            "text": "Miejsca parkingowe na obrzeżach miasta z dojazdem do centrum",
+            "responseId": "jakosc_transportu_10"
+        },
+        {
+            "text": "Więcej miejsc parkingowych dla rowerów",
+            "responseId": "jakosc_transportu_12"
+        }
+      ]
+    },
+
+
+
+
+
+    "goal4": {
+      "question": "Jakie działania mogłyby poprawić warunki drogowe w zimie?",
+      "quotes": [
+        {
+          "text": "Zwiększenie częstotliwości posypywania.",
+          "responseId": "jakosc_transportu_10"
+        },
+        {
+            "text": "Szybsze działanie przy odśnieżaniu",
+            "responseId": "jakosc_transportu_1"
+        },
+        {
+            "text": "Szybsze posypywanie dróg piaskiem",
+            "responseId": "jakosc_transportu_2"
+        },
+        {
+            "text": "Szybsze działanie przy odśnieżaniu",
+            "responseId": "jakosc_transportu_3"
+        },
+        {
+            "text": "Dokładniejsze odśnieżanie",
+            "responseId": "jakosc_transportu_4"
+        },
+        {
+            "text": "Dokładniejsze odśnieżanie",
+            "responseId": "jakosc_transportu_6"
+        },
+        {
+            "text": "Odśnieżanie chodników na bierząco",
+            "responseId": "jakosc_transportu_8"
+        },
+        {
+            "text": "Lepiej odśnieżone chodniki i przejścia dla pieszych",
+            "responseId": "jakosc_transportu_9"
+        },
+        {
+            "text": "Lepsza koordynacja służb odśnieżających",
+            "responseId": "jakosc_transportu_11"
+        },
+        {
+            "text": "Szybsze posypywanie chodników",
+            "responseId": "jakosc_transportu_12"
+        }
+        
+      ]
+    }
+  }

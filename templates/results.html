@@ -17,9 +17,10 @@
 
                 <!-- Left Column -->
                 <div class="col-md-6 form-section w-1/2" id="form-section">
-                    <h2 class="mt-5 text-2xl py-5">Results</h2>
+                    <h2 class="mt-5 text-2xl py-5">Wyniki</h2>
                     <!-- Template for Goal Results -->
                     <div class="goal-results">
+
                         <!-- Goal 1 -->
                         <div class="goal-result mb-4">
                             <h3 class="goal-title text-xl mb-2">Jakoś komunikacji miejskiej</h3>
@@ -33,16 +34,17 @@
                             <div class="metric-results">
                                 <h4 class="metric-result-title text-lg mb-2"><b>Skala Likerta: </b>Jak oceniasz jakość komunikacji miejskiej</h4>
                                 <div class="metric-image-container">
-                                    <img src="{{ url_for('static', filename='plots/komunikacja.png') }}" alt="Metric Result 1" class="metric-image mb-4">
+                                    <img src="{{ url_for('static', filename='plots/likert_goal2.png') }}" alt="Metric Result 1" class="metric-image mb-4">
                                 </div>
                             <h4 class="metric-result-title text-lg mb-2"><b>Wartość Liczbowa: </b>Ile razy w tygodniu korzystasz z transportu publicznego?</h4>
                             <div class="metric-image-container">
-                                <img src="{{ url_for('static', filename='plots/komunikacja_liczba.png') }}" alt="Metric Result 1" class="metric-image mb-4">
+                                <img src="{{ url_for('static', filename='plots/num_komunikacja.png') }}" alt="Metric Result 1" class="metric-image mb-4">
                             </div>
                             <h4 class="metric-result-title text-lg mb-2"><b>Pytanie Otwarte: </b>Jaką zmianę zasugerowałbyś/sugerowałabyś dla obecnego stanu transportu publicznego?</h4>
-                            
+                            <button class="open-quotes-btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" data-goal="1">Zobacz odpowiedzi</button>                            
                             </div>
                         </div>
+
                         <!-- Goal 2 -->
                         <div class="goal-result mb-4">
                             <h3 class="goal-title text-xl mb-2">Infrastruktura drogowa i zarządzanie ruchem</h3>
@@ -56,13 +58,14 @@
                             <div class="metric-results">
                                 <h4 class="metric-result-title text-lg mb-2"><b>Skala Likerta: </b>Jak oceniasz obecny stan dróg w Twojej okolicy?</h4>
                                 <div class="metric-image-container">
-                                    <img src="{{ url_for('static', filename='plots/komunikacja.png') }}" alt="Metric Result 1" class="metric-image mb-4">
+                                    <img src="{{ url_for('static', filename='plots/likert_goal2.png') }}" alt="Metric Result 1" class="metric-image mb-4">
                                 </div>
                                 <h4 class="metric-result-title text-lg mb-2"><b>Wartość Liczbowa: </b>Ile godzin tygodniowo średnio tracisz z powodu korków?</h4>
                                 <div class="metric-image-container">
-                                    <img src="{{ url_for('static', filename='plots/komunikacja_liczba.png') }}" alt="Metric Result 1" class="metric-image mb-4">
+                                    <img src="{{ url_for('static', filename='plots/num_goal2.png') }}" alt="Metric Result 1" class="metric-image mb-4">
                                 </div>
                                 <h4 class="metric-result-title text-lg mb-2"><b>Pytanie Otwarte: </b>Czy są miejsca, gdzie bezpieczeństwo na drogach powinno zostać poprawione?</h4>
+                                <button class="open-quotes-btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" data-goal="2">Zobacz odpowiedzi</button>
                             </div>
                         </div>
                         <!-- Goal 3 -->
@@ -78,13 +81,14 @@
                             <div class="metric-results">
                                 <h4 class="metric-result-title text-lg mb-2"><b>Skala Likerta: </b>Jak oceniasz liczbę miejsc parkingowych w centrum miasta</h4>
                                 <div class="metric-image-container">
-                                    <img src="{{ url_for('static', filename='plots/komunikacja.png') }}" alt="Metric Result 1" class="metric-image mb-4">
+                                    <img src="{{ url_for('static', filename='plots/likert_goal3.png') }}" alt="Metric Result 1" class="metric-image mb-4">
                                 </div>
                                 <h4 class="metric-result-title text-lg mb-2"><b>Wartość Liczbowa: </b>Jak daleko (w metrach) zazwyczaj parkujesz od celu podróży?</h4>
                                 <div class="metric-image-container">
-                                    <img src="{{ url_for('static', filename='plots/komunikacja_liczba.png') }}" alt="Metric Result 1" class="metric-image mb-4">
+                                    <img src="{{ url_for('static', filename='plots/num_goal3.png') }}" alt="Metric Result 1" class="metric-image mb-4">
                                 </div>
                                 <h4 class="metric-result-title text-lg mb-2"><b>Pytanie Otwarte: </b>Jakie zmiany mogłyby poprawić sytuację parkingową w Twojej okolicy?</h4>
+                                <button class="open-quotes-btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" data-goal="3">Zobacz odpowiedzi</button>
                             </div>
                         </div>
 
@@ -101,41 +105,42 @@
                             <div class="metric-results">
                                 <h4 class="metric-result-title text-lg mb-2"><b>Skala Likerta: </b>Jak oceniasz stan dróg w Twojej okolicy podczas zimy?</h4>
                                 <div class="metric-image-container">
-                                    <img src="{{ url_for('static', filename='plots/komunikacja.png') }}" alt="Metric Result 1" class="metric-image mb-4">
+                                    <img src="{{ url_for('static', filename='plots/likert_goal4.png') }}" alt="Metric Result 1" class="metric-image mb-4">
                                 </div>
                                 <h4 class="metric-result-title text-lg mb-2"><b>Wartość Liczbowa: </b>Ile razy tej zimy doświadczyłeś/łaś problemów z poruszaniem się po mieście przez śnieg lub lód?</h4>
                                 <div class="metric-image-container">
-                                    <img src="{{ url_for('static', filename='plots/komunikacja_liczba.png') }}" alt="Metric Result 1" class="metric-image mb-4">
+                                    <img src="{{ url_for('static', filename='plots/num_goal4.png') }}" alt="Metric Result 1" class="metric-image mb-4">
                                 </div>
                                 <h4 class="metric-result-title text-lg mb-2"><b>Pytanie Otwarte: </b>Jakie działania mogłyby poprawić warunki drogowe w zimie?</h4>
+                                <button class="open-quotes-btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" data-goal="4">Zobacz odpowiedzi</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Right Column -->
-                <div class="col-md-6 w-1/2 right-col">
-                    <h2 class="mt-5 text-2xl py-5">Respondents</h2>
+                <div class="col-md-6 w-1/2 right-col right-results">
+                    <h2 class="mt-5 text-2xl py-5 respondenci">Respondenci</h2>
                     <div class="form-group mb-4">
-                        <label>Total number of respondents</label>
+                        <label>Liczba respondentów</label>
                         <h3 class="demo-title text-xl mb-2">300</h3>
                     </div>
                     <div class="form-group mb-4">
-                        <label>Gender</label>
+                        <label>Płeć</label>
                         <div class="metric-image-container">
                             <img src="{{ url_for('static', filename='plots/gender.png') }}" alt="Metric Result 1" class="metric-image mb-4 w-1/2 h-auto">
                         </div>
                         <h3 class="demo-title text-xl mb-2">Mężczyźni: 165        Kobiety: 135</h3>
                     </div>    
                     <div class="form-group mb-4">
-                        <label>Education of participants</label>
+                        <label>Poziom edukacji</label>
                         <div class="metric-image-container">
                             <img src="{{ url_for('static', filename='plots/education.png') }}" alt="Metric Result 1" class="metric-image mb-4 w-1/2 h-auto">
                         </div>
                         <h3 class="demo-title text-xl mb-2">Podstawowa: 38       Middle: 97        Higher: 165</h3>
                     </div>  
                     <div class="form-group mb-4">
-                        <label>Parental situation</label>
+                        <label>Rodzice</label>
                         <div class="metric-image-container">
                             <img src="{{ url_for('static', filename='plots/parent.png') }}" alt="Metric Result 1" class="metric-image mb-4 w-1/2 h-auto">
                         </div>
@@ -149,8 +154,8 @@
         <div id="wordCloudModal" class="word-cloud-modal">
             <div class="word-cloud-modal-content">
                 <span class="word-cloud-close">&times;</span>
-                <h2>Word Cloud Details</h2>
-                <p>AI-generated summary</p>
+                <h2>Inspekcja tematu</h2>
+                <p>Opis wygenerowany przez AI</p>
                 <div class="scrollable-content">
                     <!-- Content will be dynamically inserted here -->
                 </div>
@@ -160,11 +165,11 @@
         <div id="fullResponseModal" class="full-response-modal">
             <div class="full-response-modal-content">
                 <span class="full-response-close">&times;</span>
-                <h2>Full Response</h2>
+                <h2>Cała odpowiedź</h2>
                 <div class="full-response-content">
                     <!-- Demographics and full response content will be inserted here -->
                 </div>
-                <button class="go-back-btn">Go Back</button>
+                <button class="go-back-btn">Wróć</button>
             </div>
         </div>
 
@@ -172,6 +177,17 @@
         <div id="plotModal" class="plot-modal">
             <span class="plot-modal-close">&times;</span>
             <img class="plot-modal-content" id="plotModalImg">
+        </div>
+
+
+        <div id="quotesModal" class="quotes-modal">
+            <div class="quotes-modal-content">
+                <span class="quotes-close">&times;</span>
+                <h2>Odpowiedzi na pytanie otwarte</h2>
+                <div class="scrollable-content">
+                    <!-- Content will be dynamically inserted here -->
+                </div>
+            </div>
         </div>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
