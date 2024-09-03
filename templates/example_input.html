@@ -7,83 +7,106 @@
         <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css">
         <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-        <title>Tworzenie badania</title>
+        <title>Example Use of Form Page</title>
     </head>
     <body class="text-center">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
         <div class="container mx-auto">
-            <h1 class="mt-5 text-4xl py-5">Tworzenie badania</h1> <!-- Updated title -->
-            <div class="row flex items-start"> <!-- Added items-start class -->
+            <h1 class="mt-5 text-4xl py-5">Example Use of Form Page</h1>
+            <div class="row flex items-start">
                 <!-- Left Column -->
                 <div class="col-md-6 form-section w-1/2" id="form-section">
+                    <!-- Goal 1 -->
                     <div class="form-group mb-4 bg-gray-200 rounded p-4">
                         <div class="form-group-title flex items-center mb-2">
-                            <h5 class="flex-1 m-0">Customer Satisfaction</h5>
+                            <h5 class="flex-1 m-0">Goal 1</h5>
                         </div>
                         <label class="goal-label text-left">Goal description</label>
-                        <textarea class="form-control w-full h-20 text-base" readonly>Measure overall customer satisfaction with our product</textarea>
-                        <label class="metrics-label text-left mt-4">Miary</label>
+                        <textarea class="form-control w-full h-20 text-base" placeholder="Goal description">Description for Goal 1</textarea>
+                        <label class="metrics-label text-left mt-4">Measures</label>
                         <div class="metric-titles">
                             <div class="metric-title flex items-center justify-between mt-2">
-                                <span class="flex-1 metric-title">Overall Satisfaction</span>
-                                <button class="btn btn-view bg-blue-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMeasure('Customer Satisfaction', 'Overall Satisfaction')">zobacz</button>
+                                <span class="flex-1 metric-title">Likert Scale</span>
+                                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMetric('likert')">view</button>
                             </div>
                             <div class="metric-title flex items-center justify-between mt-2">
-                                <span class="flex-1 metric-title">Ease of Use</span>
-                                <button class="btn btn-view bg-blue-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMeasure('Customer Satisfaction', 'Ease of Use')">zobacz</button>
+                                <span class="flex-1 metric-title">Numeric Value</span>
+                                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMetric('numeric')">view</button>
                             </div>
                             <div class="metric-title flex items-center justify-between mt-2">
-                                <span class="flex-1 metric-title">Value for Money</span>
-                                <button class="btn btn-view bg-blue-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMeasure('Customer Satisfaction', 'Value for Money')">zobacz</button>
-                            </div>
-                            <div class="metric-title flex items-center justify-between mt-2">
-                                <span class="flex-1 metric-title">Open Feedback</span>
-                                <button class="btn btn-view bg-blue-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMeasure('Customer Satisfaction', 'Open Feedback')">zobacz</button>
+                                <span class="flex-1 metric-title">Open Question</span>
+                                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMetric('open')">view</button>
                             </div>
                         </div>
                     </div>
+                    <!-- Goal 2 -->
                     <div class="form-group mb-4 bg-gray-200 rounded p-4">
                         <div class="form-group-title flex items-center mb-2">
-                            <h5 class="flex-1 m-0">Product Features</h5>
-                            <button class="btn btn-view bg-blue-500 text-white px-2 py-1 ml-2 rounded" onclick="viewGoal(this)">zobacz</button>
+                            <h5 class="flex-1 m-0">Goal 2</h5>
                         </div>
                         <label class="goal-label text-left">Goal description</label>
-                        <textarea class="form-control w-full h-20 text-base" readonly>Evaluate the usefulness of new product features</textarea>
-                        <label class="metrics-label text-left mt-4">Miary</label>
+                        <textarea class="form-control w-full h-20 text-base" placeholder="Goal description">Description for Goal 2</textarea>
+                        <label class="metrics-label text-left mt-4">Measures</label>
                         <div class="metric-titles">
                             <div class="metric-title flex items-center justify-between mt-2">
-                                <span class="flex-1 metric-title">Feature A Usefulness</span>
+                                <span class="flex-1 metric-title">Likert Scale</span>
+                                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMetric('likert')">view</button>
                             </div>
                             <div class="metric-title flex items-center justify-between mt-2">
-                                <span class="flex-1 metric-title">Feature B Usefulness</span>
+                                <span class="flex-1 metric-title">Numeric Value</span>
+                                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMetric('numeric')">view</button>
                             </div>
                             <div class="metric-title flex items-center justify-between mt-2">
-                                <span class="flex-1 metric-title">Open Feedback</span>
+                                <span class="flex-1 metric-title">Open Question</span>
+                                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMetric('open')">view</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Goal 3 -->
+                    <div class="form-group mb-4 bg-gray-200 rounded p-4">
+                        <div class="form-group-title flex items-center mb-2">
+                            <h5 class="flex-1 m-0">Goal 3</h5>
+                        </div>
+                        <label class="goal-label text-left">Goal description</label>
+                        <textarea class="form-control w-full h-20 text-base" placeholder="Goal description">Description for Goal 3</textarea>
+                        <label class="metrics-label text-left mt-4">Measures</label>
+                        <div class="metric-titles">
+                            <div class="metric-title flex items-center justify-between mt-2">
+                                <span class="flex-1 metric-title">Likert Scale</span>
+                                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMetric('likert')">view</button>
+                            </div>
+                            <div class="metric-title flex items-center justify-between mt-2">
+                                <span class="flex-1 metric-title">Numeric Value</span>
+                                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMetric('numeric')">view</button>
+                            </div>
+                            <div class="metric-title flex items-center justify-between mt-2">
+                                <span class="flex-1 metric-title">Open Question</span>
+                                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMetric('open')">view</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Right Column -->
-                <div class="col-md-6 w-1/2 right-col"> <!-- Removed margin-top class -->
+                <div class="col-md-6 w-1/2 right-col">
                     <div class="form-group mb-4">
                         <label for="ageRange">Zakres wiekowy</label>
                         <div id="ageRangeSlider" class="w-full h-5"></div>
-                        <p>Wybrany zakres wiekowy: <span id="ageRangeDisplay">20 - 50</span></p>
+                        <p>Wybrany zakres wiekowy: <span id="ageRangeDisplay">30 - 60</span></p>
                     </div>
                     <div class="form-group mb-4">
                         <label for="numberInput">Ilość respondentów</label>
-                        <input type="number" class="form-control w-full" id="numberInput" min="1">
+                        <input type="number" class="form-control w-full" id="numberInput" min="1" value="100">
                     </div>
                     <div class="form-group mb-4">
                         <label for="numberInput">Płeć respondentów</label>
                         <div class="checkbox-group">
                             <div class="form-check flex items-center">
-                                <input class="form-check-input mr-2" type="checkbox" id="checkbox1">
+                                <input class="form-check-input mr-2" type="checkbox" id="checkbox1" checked>
                                 <label class="form-check-label" for="checkbox1">Mężczyźni</label>
                             </div>
                             <div class="form-check flex items-center">
-                                <input class="form-check-input mr-2" type="checkbox" id="checkbox2">
+                                <input class="form-check-input mr-2" type="checkbox" id="checkbox2" checked>
                                 <label class="form-check-label" for="checkbox2">Kobiety</label>
                             </div>
                         </div>
@@ -92,15 +115,15 @@
                         <label for="numberInput">Poziom wykrztałcenia respondentów</label>
                         <div class="checkbox-group">
                             <div class="form-check flex items-center">
-                                <input class="form-check-input mr-2" type="checkbox" id="checkbox1">
+                                <input class="form-check-input mr-2" type="checkbox" id="checkbox1" checked>
                                 <label class="form-check-label" for="checkbox1">Podstawowe</label>
                             </div>
                             <div class="form-check flex items-center">
-                                <input class="form-check-input mr-2" type="checkbox" id="checkbox2">
+                                <input class="form-check-input mr-2" type="checkbox" id="checkbox2" checked>
                                 <label class="form-check-label" for="checkbox2">Średnie</label>
                             </div>
                             <div class="form-check flex items-center">
-                                <input class="form-check-input mr-2" type="checkbox" id="checkbox3">
+                                <input class="form-check-input mr-2" type="checkbox" id="checkbox3" checked>
                                 <label class="form-check-label" for="checkbox3">Wyższe</label>
                             </div>
                         </div>
@@ -109,18 +132,18 @@
                         <label for="numberInput">Posiadanie dzieci</label>
                         <div class="checkbox-group">
                             <div class="form-check flex items-center">
-                                <input class="form-check-input mr-2" type="checkbox" id="checkbox1">
+                                <input class="form-check-input mr-2" type="checkbox" id="checkbox1" checked>
                                 <label class="form-check-label" for="checkbox1">Respondenci posiadający dzieci</label>
                             </div>
                             <div class="form-check flex items-center">
-                                <input class="form-check-input mr-2" type="checkbox" id="checkbox2">
+                                <input class="form-check-input mr-2" type="checkbox" id="checkbox2" checked>
                                 <label class="form-check-label" for="checkbox2">Respondenci nie posiadający dzieci</label>
                             </div>
                         </div>
                     </div>
                     <div class="form-group mb-4">
                         <label for="textarea">Dodatkowe instrukcje dla chatbota</label>
-                        <textarea class="form-control w-full h-32" id="textarea" rows="4" placeholder="Jak powinien zachowywać się chatbot w stosunku do respondentów? O czym powienine pamiętać, a na co powinien uważać?"></textarea>
+                        <textarea class="form-control w-full h-32" id="textarea" rows="4" placeholder="Jak powinien zachowywać się chatbot w stosunku do respondentów? O czym powienine pamiętać, a na co powinien uważać?">Chatbot should be polite and considerate. It should avoid sensitive topics and ensure respondents feel comfortable.</textarea>
                     </div>
                     <div class="form-group mb-4">
                         <button class="btn btn-draft bg-grey-500 text-white px-4 py-2 mr-2 rounded">Zapisz jako szkic</button>
@@ -134,53 +157,8 @@
         <div id="metricModal" class="modal">
             <div class="modal-content rounded">
                 <span class="close" onclick="closeMetricModal()">&times;</span>
-                <h2 class = "rounded">Add Metric</h2>
-                <div class="radio-group">
-                    <label><input type="radio" name="metricOption" value="likert"> Skala Likerta</label>
-                    <label><input type="radio" name="metricOption" value="option2"> Wartość liczbowa</label>
-                    <label><input type="radio" name="metricOption" value="option3"> Pytanie otwarte</label>
-                </div>
-                <div id="dynamic-likert" class="dynamic-content" style="display: none;">
-                    <label>Oznacznia dla stopni skali Likerta:</label>
-                    <div class="likert-labels">
-                        <div class="likert-label-item">
-                            <label>Bardzo negatywne:</label>
-                            <input type="text" class="form-control mt-2" placeholder="Bardzo źle">
-                        </div>
-                        <div class="likert-label-item">
-                            <label>Negatywne:</label>
-                            <input type="text" class="form-control mt-2" placeholder="Źle">
-                        </div>
-                        <div class="likert-label-item">
-                            <label>Neutralne:</label>
-                            <input type="text" class="form-control mt-2" placeholder="Neutralnie">
-                        </div>
-                        <div class="likert-label-item">
-                            <label>Pozytywne:</label>
-                            <input type="text" class="form-control mt-2" placeholder="Dobrze">
-                        </div>
-                        <div class="likert-label-item">
-                            <label>Bardzo pozytywne:</label>
-                            <input type="text" class="form-control mt-2" placeholder="Bardzo dobrze">
-                        </div>
-                    </div>
-                </div>
-                <div id="dynamic-option2" class="dynamic-content" style="display: none;">
-                    <input type="number" id="metricInput1" class="form-control mt-2" placeholder="Lewa granica przedziału">
-                    <input type="number" id="metricInput1" class="form-control mt-2" placeholder="Prawa granica przedziału">
-                </div>
-                <div id="dynamic-option3" class="dynamic-content" style="display: none;">
-                    <input type="text" id="metricInput1" class="form-control mt-2" placeholder="Wpisz pytanie">
-                </div>
-                <label for="metricTitle">Tytuł miary:</label>
-                <input type="text" id="metricTitle" class="form-control mt-2 metric-titles" placeholder="Tytuł miary">
-                <button class="btn btn-primary mt-2 rounded" onclick="saveMetric()">OK</button>
-            </div>
-        </div>
-
-        <div id="metricModal" class="modal">
-            <div class="modal-content rounded">
-                <!-- Content will be dynamically inserted here -->
+                <h2 class="rounded">View Metric</h2>
+                <div id="metricContent"></div>
             </div>
         </div>
 
