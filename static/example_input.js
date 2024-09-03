@@ -29,11 +29,11 @@ function viewMetric(type) {
             </div>`;
     } else if (type === 'numeric') {
         metricContent.innerHTML = `
-            <input type="number" class="form-control mt-2" value="10" readonly>
-            <input type="number" class="form-control mt-2" value="100" readonly>`;
+            <input type="number" class="form-control mt-2" value="0" readonly>
+            <input type="number" class="form-control mt-2" value="1000" readonly>`;
     } else if (type === 'open') {
         metricContent.innerHTML = `
-            <input type="text" class="form-control mt-2" value="What is your opinion on the subject?" readonly>`;
+            <textarea class="form-control mt-2" rows="4" readonly>Jaka jest twoja opinia o ...</textarea>`;
     }
 
     document.getElementById('metricModal').style.display = "block";

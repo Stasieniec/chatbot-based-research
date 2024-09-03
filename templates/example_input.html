@@ -7,81 +7,104 @@
         <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css">
         <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-        <title>Example Use of Form Page</title>
+        <title>Przykładowe wypełnienie</title>
     </head>
     <body class="text-center">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
         <div class="container mx-auto">
-            <h1 class="mt-5 text-4xl py-5">Example Use of Form Page</h1>
+            <h1 class="mt-5 text-4xl py-5">Przykładowe tworzenie badania</h1>
             <div class="row flex items-start">
                 <!-- Left Column -->
                 <div class="col-md-6 form-section w-1/2" id="form-section">
                     <!-- Goal 1 -->
                     <div class="form-group mb-4 bg-gray-200 rounded p-4">
                         <div class="form-group-title flex items-center mb-2">
-                            <h5 class="flex-1 m-0">Goal 1</h5>
+                            <h5 class="flex-1 m-0">Jakość komunikacji miejskiej</h5>
                         </div>
-                        <label class="goal-label text-left">Goal description</label>
-                        <textarea class="form-control w-full h-20 text-base" placeholder="Goal description">Description for Goal 1</textarea>
-                        <label class="metrics-label text-left mt-4">Measures</label>
+                        <label class="goal-label text-left">Opis celu</label>
+                        <textarea class="form-control w-full h-20 text-base" placeholder="Goal description">Zbadaj co ludzie myślą o jakości komunikacji miejskiej.</textarea>
+                        <label class="metrics-label text-left mt-4">Miary</label>
                         <div class="metric-titles">
                             <div class="metric-title flex items-center justify-between mt-2">
-                                <span class="flex-1 metric-title">Likert Scale</span>
-                                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMetric('likert')">view</button>
+                                <span class="flex-1 metric-title">Jak oceniasz jakość komunikacji miejskiej?</span>
+                                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMetric('likert')">zobacz</button>
                             </div>
                             <div class="metric-title flex items-center justify-between mt-2">
-                                <span class="flex-1 metric-title">Numeric Value</span>
-                                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMetric('numeric')">view</button>
+                                <span class="flex-1 metric-title">Ile razy w tygodniu korzystasz z transportu publicznego?</span>
+                                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMetric('numeric')">zobacz</button>
                             </div>
                             <div class="metric-title flex items-center justify-between mt-2">
-                                <span class="flex-1 metric-title">Open Question</span>
-                                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMetric('open')">view</button>
+                                <span class="flex-1 metric-title">Jaką zmianę zasugerowałbyś/sugerowałabyś dla obecnego stanu transportu publicznego?</span>
+                                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMetric('open')">zobacz</button>
                             </div>
                         </div>
                     </div>
                     <!-- Goal 2 -->
                     <div class="form-group mb-4 bg-gray-200 rounded p-4">
                         <div class="form-group-title flex items-center mb-2">
-                            <h5 class="flex-1 m-0">Goal 2</h5>
+                            <h5 class="flex-1 m-0">Infrastruktura drogowa i zarządzanie ruchem</h5>
                         </div>
-                        <label class="goal-label text-left">Goal description</label>
-                        <textarea class="form-control w-full h-20 text-base" placeholder="Goal description">Description for Goal 2</textarea>
-                        <label class="metrics-label text-left mt-4">Measures</label>
+                        <label class="goal-label text-left">Opis celu</label>
+                        <textarea class="form-control w-full h-20 text-base" placeholder="Goal description">Zbadaj jak mieszkańcy odbierają jakość infrastruktury, zarządzania ruchem, a także bezpieczeństwo na drogach</textarea>
+                        <label class="metrics-label text-left mt-4">Miary</label>
                         <div class="metric-titles">
                             <div class="metric-title flex items-center justify-between mt-2">
-                                <span class="flex-1 metric-title">Likert Scale</span>
-                                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMetric('likert')">view</button>
+                                <span class="flex-1 metric-title">Jak oceniasz obecny stan dróg w Twojej okolicy?</span>
+                                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMetric('likert')">zobacz</button>
                             </div>
                             <div class="metric-title flex items-center justify-between mt-2">
-                                <span class="flex-1 metric-title">Numeric Value</span>
-                                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMetric('numeric')">view</button>
+                                <span class="flex-1 metric-title">Ile godzin tygodniowo średnio tracisz z powodu korków?</span>
+                                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMetric('numeric')">zobacz</button>
                             </div>
                             <div class="metric-title flex items-center justify-between mt-2">
-                                <span class="flex-1 metric-title">Open Question</span>
-                                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMetric('open')">view</button>
+                                <span class="flex-1 metric-title">Jaką zmianę zasugerowałbyś/sugerowałabyś aby poprawić bezpieczeństwo na drogach?</span>
+                                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMetric('open')">zobacz</button>
                             </div>
                         </div>
                     </div>
                     <!-- Goal 3 -->
                     <div class="form-group mb-4 bg-gray-200 rounded p-4">
                         <div class="form-group-title flex items-center mb-2">
-                            <h5 class="flex-1 m-0">Goal 3</h5>
+                            <h5 class="flex-1 m-0">Miejsca parkingowe</h5>
                         </div>
-                        <label class="goal-label text-left">Goal description</label>
-                        <textarea class="form-control w-full h-20 text-base" placeholder="Goal description">Description for Goal 3</textarea>
-                        <label class="metrics-label text-left mt-4">Measures</label>
+                        <label class="goal-label text-left">Opis celu</label>
+                        <textarea class="form-control w-full h-20 text-base" placeholder="Goal description">Zbadaj co mieszkańcy sądzą o styduacji z miejscami parkingowymi.</textarea>
+                        <label class="metrics-label text-left mt-4">Miary</label>
                         <div class="metric-titles">
                             <div class="metric-title flex items-center justify-between mt-2">
-                                <span class="flex-1 metric-title">Likert Scale</span>
-                                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMetric('likert')">view</button>
+                                <span class="flex-1 metric-title">Jak oceniasz liczbę miejsc parkingowych w centrum miasta</span>
+                                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMetric('likert')">zobacz</button>
                             </div>
                             <div class="metric-title flex items-center justify-between mt-2">
-                                <span class="flex-1 metric-title">Numeric Value</span>
-                                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMetric('numeric')">view</button>
+                                <span class="flex-1 metric-title">Jak daleko (w metrach) zazwyczaj parkujesz od celu podróży?</span>
+                                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMetric('numeric')">zobacz</button>
                             </div>
                             <div class="metric-title flex items-center justify-between mt-2">
-                                <span class="flex-1 metric-title">Open Question</span>
-                                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMetric('open')">view</button>
+                                <span class="flex-1 metric-title">Jakie zmiany mogłyby poprawić sytuację parkingową w Twojej okolicy?</span>
+                                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMetric('open')">zobacz</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Goal 4 -->
+                    <div class="form-group mb-4 bg-gray-200 rounded p-4">
+                        <div class="form-group-title flex items-center mb-2">
+                            <h5 class="flex-1 m-0">Sezonowe wyzwania mobilności</h5>
+                        </div>
+                        <label class="goal-label text-left">Opis celu</label>
+                        <textarea class="form-control w-full h-20 text-base" placeholder="Goal description">Zbadaj co mieszkańcy sądzą o środkach, jakie miasto podejmuje aby ułatwić mobilność podczas zimy.</textarea>
+                        <label class="metrics-label text-left mt-4">Miary</label>
+                        <div class="metric-titles">
+                            <div class="metric-title flex items-center justify-between mt-2">
+                                <span class="flex-1 metric-title">Jak oceniasz stan dróg w Twojej okolicy podczas zimy?</span>
+                                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMetric('likert')">zobacz</button>
+                            </div>
+                            <div class="metric-title flex items-center justify-between mt-2">
+                                <span class="flex-1 metric-title">Ile razy tej zimy doświadczyłeś/łaś problemów z poruszaniem się po mieście przez śnieg lub lód?</span>
+                                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMetric('numeric')">zobacz</button>
+                            </div>
+                            <div class="metric-title flex items-center justify-between mt-2">
+                                <span class="flex-1 metric-title">Jakie działania mogłyby poprawić warunki drogowe w zimie?</span>
+                                <button class="btn btn-secondary bg-yellow-500 text-white px-2 py-1 ml-2 rounded" onclick="viewMetric('open')">zobacz</button>
                             </div>
                         </div>
                     </div>
@@ -96,7 +119,7 @@
                     </div>
                     <div class="form-group mb-4">
                         <label for="numberInput">Ilość respondentów</label>
-                        <input type="number" class="form-control w-full" id="numberInput" min="1" value="100">
+                        <input type="number" class="form-control w-full" id="numberInput" min="1" value="300">
                     </div>
                     <div class="form-group mb-4">
                         <label for="numberInput">Płeć respondentów</label>
@@ -143,7 +166,7 @@
                     </div>
                     <div class="form-group mb-4">
                         <label for="textarea">Dodatkowe instrukcje dla chatbota</label>
-                        <textarea class="form-control w-full h-32" id="textarea" rows="4" placeholder="Jak powinien zachowywać się chatbot w stosunku do respondentów? O czym powienine pamiętać, a na co powinien uważać?">Chatbot should be polite and considerate. It should avoid sensitive topics and ensure respondents feel comfortable.</textarea>
+                        <textarea class="form-control w-full h-32" id="textarea" rows="4" placeholder="Jak powinien zachowywać się chatbot w stosunku do respondentów? O czym powienine pamiętać, a na co powinien uważać?">Bądź uprzejmy, ale zwięzły. Nie używaj zbyt technicznych określeń. Staraj się unikać zbaczania konwersacji na tematy, które nie są związane z tematem badania. Część ludzi nie będzie miała odpowiedzi na niektóre miary, na przykład, kiedy nie korzystają z danej usługi.</textarea>
                     </div>
                     <div class="form-group mb-4">
                         <button class="btn btn-draft bg-grey-500 text-white px-4 py-2 mr-2 rounded">Zapisz jako szkic</button>
@@ -157,7 +180,7 @@
         <div id="metricModal" class="modal">
             <div class="modal-content rounded">
                 <span class="close" onclick="closeMetricModal()">&times;</span>
-                <h2 class="rounded">View Metric</h2>
+                <h2 class="rounded">Zobacz miarę</h2>
                 <div id="metricContent"></div>
             </div>
         </div>
