@@ -36,19 +36,19 @@ def plot_likert_scale(data):
     plt.tight_layout()
     plt.show()
 
-def plot_gender_ratio(male_ratio=0.45, total_participants=1000):
+def plot_gender_ratio(male_ratio=0.35, total_participants=1000):
     set_plot_style()
 
     male_count = int(total_participants * male_ratio)
     female_count = total_participants - male_count
 
     gender_sizes = [male_count, female_count]
-    gender_labels = ['Kobiety', 'Mężczyźni']
+    gender_labels = ['Posiada dzieci', 'Nie posiada dzieci']
     gender_colors = ['#3498db', '#e74c3c']
 
     fig, ax = plt.subplots(figsize=(8, 8))
     ax.pie(gender_sizes, labels=gender_labels, colors=gender_colors, autopct='%1.1f%%',
-           startangle=90, wedgeprops=dict(width=0.3))
+           startangle=90, wedgeprops=dict(width=0.3), textprops={'fontsize': 18, 'fontweight': 'bold'}, pctdistance=0.85)  # Adjusted textprops
     ax.axis('equal')
 
     plt.tight_layout()
@@ -59,7 +59,7 @@ def plot_three_category_distribution(category_names, sizes, colors):
 
     fig, ax = plt.subplots(figsize=(8, 8))
     ax.pie(sizes, labels=category_names, colors=colors, autopct='%1.1f%%',
-           startangle=90, wedgeprops=dict(width=0.3))
+           startangle=90, wedgeprops=dict(width=0.3), textprops={'fontsize': 18, 'fontweight': 'bold'}, pctdistance=0.85)  # Adjusted textprops
     ax.axis('equal')
 
     plt.tight_layout()
@@ -114,8 +114,8 @@ sizes = [38, 97, 165]  # Adjusted to sum up to 250
 colors = ['#3498db', '#e74c3c', '#2ecc71']
 
 
-#plot_gender_ratio()
-#plot_three_category_distribution(category_names, sizes, colors)
+plot_gender_ratio()
+plot_three_category_distribution(category_names, sizes, colors)
 
 #integer_data = generate_integer_normal_data(mean=5, std_dev=3)
 #plot_integer_distribution(integer_data)
@@ -123,5 +123,5 @@ colors = ['#3498db', '#e74c3c', '#2ecc71']
 #likert_data = generate_likert_data()
 #plot_likert_scale(likert_data)
 
-integer_data = generate_integer_normal_data(mean=98, std_dev=30, zero_boost=5)
-plot_integer_distribution(integer_data)
+#integer_data = generate_integer_normal_data(mean=98, std_dev=30, zero_boost=5)
+#plot_integer_distribution(integer_data)
