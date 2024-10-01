@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h3>Demografia respondenta</h3>
                 <p><strong>Wiek:</strong> ${demographics.age}</p>
                 <p><strong>Płeć:</strong> ${demographics.gender}</p>
-                <p><strong>Poziom edukacji:</strong> ${demographics.educationLevel}</p>
+                <p><strong>Poziom wykształcenia:</strong> ${demographics.educationLevel}</p>
                 <p><strong>Status rodzicielski:</strong> ${demographics.parentalStatus}</p>
             </div>
         `;
